@@ -1,0 +1,15 @@
+action_inherited();
+tile = instance_nearest(x,y,obj_tiles);
+tile.endangered = 1;
+hp = 60;
+action_set_alarm(60, 0);
+lvl = 1
+sprite_index = spr_treeofwisdom
+image_index = 0
+image_speed = 0
+requirement[0] = 999999
+
+
+pr.tree = 1
+
+

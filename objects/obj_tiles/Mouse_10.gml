@@ -1,0 +1,1 @@
+global.plantable = 1;

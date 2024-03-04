@@ -1,0 +1,2 @@
+tile.unplantable = 1
+

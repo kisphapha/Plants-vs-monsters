@@ -1,0 +1,1 @@
+global.kill = 0;
