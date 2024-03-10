@@ -1,4 +1,5 @@
 action_kill_object();
+instance_create(view_get(0) + 576, view_get(1), obj_menu_pause)
 with (controller) {
 	chosing = 0;
 }

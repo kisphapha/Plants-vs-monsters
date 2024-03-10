@@ -1,4 +1,4 @@
-if !global.plant_amount > 7
+if !(global.plant_amount > 7)
 {
 	with (obj_spectator) {
 	action_move("000100000", 8);
@@ -11,6 +11,7 @@ else
 		{
 			action_create_object(obj_plantboard, view_get(0)+4, view_get(1)+16);
 			action_create_object(obj_selectboard, view_get(0)+4, view_get(1)+96);
+			instance_create(view_get(0) + 440, view_get(1) + 448, obj_menu_quit_level)
 			action_create_object(obj_letrock, view_get(0)+194, view_get(1)+448);
 			instance_create(view_get(0)+6,view_get(1)+100,obj_ca1)
 

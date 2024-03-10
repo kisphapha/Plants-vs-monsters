@@ -71,7 +71,7 @@ if lock_sequence == 3
 			action_draw_text("SWAMP", 0, 30);
 			action_font(font0, 1);
 			action_draw_variable(global.world3_level-1, -10, 60);
-			action_draw_text("/13", 10, 60);
+			action_draw_text("/12", 10, 60);
 		}
 	}
 }
@@ -86,7 +86,7 @@ if lock_sequence == 2
 			action_draw_text("DESERT", 0, 30);
 			action_font(font0, 1);
 			action_draw_variable(global.world2_level-1, -10, 60);
-			action_draw_text("/12", 10, 60);
+			action_draw_text("/13", 10, 60);
 		}
 	}
 }

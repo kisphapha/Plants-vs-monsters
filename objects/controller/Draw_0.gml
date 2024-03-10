@@ -6,9 +6,10 @@ if global.pause = 1 {
 	draw_rectangle(0,0,room_width,room_height,false)
 	draw_set_alpha(1)
 	draw_set_font(victory)
+	draw_set_halign(fa_center)
 	draw_set_color(c_lime)
-	draw_text(view_get(0)+view_get(0)/2,
-		view_get(1)+view_get(1)/2,"PAUSED");
+	draw_text(view_get(0)+view_get(2)/2,
+		view_get(1)+view_get(3)/2,"PAUSED");
 }
 if global.begining == 0
 {

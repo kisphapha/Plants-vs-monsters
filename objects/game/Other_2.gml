@@ -80,5 +80,6 @@ global.kill = 0
 global.planting = 0
 global.strongwind = 0
 global.lvl = noone
+global.confirm_result = -1
 /* */
 /*  */

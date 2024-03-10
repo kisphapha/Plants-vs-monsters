@@ -1,5 +1,5 @@
 depth = -3000
-cd = 1
+cd = 50
 lvl = noone
 planting = 0;
 plant_ = 0

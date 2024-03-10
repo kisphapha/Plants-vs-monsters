@@ -1,4 +1,4 @@
-if transparent == 0 && !dead && other.daming == 1
+if transparent == 0 && !dead && other.daming == 1 && special_condition(0)
 {
 	hp += -other.dame*(1-immortal);
 	if other.type_ = 1 or other.type_ = 2
