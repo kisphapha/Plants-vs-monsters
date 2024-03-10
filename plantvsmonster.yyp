@@ -764,6 +764,7 @@
     {"id":{"name":"lvl13_desert","path":"objects/lvl13_desert/lvl13_desert.yy",},},
     {"id":{"name":"lvl1_swamp","path":"objects/lvl1_swamp/lvl1_swamp.yy",},},
     {"id":{"name":"lvl2_swamp","path":"objects/lvl2_swamp/lvl2_swamp.yy",},},
+    {"id":{"name":"Sprite317","path":"sprites/Sprite317/Sprite317.yy",},},
     {"id":{"name":"lvl3_swamp","path":"objects/lvl3_swamp/lvl3_swamp.yy",},},
     {"id":{"name":"spr_menu_user_select","path":"sprites/spr_menu_user_select/spr_menu_user_select.yy",},},
     {"id":{"name":"lvl4_swamp","path":"objects/lvl4_swamp/lvl4_swamp.yy",},},

@@ -1,0 +1,23 @@
+
+Chủ đề: Xác nhận bảo lưu thành công
+
+Kính gửi [Student/User Name],
+
+Chúng tôi vui mừng thông báo với bạn rằng thủ tục bảo lưu của bạn đã được xác nhận thành công! Dưới đây là chi tiết bảo lưu của bạn:
+
+StudentId: [Insert StudentId]
+StartDate of Reservation: [Insert Date]
+EndDate of Reservation: [Insert Date]
+ReservedClassId:[Insert ReservedClassId]
+ReservedModuleId:[Insert ReservedModuleId]
+Reason: [Insert Reason]
+Note: [Insert Note]
+
+Vui lòng lưu ý các điều khoản khi đăng ký bảo lưu, bao gồm việc đi học lại đúng theo hạn bảo lưu.
+
+Chúng tôi chúc bạn những điều tốt đẹp trong thời gian đăng ký bảo lưu và mong chờ sự trở lại của bạn.
+
+Trân trọng,
+
+[Sender Name]
+

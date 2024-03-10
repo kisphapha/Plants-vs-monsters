@@ -699,6 +699,7 @@
     {"name":"spr_smallbomb6","order":5,"path":"sprites/spr_smallbomb6/spr_smallbomb6.yy",},
     {"name":"lvl13_desert","order":12,"path":"objects/lvl13_desert/lvl13_desert.yy",},
     {"name":"lvl2_swamp","order":1,"path":"objects/lvl2_swamp/lvl2_swamp.yy",},
+    {"name":"Sprite317","order":14,"path":"sprites/Sprite317/Sprite317.yy",},
     {"name":"lvl3_swamp","order":2,"path":"objects/lvl3_swamp/lvl3_swamp.yy",},
     {"name":"spr_menu_user_select","order":37,"path":"sprites/spr_menu_user_select/spr_menu_user_select.yy",},
     {"name":"lvl4_swamp","order":3,"path":"objects/lvl4_swamp/lvl4_swamp.yy",},
