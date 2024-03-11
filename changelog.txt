@@ -85,8 +85,7 @@
 	+ Play and exit buttons
 	+ Users selection board
 	+ New user dialog
-- Added CRUD User systems, now player can save thier progress and continue instead of play again from the
-begining
+- Added CRUD User systems, now player can save thier progress and continue instead of play again from the begining
 	+ Create : click NEW button in Users selection board, enter name and your new user is stored in your computer
 	for a long time
 	+ Read : The Users selection board display all created Users. Select a user then click PLAY. Everything
@@ -99,3 +98,10 @@ begining
 - Change : Move changelog to the root folder
 - Fixed : Drillie can still get damaged while underground
 - Fixed : Wrong number of levels display on Desert island and Swamp island
+=================================================================
+11/3/2024 --- RELEASE 1.1.1
+=================================================================
+- Fixed : Lawn mover and shovel as dropping item is underneath the plants
+- Fixed : Auto loading all your plants seed while you have under 7 plants. Before, the game only take 7 first seeds of Hometown world but don't include seed that you
+get from other worlds in the early game
+- Fixed : Level Day 3 - Desert which is a last stand level would automatically choose all the plant you have including Sun flower if you have under 7 plants

@@ -3,3 +3,4 @@ flying_toward_screen = 0;
 image_speed = 0
 freeze = 0
 size = 0
+depth = -2000
