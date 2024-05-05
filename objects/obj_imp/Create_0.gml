@@ -1,7 +1,5 @@
 action_inherited();
-const_speed = 0.3;
-hp = 10;
-hpmax = hp;
+mons_id = 6
 
 sprite_walk = spr_smallone
 

@@ -3,18 +3,33 @@
 function insert_line_break(_str, _max_length){
 	var _result = "";
     var _len = string_length(_str);
-    var _current_line_length = 0;
-
+	var _word = "";
+	var _sentence = "";
+	
     for (var _i = 1; _i <= _len; _i++) {
         var _char = string_char_at(_str, _i);
-
-        if (_current_line_length >= _max_length && _char != " ") {
-            _result += "\n";
-            _current_line_length = 0;
-        }
-
-        _result += _char;
-        _current_line_length++;
+		
+		if _char == "\n" {
+			_result += _sentence + _word
+			_result += "\n";
+			_word = "";
+			_sentence = "";
+			continue;
+		}
+		
+		_word += _char
+		if _char == " " {
+			if string_width(_word) + string_width(_sentence) > _max_length {
+				_result += _sentence + "\n"
+				_sentence = _word
+			} else {
+				_sentence += _word
+			}
+			_word = ""
+		}
+		if _i == _len {
+			_result += _sentence + _word
+		}
     }
 
     return _result;

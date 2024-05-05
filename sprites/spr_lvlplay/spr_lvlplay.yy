@@ -55,8 +55,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "graphic",
-    "path": "folders/Sprites/graphic.yy",
+    "name": "GUI",
+    "path": "folders/Sprites/graphic/GUI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

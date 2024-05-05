@@ -29,7 +29,7 @@ if instance_exists(mons){
 }
 if powering == 1
 {
-	pr.hp = 500;
+	if instance_exists(pr) pr.hp = 500;
 }
 if power_active == 1
 {

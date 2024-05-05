@@ -19,7 +19,7 @@ if global.tree_of_wisdom == 1 && instance_number(obj_treeOfWishom) > 0
 }
 win = 3;
 action_set_alarm(150, 2);
-if object_index == lvl10_hometown
+if object_index == lvl10_hometown && global.tutor1 == 0
 	global.tutor1 = 1
 if world_type = 1 
 {
@@ -49,3 +49,4 @@ if world_type = 7
 {
 	if global.world7_level == lvl global.world7_level += 1;
 }	
+save_game()

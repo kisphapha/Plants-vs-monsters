@@ -1,3 +1,4 @@
+mons_id = 0;
 strong = 0;
 untouch = 0;
 cold = 0;
@@ -54,3 +55,10 @@ if (y > 408)
 	line = 5;
 }
 heart.line = line
+var _index =  array_find_index(game.monsters_library, function(_element) { return _element.obj_form == object_index; });
+if _index != -1 {
+	hp =  game.monsters_library[_index].hp
+	hpmax = hp
+	dame = game.monsters_library[_index].dame
+	const_speed = game.monsters_library[_index].basic_speed
+}

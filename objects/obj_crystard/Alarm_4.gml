@@ -1,9 +1,18 @@
-sprite_walk = spr_crystard2
-const_speed = 0.3
-speed = const_speed
-direction = 180
-sprite_index = sprite_walk
-image_speed = 0.5;
-image_index = 0
-immortal = 0
+sprite_walk = spr_crystard2
+
+const_speed = 0.3
+
+speed = const_speed
+
+direction = 180
+
+sprite_index = sprite_walk
+
+image_speed = 0.5;
+
+image_index = 0
+
+immortal = 0
+
+action_set_alarm(300+random(300), 2);
 

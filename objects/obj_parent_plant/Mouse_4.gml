@@ -20,7 +20,7 @@ if volatile == 0 && instance_exists(pr)
 }
 if powering == 0  && instance_exists(pr)
 {
-	if controller.plant_ = -1
+	if controller.plant_ = -1 && pr.y > 0
 	{
 		controller.plant_ = 0
 		controller.planting = 0

@@ -1,7 +1,5 @@
 event_inherited()
-dame = 0;
-hp = 15;
-hpmax = hp;
+mons_id = 14
 dead = false;
 dest_y = 0
 line = 0

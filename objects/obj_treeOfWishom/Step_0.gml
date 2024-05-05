@@ -2,33 +2,12 @@ event_inherited();
 
 
 
-if controller.win = 1 and lvl = 5{
-
-    global.recharge_boost += 0.4
-
+/*if controller.win = 1 and lvl = 5{
     lvl = 6
+}*/
 
-}
-
-if controller.lost = 1 and lvl > 0{
-
-    lvl = 0
-
-    if lvl = 2 global.recharge_boost += 0.1
-
-    if lvl = 3 global.recharge_boost += 0.2
-
-    if lvl = 4 global.recharge_boost += 0.4
-
-}
 
 if !instance_exists(pr) {
-
-    if lvl = 2 global.recharge_boost += 0.1
-
-    if lvl = 3 global.recharge_boost += 0.2
-
-    if lvl = 4 global.recharge_boost += 0.4
 
     if controller.lost = 0 controller.lost = 1
 

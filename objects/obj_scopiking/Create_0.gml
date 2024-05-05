@@ -1,11 +1,9 @@
 heart = noone;
 action_inherited();
+mons_id = 11
 isBoss = 1;
 untouch = 2;
 strong = 1;
-const_speed = 2;
-hp = 2000;
-hpmax = hp;
 multi_line = 1
 
 sprite_walk = spr_scorpiking2

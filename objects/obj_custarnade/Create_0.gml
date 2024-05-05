@@ -1,7 +1,5 @@
 pr = noone
 action_inherited();
-hp_max = 10000;
-hp = hp_max;
 action_sprite_set(spr_custarnade, 1, 0);
 bam = 0;
 

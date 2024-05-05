@@ -1,7 +1,5 @@
 action_inherited();
-const_speed = 0.3;
-hp = 25;
-hpmax = hp;
+mons_id = 19
 untouch = 2;
 y0 = y
 plant = noone

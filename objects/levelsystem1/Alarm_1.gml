@@ -12,7 +12,7 @@ if global.tutor1 == 1
 		action_set_relative(0);
 		}
 		arrow = instance_create(320,210,obj_arrow); arrow.facing =270; arrow.alarm[10] = 1
-		global.tutor1 = 0;
+		global.tutor1 = 2;
 	}
 }
 action_create_object(obj_hometown, 0, 0);

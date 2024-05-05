@@ -32,12 +32,21 @@ if global.bangchuyen == 0
 	action_create_object(obj_plantboard, 4, 16);
 	if global.plant_amount <= 7
 	{		
+		var _i, _j = 0, _index;
 		var _possible_seeds = []
-		for (var _i = 1, _j = 0; _i < array_length(global.seed) && _j < global.plant_amount; _i += 1) {
+		var _scope;
+		for (_i = 1; _i < array_length(global.seed) && _j < global.plant_amount; _i += 1) {
+			//Find index of the looking plant in the game library
+			_scope = { i : _i };
+			_index =  array_find_index(game.plants_library, method(_scope,function(_element) { 
+				return _element.plant_id == i; 
+			}));
+			//Checking if this plant is eligible for entering the auto selected plants
 			if global.seed[_i] == 1 
-				&& ((global.last_stand == 1 && !array_contains(global.sun_cards, _i))
+				&& _index >= 0
+				&& ((global.last_stand == 1 && game.plants_library[_index].plant_types[0] != game.plants_types[0])
 					|| global.last_stand == 0){
-				_possible_seeds[_j] = global.seed_card[_i];
+				_possible_seeds[_j] = game.plants_library[_index].card_type;
 				_j += 1
 			}
 		}
@@ -47,65 +56,13 @@ if global.bangchuyen == 0
 	}
 	else
 	{
-		for (var r = 0; r<=global.slotNumber-1;r+=1)
-
+		for (var _r = 0; _r<=global.slotNumber-1;_r+=1)
 		{
-
-			if global.slot[r+1] = 1 instance_create(80+r*controller.cd,20,obj_ca1)
-
-			if global.slot[r+1] = 2 instance_create(80+r*controller.cd,20,obj_ca2)
-
-			if global.slot[r+1] = 3 instance_create(80+r*controller.cd,20,obj_ca3)
-
-			if global.slot[r+1] = 4 instance_create(80+r*controller.cd,20,obj_ca4)
-
-			if global.slot[r+1] = 5 instance_create(80+r*controller.cd,20,obj_ca5)
-
-			if global.slot[r+1] = 6 instance_create(80+r*controller.cd,20,obj_ca6)
-
-			if global.slot[r+1] = 7 instance_create(80+r*controller.cd,20,obj_ca7)
-
-			if global.slot[r+1] = 8 instance_create(80+r*controller.cd,20,obj_ca8)
-
-			if global.slot[r+1] = 9 instance_create(80+r*controller.cd,20,obj_ca9)
-
-			if global.slot[r+1] = 10 instance_create(80+r*controller.cd,20,obj_ca10)
-
-			if global.slot[r+1] = 11 instance_create(80+r*controller.cd,20,obj_ca11)
-
-			if global.slot[r+1] = 12 instance_create(80+r*controller.cd,20,obj_ca12)
-
-			if global.slot[r+1] = 13 instance_create(80+r*controller.cd,20,obj_ca13)
-
-			if global.slot[r+1] = 14 instance_create(80+r*controller.cd,20,obj_ca14)
-
-			if global.slot[r+1] = 15 instance_create(80+r*controller.cd,20,obj_ca15)
-
-			if global.slot[r+1] = 16 instance_create(80+r*controller.cd,20,obj_ca16)
-
-			if global.slot[r+1] = 17 instance_create(80+r*controller.cd,20,obj_ca17)
-
-			if global.slot[r+1] = 18 instance_create(80+r*controller.cd,20,obj_ca18)
-
-			if global.slot[r+1] = 19 instance_create(80+r*controller.cd,20,obj_ca19)
-
-			if global.slot[r+1] = 20 instance_create(80+r*controller.cd,20,obj_ca20)
-
-			if global.slot[r+1] = 21 instance_create(80+r*controller.cd,20,obj_ca21)
-
-			if global.slot[r+1] = 22 instance_create(80+r*controller.cd,20,obj_ca22)
-
-			if global.slot[r+1] = 23 instance_create(80+r*controller.cd,20,obj_ca23)
-
-			if global.slot[r+1] = 24 instance_create(80+r*controller.cd,20,obj_ca24)
-
-			if global.slot[r+1] = 25 instance_create(80+r*controller.cd,20,obj_ca25)
-
-			if global.slot[r+1] = 26 instance_create(80+r*controller.cd,20,obj_ca26)
-
-			if global.slot[r+1] = 27 instance_create(80+r*controller.cd,20,obj_ca27)
-
-			if global.slot[r+1] = 28 instance_create(80+r*controller.cd,20,obj_ca28)
+			var _scope = { r : _r};
+			array_foreach(game.plants_library,method(_scope,function(_element){
+				if global.slot[r+1] == _element.plant_id
+					instance_create(80+r*controller.cd,20,_element.card_type)
+			}))
 		}
 	}
 }

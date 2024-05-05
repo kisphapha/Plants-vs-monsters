@@ -1,6 +1,6 @@
 heart = noone;
 action_inherited();
-const_speed = 1.2;
+mons_id = 15
 jump = 0
 height = 0
 lech = 40
@@ -8,8 +8,6 @@ scale = 1
 y += lech; heart.adjy = -lech
 
 splited = 0
-
-hp = 1; hpmax = 1
 
 sprite_walk = spr_slime
 

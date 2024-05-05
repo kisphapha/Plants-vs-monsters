@@ -1,10 +1,7 @@
 action_inherited();
+mons_id = 5
 imp = 1;
 strong = 1;
-dame = 0;
-const_speed = 0.4;
-hp = 150;
-hpmax = hp;
 if global.begining == 0
 {
 	action_move("000100000", 0.4);

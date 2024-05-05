@@ -6,3 +6,4 @@ length = 0
 retreat = 0
 victim= noone
 love = noone
+depth = -1000

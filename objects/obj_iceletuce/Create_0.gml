@@ -1,8 +1,6 @@
 action_inherited();
 a1 = noone
 a2 = noone
-hp_max = 100;
-hp = hp_max;
 action_sprite_set(spr_icelettuce, 0, 0);
 bam = 0;
 action_set_alarm(2, 1);

@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "effect",
-    "path": "folders/Objects/effect.yy",
+    "name": "GUI",
+    "path": "folders/Objects/GUI.yy",
   },
   "parentObjectId": null,
   "persistent": false,

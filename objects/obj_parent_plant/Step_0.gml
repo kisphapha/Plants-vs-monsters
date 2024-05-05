@@ -11,7 +11,7 @@ if ready == 1
 		{
 			if object_index != obj_wallnut
 			{
-				pr.hp = hpmax;
+				pr.hp = hp_max;
 			}
 		}
 	}

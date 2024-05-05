@@ -105,3 +105,31 @@
 - Fixed : Auto loading all your plants seed while you have under 7 plants. Before, the game only take 7 first seeds of Hometown world but don't include seed that you
 get from other worlds in the early game
 - Fixed : Level Day 3 - Desert which is a last stand level would automatically choose all the plant you have including Sun flower if you have under 7 plants
+==================================================================================================================================================================
+--/--/2024 --- RELEASE 1.2.0 - THE BIG GAME HONING UPDATE
+==================================================================================================================================================================
+- Added plants alamanac. Now you can easier capture information about plants. Everytime you unlock a plant, the alamanac information of that plant should be 
+unlocked too. To open almanac, click the the top right corner button in islands screen
+- Change : Now the game will auto-save after each time you finish a level.
+- Change : Make the unlocked plant darker and harder to see. Create a mysterious feelings
+- Change : Monster all die in the begining of the level. They now disapear instead
+- Change : Nerf ability recharge of Dark Patrol. He can't also use ability while Freezing
+- Change : Decrease the monsters density of level 4 - 8
+- Change : Chompers's health are now equal to Castuses
+- Fixed : Fatal error that make you can't finish level 4 - 6
+- Fixed : Lily pad is able to remove even if they're having another plant standing on, making that plant floating on the water
+- Fixed : Pointing yellow arrow underneaths objects and tends to move upward each time
+- Fixed : Potato mine's plant food causing the game to crash
+- Fixed : Starting some of the levels may crash the game
+- Fixed : Lawn movers didn't change the theme in some of the levels
+- Fixed : Plant-fooding Castuses may cause the game the crash
+- Fixed : "Done" button in last stand levels, peas and Urusal's tounge is underneath objects, water ponds
+- Fixed : If Blover get destroyed when blowing, the effect remain forever until another Blover is placed
+- Fixed : Urusal in phase 2 potentailly cause the game to crash.
+- Fixed : Destroy the plant while being targeted by Urusal's tounge can cause the game to crash
+- Fixed : Annabelle causing the game to crash
+- Fixed : Crystard unable to use ability more than once
+- Fixed : Quiting tree of wisdom levels will not reset the seed recharge time boost
+- Fixed : Vollo's angry head underneath everything
+- Fixed : Annabelle sometime become absolute incredible for some reason
+- Comming soon : Almanac about monsters.

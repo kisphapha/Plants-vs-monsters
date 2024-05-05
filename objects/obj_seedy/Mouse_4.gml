@@ -1,4 +1,4 @@
-if (global.sun >=global.cost[plant_id] and recharge = 1 and drop<>3)
+if (global.sun >= game.plants_library[library_index].cost and recharge = 1 and drop<>3)
 {
 	if ban_choosing == 0
 		{

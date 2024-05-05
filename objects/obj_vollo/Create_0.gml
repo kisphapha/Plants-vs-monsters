@@ -1,11 +1,9 @@
 heart = noone;
 action_inherited();
+mons_id = 23
 isBoss = 1;
 untouch = 2;
 strong = 1;
-const_speed = 2;
-hp = 1500;
-hpmax = hp;
 angery = 0
 dying = 0
 phase = 0

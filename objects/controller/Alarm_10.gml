@@ -13,57 +13,11 @@ else
 			action_create_object(obj_selectboard, view_get(0)+4, view_get(1)+96);
 			instance_create(view_get(0) + 440, view_get(1) + 448, obj_menu_quit_level)
 			action_create_object(obj_letrock, view_get(0)+194, view_get(1)+448);
-			instance_create(view_get(0)+6,view_get(1)+100,obj_ca1)
 
-			instance_create(view_get(0)+6+50,view_get(1)+100,obj_ca2)
-
-			instance_create(view_get(0)+6+50*2,view_get(1)+100,obj_ca3)
-
-			instance_create(view_get(0)+6+50*3,view_get(1)+100,obj_ca4)
-
-			instance_create(view_get(0)+6+50*4,view_get(1)+100,obj_ca5)
-
-			instance_create(view_get(0)+6+50*5,view_get(1)+100,obj_ca6)
-
-			instance_create(view_get(0)+6+50*6,view_get(1)+100,obj_ca7)
-
-			instance_create(view_get(0)+6,view_get(1)+164,obj_ca8)
-
-			instance_create(view_get(0)+6+50,view_get(1)+164,obj_ca9)
-
-			instance_create(view_get(0)+6+50*2,view_get(1)+164,obj_ca10)
-
-			instance_create(view_get(0)+6+50*3,view_get(1)+164,obj_ca11)
-
-			instance_create(view_get(0)+6+50*4,view_get(1)+164,obj_ca12)
-
-			instance_create(view_get(0)+6+50*5,view_get(1)+164,obj_ca13)
-
-			instance_create(view_get(0)+6+50*6,view_get(1)+164,obj_ca14)
-
-			instance_create(view_get(0)+6,view_get(1)+228,obj_ca15)
-
-			instance_create(view_get(0)+6+50,view_get(1)+228,obj_ca16)
-
-			instance_create(view_get(0)+6+50*2,view_get(1)+228,obj_ca17)
-
-			instance_create(view_get(0)+6+50*3,view_get(1)+228,obj_ca18)
-
-			instance_create(view_get(0)+6+50*4,view_get(1)+228,obj_ca19)
-
-			instance_create(view_get(0)+6+50*5,view_get(1)+228,obj_ca20)
-
-			instance_create(view_get(0)+6+50*6,view_get(1)+228,obj_ca21)
-
-			instance_create(view_get(0)+6,view_get(1)+292,obj_ca22)
-
-			instance_create(view_get(0)+6+50,view_get(1)+292,obj_ca23)
-
-			instance_create(view_get(0)+6+50*2,view_get(1)+292,obj_ca24)
-
-			instance_create(view_get(0)+6+50*3,view_get(1)+292,obj_ca25)
-
-
+			for (var _i = 0; _i < array_length(game.plants_library) - 1 ; _i += 1)
+			{
+				instance_create(view_get(0)+6+50*(_i mod 7),view_get(1)+100+(_i div 7)*64,game.plants_library[_i].card_type)
+			}
 			chosing = 1;
 		}
 	}

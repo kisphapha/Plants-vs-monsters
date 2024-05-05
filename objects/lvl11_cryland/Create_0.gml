@@ -14,7 +14,7 @@ instance_create(random_range(656,828),random_range(104,452),obj_darkpatrol)
 instance_create(random_range(656,828),random_range(104,452),obj_annabelle)
 
 global.fixed = 1;
-global.xac_suat = 10;
+global.xac_suat = 8;
 hugewave[1] = 8;
 max_waves = 16;
 lvl = 11;

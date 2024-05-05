@@ -1,5 +1,4 @@
 action_inherited();
-hp = 250;
 y0 = y;
 mons = noone
 volatile = 0

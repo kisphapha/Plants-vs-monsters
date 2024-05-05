@@ -1,12 +1,10 @@
 heart = noone
 tougue = noone
 action_inherited();
+mons_id = 16
 isBoss = 1;
 strong = 1;
 untouch = 2;
-const_speed = 2;
-hp = 3000;
-hpmax = hp;
 
 heart2 = instance_create(x,y,obj_enemies); heart2.love = instance_nearest(x,y,object_index); heart2.adjy = -80
 

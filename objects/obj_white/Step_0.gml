@@ -8,6 +8,7 @@ if controller.win == 1
 		}
 		if image_alpha > 0.99
 		{
+			with obj_seedy sprite_set_offset(sprite_index,0,0)
 			if goto_buff = 1 or global.tutor1 = 1{
 			    if goto_buff = 1
 			    room_goto(buffer);

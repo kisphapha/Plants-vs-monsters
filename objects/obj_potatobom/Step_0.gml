@@ -13,11 +13,11 @@ if power_active == 1
 		//counting unplanted slot
 		while (setfire > 0){
 		    count = 0
-		    for (j = 0; j < 45; j+=1){
+		    for (j = 1; j <= 45; j+=1){
 		        b0 = isn(0,0,obj_tiles,j)
 		        if b0.planted = 0 && b0.water = 0 && b0.crystalize = 0 && b0.unplantable = 0 count +=1   
 		    }
-		    for(i = 0; i< 45;i +=1){
+		    for(i = 0; i <= 45;i +=1){
 		        b2 = isn(640,240,obj_tiles,i)
 		        if b2.planted = 0 && setfire > 0 && b2.water = 0 && b2.crystalize = 0  && b2.unplantable = 0{
 		            if random(count-i) <=1 {

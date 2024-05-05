@@ -52,19 +52,19 @@ alarm[0] = 600}
 
   monster = instance_create(random_range(432,608),script0(0),obj_darkpatrol);
 
-repeat 5 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
+repeat 4 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
 
 repeat 3 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
 
-repeat 2 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
+repeat 1 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
 
  alarm[0] = 800}
 
  if waves =11 or waves = 12
 
-{repeat 4 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
+{repeat 3 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
 
-repeat 4 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
+repeat 3 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
 
 repeat 1 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
 
@@ -74,17 +74,17 @@ alarm[0] = 600}
 
 {  monster = instance_create(random_range(432,608),script0(0),obj_darkpatrol);
 
-repeat 6 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
+repeat 5 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
 
-repeat 3 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
+repeat 2 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
 
 alarm[0] = 600}
 
  if waves =16 or waves = 17
 
-{repeat 12 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
+{repeat 10 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
 
-repeat 8 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
+repeat 7 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)};
 
 alarm[0] = 600}
 
@@ -92,7 +92,7 @@ alarm[0] = 600}
 
 {repeat 2 {  monster = instance_create(random_range(432,608),script0(0),obj_darkpatrol)};
 
-repeat 7 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
+repeat 5 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)};
 
 alarm[0] = 600}
 
@@ -102,11 +102,11 @@ if waves = 20
 
 repeat 3 {  monster = instance_create(random_range(432,608),script0(0),obj_darkpatrol)};
 
-repeat 14 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
+repeat 12 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_monster)};
 
-repeat 8 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)}
+repeat 7 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_brownie)}
 
-repeat 4 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)}
+repeat 3 {  monster = instance_create(680+random_range(-32,32),script0(0),obj_hardcore)}
 
 }
 

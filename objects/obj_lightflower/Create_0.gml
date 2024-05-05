@@ -6,7 +6,6 @@ launch = 0
 direct.love = self.id
 facing = 0
 laser = 0
-hp = 120;
 l = noone
 light = noone
 plight = noone

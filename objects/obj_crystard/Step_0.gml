@@ -6,7 +6,7 @@ if instance_exists(mask)
 }
 if dead = true {
 
-    if fuked = 0 {
+    if fuked = 0 && global.begining == 0 {
 
         fuked = 1
 

@@ -1,5 +1,5 @@
 dead = 0
-
+step = 0
 amount = 0
 
 value = 0

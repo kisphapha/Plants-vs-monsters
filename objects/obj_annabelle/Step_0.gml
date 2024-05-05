@@ -16,6 +16,7 @@ if range = 0 && distance < 120 && switch_lane = 0 && prj.line = line && cool_dow
     if line = 4 new_line = choose(275,440)
     if line = 5 new_line = 350
 	cool_down = 0;
+	alarm[6] = 13
 }
 
 if range = 2 && cool_down == 1

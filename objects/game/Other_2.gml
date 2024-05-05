@@ -5,37 +5,12 @@ global.seed[2] = 1
 for (i = 3; i <= 30; i += 1){
     global.seed[i] = 0
 }
-//plant cost
-global.cost[1] = 50
-global.cost[2] = 100
-global.cost[3] = 50
-global.cost[4] = 25
-global.cost[5] = 200
-global.cost[6] = 175
-global.cost[7] = 150
-global.cost[8] = 175
-global.cost[9] = 0
-global.cost[10] = 50
-global.cost[11] = 125
-global.cost[12] = 150
-global.cost[13] = 50
-global.cost[14] = 25
-global.cost[15] = 325
-global.cost[16] = 75
-global.cost[17] = 175
-global.cost[18] = 350
-global.cost[19] = 100
-global.cost[20] = 0
-global.cost[21] = 25
-global.cost[22] = 25
-global.cost[23] = 300
-global.cost[24] = 150
-global.cost[25] = 225
+global.seed[100] = 0
 //Card config
-for (var _i = 1; _i <= 25; _i++) {
-    global.seed_card[_i] = asset_get_index("obj_ca" + string(_i));
-}
-global.sun_cards = [1,21]
+//for (var _i = 1; _i <= 25; _i++) {
+//    global.seed_card[_i] = asset_get_index("obj_ca" + string(_i));
+//}
+//global.sun_cards = [1,21]
 /* */
 global.pause = 0;
 global.slotNumber = 7;
@@ -60,5 +35,6 @@ global.planting = 0
 global.strongwind = 0
 global.lvl = noone
 global.confirm_result = -1
+global.map = 0
 /* */
 /*  */

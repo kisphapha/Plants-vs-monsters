@@ -3,11 +3,13 @@ if global.pause == 2 {
 	instance_deactivate_all(true)
 	instance_activate_object(game)
 	instance_activate_object(obj_menu_pause)
+	instance_create(view_get(0) + 240, view_get(1) + 350, obj_menu_restart_level)
 	instance_create(view_get(0) + 240, view_get(1) + 400, obj_menu_quit_level)
 }
 if global.pause == 3 {
 	global.pause = 0
 	instance_activate_all()
+	with obj_menu_restart_level instance_destroy()
 	with obj_menu_quit_level instance_destroy()
 }
 if global.bangchuyen == 1

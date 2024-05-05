@@ -83,6 +83,7 @@ if dead == true
 	if (isBoss = 0 and weird_death = 0)
 	{
 		{
+			if controller.lvl.started == 0 visible = false
 			hp = 0;
 			{
 				action_set_relative(1);
