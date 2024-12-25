@@ -3,6 +3,9 @@ mons_id = 1
 if global.begining == 0
 {
 	action_move("000100000", 0.3);
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }
 action_sprite_set(spr_monster, 0, 0.5-global.begining*0.5);
 sprite_walk = spr_monster

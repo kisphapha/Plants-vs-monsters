@@ -1,23 +1,24 @@
 action_inherited();
 prj = instance_nearest(x,y,obj_projectile)
 if instance_exists(prj)
-distance = abs(x - prj.x)
+{
+	distance = abs(x - prj.x)
+
+	if range == 0 && distance < 120 && switch_lane == 0 && prj.line == line && cool_down == 1{
+	    switch_lane = 1;
+	    sprite_index = spr_annabelle2;
+	    image_speed = 1;
+	    if line = 1 new_line = 190
+	    if line = 2 new_line = choose(100,275)
+	    if line = 3 new_line = choose(190,350)
+	    if line = 4 new_line = choose(275,440)
+	    if line = 5 new_line = 350
+		cool_down = 0;
+		alarm[6] = 13
+	}
+}
 else
 distance = 9999
-
-
-if range = 0 && distance < 120 && switch_lane = 0 && prj.line = line && cool_down = 1{
-    switch_lane = 1;
-    sprite_index = spr_annabelle2;
-    image_speed = 1;
-    if line = 1 new_line = 190
-    if line = 2 new_line = choose(100,275)
-    if line = 3 new_line = choose(190,350)
-    if line = 4 new_line = choose(275,440)
-    if line = 5 new_line = 350
-	cool_down = 0;
-	alarm[6] = 13
-}
 
 if range = 2 && cool_down == 1
 {

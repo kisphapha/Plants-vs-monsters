@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "action_sprite_transform",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "action",
-    "path": "folders/Scripts/compatibility/action.yy",
+  "$GMScript":"v1",
+  "%Name":"action_sprite_transform",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_sprite_transform",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

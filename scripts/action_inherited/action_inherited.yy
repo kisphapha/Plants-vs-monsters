@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "action_inherited",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "action",
-    "path": "folders/Scripts/compatibility/action.yy",
+  "$GMScript":"v1",
+  "%Name":"action_inherited",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_inherited",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

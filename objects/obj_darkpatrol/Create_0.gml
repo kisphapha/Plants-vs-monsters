@@ -8,6 +8,9 @@ if global.begining == 0
 	action_sprite_set(spr_darkpatrol2, 0, 0);
 	x = 10000
 	alarm[5] = delay
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }
 sprite_walk = spr_darkpatrol
 
@@ -18,8 +21,6 @@ sprite_dead = spr_darkpatrol5
 
 
 weird_death = 1
-
-
 
 
 

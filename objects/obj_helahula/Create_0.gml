@@ -10,6 +10,9 @@ if global.begining == 0
 {
 	action_move("000100000", 0.3);
 	action_set_alarm(150+random(150), 2);
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }
 action_sprite_set(spr_helahula, 0, 0.5-global.begining*0.5);
 sprite_walk = spr_helahula

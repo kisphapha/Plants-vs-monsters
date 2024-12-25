@@ -1,6 +1,6 @@
-action_set_relative(0);
+
 if controller.lost == 0
-depth = -(y + sprite_height - sprite_yoffset - 35 * waterlogged);
+	depth = -(y + sprite_height - sprite_yoffset - 35 * waterlogged);
 if instance_exists(heart)
 {
 	heart.line = line
@@ -86,18 +86,14 @@ if dead == true
 			if controller.lvl.started == 0 visible = false
 			hp = 0;
 			{
-				action_set_relative(1);
 				dying += 1;
-				action_set_relative(0);
 			}
 			action_set_motion(0, 2-dying/30);
 			action_move("001000000", 0.5);
 			if dying < 30
 			{
 				{
-					action_set_relative(1);
 					spin += dead_spin;
-					action_set_relative(0);
 				}
 			}
 			action_sprite_transform(1, 1, -spin, 0);
@@ -146,4 +142,3 @@ if attack == 1 && object_index != obj_gigantic
 		}			
 	}
 }
-action_set_relative(0);

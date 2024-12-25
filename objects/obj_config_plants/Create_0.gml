@@ -111,7 +111,7 @@ with game
 		{
 			plant_id : 6,
 			plant_name : "Snow pea",
-			description : "Shoot an icy pea that slows down the monsters"+
+			description : "Shoot an icy pea that slows down the monsters\n"+
 			"The origin of snow pea is still in debate. One of them said that they're regular peashooters who has been enchanted by Ice God (Chai) and inherit the ice power",
 			quotation : "\"Don't need to rush. Just chill!\"",
 			plant_food : "He blows an ice cloud that freezes all the monster on the way. Then he finishs them by a stream of peas just like peashooters",
@@ -131,7 +131,7 @@ with game
 		{
 			plant_id : 7,
 			plant_name : "Cherry bomb",
-			description : "Explode an 3x3 area and instantly kills all the monsters surrounding"+
+			description : "Explode an 3x3 area and instantly kills all the monsters surrounding\n"+
 			"This dangerous weapon is so hard to preserved. They're so easy to get excited and them BOOM. Don't get too close to them when this happens",
 			quotation : "\"WE CAN'T TALK IN LOWERCASE AND WITHOUT AN EXCLAMATION POINT!\"",
 			plant_food : "*Mystery*",

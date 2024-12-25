@@ -6,6 +6,8 @@ for (i = 3; i <= 30; i += 1){
     global.seed[i] = 0
 }
 global.seed[100] = 0
+global.monster_reveal[1] = 1
+global.monster_reveal[100] = 0
 //Card config
 //for (var _i = 1; _i <= 25; _i++) {
 //    global.seed_card[_i] = asset_get_index("obj_ca" + string(_i));

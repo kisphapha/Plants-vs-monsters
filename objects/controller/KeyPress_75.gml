@@ -1,4 +1,4 @@
- monster = instance_create(random_range(500,608),script0(0),obj_crystard);
+ monster = instance_create(random_range(500,608),script0(0),obj_small_bomb);
 
 //add_random_crystal(8,1,9)
 

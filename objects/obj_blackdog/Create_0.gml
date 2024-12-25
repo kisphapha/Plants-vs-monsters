@@ -14,7 +14,9 @@ sprite_walk = spr_blackdog2
 sprite_attack = spr_blackdog3
 
 sprite_dead = spr_blackdog4
-
+if global.monster_reveal[mons_id] == 0 {
+	global.monster_reveal[mons_id] = 1
+}
 
 
 

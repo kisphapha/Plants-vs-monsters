@@ -106,7 +106,7 @@
 get from other worlds in the early game
 - Fixed : Level Day 3 - Desert which is a last stand level would automatically choose all the plant you have including Sun flower if you have under 7 plants
 ==================================================================================================================================================================
---/--/2024 --- RELEASE 1.2.0 - THE BIG GAME HONING UPDATE
+5/5/2024 --- RELEASE 1.2.0 - THE BIG GAME HONING UPDATE
 ==================================================================================================================================================================
 - Added plants alamanac. Now you can easier capture information about plants. Everytime you unlock a plant, the alamanac information of that plant should be 
 unlocked too. To open almanac, click the the top right corner button in islands screen
@@ -133,3 +133,9 @@ unlocked too. To open almanac, click the the top right corner button in islands 
 - Fixed : Vollo's angry head underneath everything
 - Fixed : Annabelle sometime become absolute incredible for some reason
 - Comming soon : Almanac about monsters.
+=================================================================
+25/12/2024 --- RELEASE 1.2.1
+=================================================================
+- Added monsters alamanac. You can now have a preference for monsters just like as plant. Infomation of the monster in the alamanac will be unlocked if you first discover that monster in the game.
+- Fixed : Annabelle dodging sometime crash the game
+- Fixed : Readjust hitbox of eyebat since it can phase through projectiles of the same rank

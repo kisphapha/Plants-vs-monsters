@@ -27,3 +27,6 @@ heart2.adjx = -40; heart2.adjy = -40
 heart3 = instance_create(x,y,obj_enemies); heart3.love = instance_nearest(x,y,object_index);
 heart3.adjx = -40; heart3.adjy = 40
 
+if global.monster_reveal[mons_id] == 0 {
+	global.monster_reveal[mons_id] = 1
+}

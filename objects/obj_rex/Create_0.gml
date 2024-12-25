@@ -22,4 +22,7 @@ angery = 0
 if global.begining == 0
 {
 	action_move("000100000", const_speed-global.begining*const_speed);
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }

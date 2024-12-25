@@ -16,3 +16,6 @@ else
 {
 	action_sprite_set(spr_driller, 0, 0);
 }
+if global.monster_reveal[mons_id] == 0 {
+	global.monster_reveal[mons_id] = 1
+}

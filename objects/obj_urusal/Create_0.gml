@@ -44,3 +44,7 @@ n = 0;
 dead = false;
 depth = -y/100;
 multi_line = 1;
+
+if global.monster_reveal[mons_id] == 0 {
+	global.monster_reveal[mons_id] = 1
+}

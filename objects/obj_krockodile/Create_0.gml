@@ -4,6 +4,9 @@ dive = 0
 if global.begining == 0
 {
 	action_move("000100000", 0.3);
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }
 
 sprite_walk = spr_krocodile

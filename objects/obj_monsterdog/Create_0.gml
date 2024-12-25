@@ -4,6 +4,9 @@ if global.begining == 0
 {
 	action_move("000100000", 0.6);
 	action_sprite_set(spr_monsterdog2, 0, 1);
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}
 }
 else
 {

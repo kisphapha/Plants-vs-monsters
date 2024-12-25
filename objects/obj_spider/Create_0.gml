@@ -24,4 +24,8 @@ phase = -1
 
 alarm[11] = 1
 
-
+if (global.begining ==  0) {
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}	
+}

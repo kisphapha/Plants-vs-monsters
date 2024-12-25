@@ -19,7 +19,11 @@ image_index = 0; image_speed = 0
 
 y0 = y
 
-
+if (global.begining == 0) {
+	if global.monster_reveal[mons_id] == 0 {
+		global.monster_reveal[mons_id] = 1
+	}	
+}
 
 
 

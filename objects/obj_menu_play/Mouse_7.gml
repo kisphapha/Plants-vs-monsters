@@ -38,6 +38,14 @@ if image_index == 0 {
 					global.seed[_i] =   is_real(_data.plants[_i - 1]) ? _data.plants[_i - 1] : 0
 				}
 			}
+			if variable_instance_exists(_data, "monsters") 
+			{
+				var _monsters_array_length = array_length(_data.monsters)
+				for (var _i = 2; _i <= _monsters_array_length; _i++)
+				{
+					global.monster_reveal[_i] =   is_real(_data.monsters[_i - 1]) ? _data.monsters[_i - 1] : 0
+				}
+			}
 			game.selected_user = game.user_name
 			room_goto(main)
 		} catch (e) {

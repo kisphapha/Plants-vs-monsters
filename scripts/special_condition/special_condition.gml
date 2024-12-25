@@ -38,5 +38,10 @@ function special_condition(argument0) {
 	if object_index = obj_phonglon{
 	    return flying == 0
 	}
+	if object_index = obj_small_bomb{
+	    if type = 0 return !is_bombing	    
+		if type = 1 return !ignited
+
+	}
 	return true
 }

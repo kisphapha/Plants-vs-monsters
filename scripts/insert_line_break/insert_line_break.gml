@@ -28,7 +28,11 @@ function insert_line_break(_str, _max_length){
 			_word = ""
 		}
 		if _i == _len {
-			_result += _sentence + _word
+			if string_width(_word) + string_width(_sentence) > _max_length {
+				_result += _sentence + "\n" + _word
+			} else {
+				_result += _sentence + _word
+			}		
 		}
     }
 

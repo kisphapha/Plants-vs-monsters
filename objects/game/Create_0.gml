@@ -18,6 +18,7 @@ plants_library = [
 		quotation : "",
 		plant_food : "",
 		picture : spr_sunflower,
+		picture_scale : 1,
 		card_pucture : spr_ca0,
 		dame_level : "",
 		hp_level : "",
@@ -40,12 +41,15 @@ monster_class = []
 monsters_library = [
 	{
 		mons_id : 0,
+		monster_name : "",
 		picture : spr_monster,
+		picture_scale : 1,
 		behavior : "",
 		anecdote : "",
 		toughness : "",
 		speed_lvl : "",
 		dame_lvl : "",
+		quotation : "",
 		class : [0],
 		hp : 0,
 		basic_speed : 0,

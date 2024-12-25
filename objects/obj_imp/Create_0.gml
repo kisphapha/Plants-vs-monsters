@@ -7,7 +7,9 @@ sprite_attack = spr_smallone2
 
 sprite_dead = spr_smallone3
 
-
+if global.monster_reveal[mons_id] == 0 {
+	global.monster_reveal[mons_id] = 1
+}
 
 
 action_sprite_set(spr_smallone, 0, 0.5-global.begining*0.5);

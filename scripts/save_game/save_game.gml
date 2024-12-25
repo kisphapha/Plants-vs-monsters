@@ -15,6 +15,11 @@ function save_game(){
 			{
 				array_push(_plants,global.seed[_i])
 			}
+			var _monsters = []
+			for (var _i = 1; _i < array_length(global.monster_reveal) ; _i += 1) 
+			{
+				array_push(_monsters,global.monster_reveal[_i])
+			}
 			var _content = ds_map_create();
 			ds_map_add(_content, "slot_number", global.slotNumber);
 			ds_map_add(_content, "recharge_boost", global.recharge_boost);
@@ -25,8 +30,9 @@ function save_game(){
 			ds_map_add(_content, "have_plant_food", global.food);
 			ds_map_add(_content, "have_lawn_mover", global.lawnmover);
 			ds_map_add(_content, "have_shovel", global.shovel);
-			ds_map_add(_content, "have_tutorial_1", global.tutor1);
-			ds_map_add(_content, "plants", _plants);
+			ds_map_add(_content, "have_tutorial_1", global.tutor1);			
+			ds_map_add(_content, "monsters", _monsters);
+			ds_map_add(_content, "plants", _plants);			
 			ds_map_add(_content, "balance", 0);
 
 			var _file_name = game.selected_user;

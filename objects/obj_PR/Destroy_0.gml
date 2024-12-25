@@ -1,8 +1,4 @@
-action_set_relative(1);
-action_effect(0, 0, 0, 1, 16777215, 0);
-{
-action_set_relative(0);
+
+effect_create_below(0, x, y, 1, c_white)
 tile.planted = 0;
-action_set_relative(1);
-}
-action_set_relative(0);
+
