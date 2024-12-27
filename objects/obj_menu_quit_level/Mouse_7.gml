@@ -10,6 +10,8 @@ if global.map == 2
 	room_goto(r_swamp)
 if global.map == 3
 	room_goto(r_cryland)
+if global.map == 4
+	room_goto(r_kangdynasty)
 
 
 

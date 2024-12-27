@@ -13,8 +13,8 @@
   "name":"obj_eyebat",
   "overriddenProperties":[],
   "parent":{
-    "name":"monsters",
-    "path":"folders/Objects/monsters.yy",
+    "name":"cryland",
+    "path":"folders/Objects/monsters/cryland.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_mons",

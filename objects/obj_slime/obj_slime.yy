@@ -20,8 +20,8 @@
   "name":"obj_slime",
   "overriddenProperties":[],
   "parent":{
-    "name":"monsters",
-    "path":"folders/Objects/monsters.yy",
+    "name":"swamp",
+    "path":"folders/Objects/monsters/swamp.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_mons",

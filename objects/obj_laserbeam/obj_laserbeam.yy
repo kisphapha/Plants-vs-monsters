@@ -11,8 +11,8 @@
   "name":"obj_laserbeam",
   "overriddenProperties":[],
   "parent":{
-    "name":"power",
-    "path":"folders/Objects/power.yy",
+    "name":"plants",
+    "path":"folders/Objects/power/plants.yy",
   },
   "parentObjectId":{
     "name":"obj_otherdame",

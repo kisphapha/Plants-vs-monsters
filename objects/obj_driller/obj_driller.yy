@@ -16,8 +16,8 @@
   "name":"obj_driller",
   "overriddenProperties":[],
   "parent":{
-    "name":"monsters",
-    "path":"folders/Objects/monsters.yy",
+    "name":"desert",
+    "path":"folders/Objects/monsters/desert.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_mons",

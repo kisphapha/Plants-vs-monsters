@@ -9,6 +9,8 @@ sprite_attack = spr_smallbomb5
 
 sprite_dead = spr_smallbomb6
 
+falling = 0;
+dest_fall_line = 0;
 
 if global.begining == 0
 {

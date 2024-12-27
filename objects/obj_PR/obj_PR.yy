@@ -13,6 +13,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_smassh","path":"objects/obj_smassh/obj_smassh.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_tiles","path":"objects/obj_tiles/obj_tiles.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_monster_boom","path":"objects/obj_monster_boom/obj_monster_boom.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_kang_laser","path":"objects/obj_kang_laser/obj_kang_laser.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_PR",

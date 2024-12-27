@@ -15,8 +15,8 @@
   "name":"obj_gigantic",
   "overriddenProperties":[],
   "parent":{
-    "name":"monsters",
-    "path":"folders/Objects/monsters.yy",
+    "name":"hometown",
+    "path":"folders/Objects/monsters/hometown.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_mons",

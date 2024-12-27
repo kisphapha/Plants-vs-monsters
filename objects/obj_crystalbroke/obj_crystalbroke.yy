@@ -9,8 +9,8 @@
   "name":"obj_crystalbroke",
   "overriddenProperties":[],
   "parent":{
-    "name":"power",
-    "path":"folders/Objects/power.yy",
+    "name":"monsters",
+    "path":"folders/Objects/power/monsters.yy",
   },
   "parentObjectId":null,
   "persistent":false,

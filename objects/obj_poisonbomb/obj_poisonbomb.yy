@@ -12,8 +12,8 @@
   "name":"obj_poisonbomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"power",
-    "path":"folders/Objects/power.yy",
+    "name":"plants",
+    "path":"folders/Objects/power/plants.yy",
   },
   "parentObjectId":null,
   "persistent":false,

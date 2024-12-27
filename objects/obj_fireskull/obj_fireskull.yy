@@ -13,8 +13,8 @@
   "name":"obj_fireskull",
   "overriddenProperties":[],
   "parent":{
-    "name":"power",
-    "path":"folders/Objects/power.yy",
+    "name":"monsters",
+    "path":"folders/Objects/power/monsters.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_mons",

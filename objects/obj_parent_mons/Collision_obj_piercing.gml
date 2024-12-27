@@ -11,6 +11,7 @@ if transparent == 0 && !dead && other.daming == 1 && special_condition(0)
 			speed = const_speed;
 			direction = 180;	
 		}
+		
 	}
 
 	if (hp <= 0)

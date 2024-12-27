@@ -9,8 +9,8 @@
   "name":"obj_monster_boom",
   "overriddenProperties":[],
   "parent":{
-    "name":"power",
-    "path":"folders/Objects/power.yy",
+    "name":"monsters",
+    "path":"folders/Objects/power/monsters.yy",
   },
   "parentObjectId":{
     "name":"obj_otherdame",

@@ -1,5 +1,5 @@
- monster = instance_create(random_range(500,608),script0(0),obj_small_bomb);
-
+add_rain_bomb(400,608,3)
+ 
 //add_random_crystal(8,1,9)
 
 //with obj_parent_mons {dead = true}

@@ -39,8 +39,11 @@ function special_condition(argument0) {
 	    return flying == 0
 	}
 	if object_index = obj_small_bomb{
-	    if type = 0 return !is_bombing	    
-		if type = 1 return !ignited
+	    if type = 0 return !is_bombing && falling != 1    
+		if type = 1 return !ignited && falling != 1
+	}
+	if object_index = obj_kang_troller{   
+		if type = 1 return false
 
 	}
 	return true

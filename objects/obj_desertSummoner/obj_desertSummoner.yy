@@ -10,8 +10,8 @@
   "name":"obj_desertSummoner",
   "overriddenProperties":[],
   "parent":{
-    "name":"monsters",
-    "path":"folders/Objects/monsters.yy",
+    "name":"desert",
+    "path":"folders/Objects/monsters/desert.yy",
   },
   "parentObjectId":null,
   "persistent":false,

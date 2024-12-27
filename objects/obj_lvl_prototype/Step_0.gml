@@ -115,7 +115,7 @@ if win == 3
 		if action_if_dice(5)
 		{	
 			action_set_relative(1);
-			action_effect(3, __view_get( e__VW.XView, 0 )+random(__view_get( e__VW.WView, 0 )), __view_get( e__VW.YView, 0 )+random(__view_get( e__VW.HView, 0 )), 0, 255, 1);
+			action_effect(3, view_get(0)+view_get(2), view_get(1)+view_get(3), 0, 255, 1);
 			action_set_relative(0);
 		}
 	}
