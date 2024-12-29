@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"plants",
-    "path":"folders/Sprites/plants.yy",
+    "name":"swamp",
+    "path":"folders/Sprites/plants/swamp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

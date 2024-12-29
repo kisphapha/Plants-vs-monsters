@@ -4,7 +4,7 @@ if special_condition(0) && transparent == 0 && !dead
 	hp += -other.dame*(1-immortal);
 	with (other) 
 	{
-		action_kill_object();
+		instance_destroy()
 	}
 	if (hp <= 0)
 	{

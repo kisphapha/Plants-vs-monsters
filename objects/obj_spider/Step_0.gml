@@ -16,12 +16,13 @@ if transparent = 1
 image_alpha = 0.5
 
 
-
-if phase = 1
-height -= 1
-if phase = 2
-height += 1
-
+if (!is_buttered)
+{
+	if phase = 1
+	height -= 1
+	if phase = 2
+	height += 1
+}
 
 
 if abs(dest_y-y) < 10 and phase = 0 {

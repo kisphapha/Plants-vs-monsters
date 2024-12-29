@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"effect",
-    "path":"folders/Sprites/effect.yy",
+    "name":"game",
+    "path":"folders/Sprites/effect/game.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

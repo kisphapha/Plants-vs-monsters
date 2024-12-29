@@ -35,10 +35,13 @@ if global.begining == 0
 }
 if chosing = 1
 {
-	for (k=0;k<=global.slotNumber-1;k+=1)
+	for (var _k=0;_k<=global.slotNumber-1;_k+=1)
 	{ 
-	    if global.slot[k+1] = 1 draw_sprite(spr_ca1,0,view_get(0)+80+k*cd,view_get(1))
-	    if global.slot[k+1] = 2 draw_sprite(spr_ca2,0,view_get(0)+80+k*cd,view_get(1))
+		if (global.slot[_k+1] > 0)
+		{		
+			draw_sprite(game.plants_library[global.slot[_k+1] - 1].card_pucture,0,view_get(0)+80+_k*cd,view_get(1))
+		}
+		/*if global.slot[k+1] = 2 draw_sprite(spr_ca2,0,view_get(0)+80+k*cd,view_get(1))
 	    if global.slot[k+1] = 3 draw_sprite(spr_ca3,0,view_get(0)+80+k*cd,view_get(1))
 	    if global.slot[k+1] = 4 draw_sprite(spr_ca4,0,view_get(0)+80+k*cd,view_get(1))
 	    if global.slot[k+1] = 5 draw_sprite(spr_ca5,0,view_get(0)+80+k*cd,view_get(1))
@@ -65,7 +68,9 @@ if chosing = 1
 	    if global.slot[k+1] = 26 draw_sprite(spr_ca26,0,view_get(0)+80+k*cd,view_get(1))
 	    if global.slot[k+1] = 27 draw_sprite(spr_ca27,0,view_get(0)+80+k*cd,view_get(1))
 	    if global.slot[k+1] = 28 draw_sprite(spr_ca28,0,view_get(0)+80+k*cd,view_get(1))
-	    if global.slot[k+1] = 29 draw_sprite(spr_ca29,0,view_get(0)+80+k*cd,view_get(1))
+	    if global.slot[k+1] = 29 draw_sprite(spr_ca29,0,view_get(0)+80+k*cd,view_get(1))	    
+		if global.slot[k+1] = 29 draw_sprite(spr_ca29,0,view_get(0)+80+k*cd,view_get(1))*/
+
 	}
 }
 

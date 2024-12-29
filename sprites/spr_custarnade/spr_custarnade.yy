@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"plants",
-    "path":"folders/Sprites/plants.yy",
+    "name":"swamp",
+    "path":"folders/Sprites/plants/swamp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

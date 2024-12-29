@@ -32,6 +32,9 @@ if controller.win == 1
 			    if _lvl.world_type == 4{
 			        room_goto(r_cryland)
 			    }
+				if _lvl.world_type == 5{
+			        room_goto(r_kangdynasty)
+			    }
 			}
 		}
 	}

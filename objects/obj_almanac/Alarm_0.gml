@@ -23,7 +23,9 @@ if selected_info.plant_id <= 7 {
 	background = swamp
 } else if selected_info.plant_id > 19 &&  selected_info.plant_id <= 25 {
 	background = cryland
-} else if selected_info.plant_id >= 100 {
+} else if selected_info.plant_id > 25 &&  selected_info.plant_id <= 31 {
+	background = kangdynasty
+} else {
 	background = background1
 }
 

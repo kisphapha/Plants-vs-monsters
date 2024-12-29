@@ -509,6 +509,46 @@ with game
 			obj_form : obj_possonshroom
 		},
 		{
+			plant_id : 26,
+			plant_name : "Kernel-pult",
+			description : "Throw a little corn kernel into the enemies. There is a chance that he throw a butter that will freeze the monster a while on hit\n"+
+			"He is asked a lot about where he take the butters from. There is a least known fact about kernel-pults, most of them used to attempt a master-chef competition in which they have to cook quickly. Ah yes! They're making themselves butters with ingredients from thier own body during the battle.",
+			quotation : "\"Butters make you utter 'Delicious'!\"",
+			plant_food : "Throws a numerous amount of butters that stun most of the monsters on the lawn",
+			picture : spr_kernelpult_1,
+			card_pucture : spr_ca26,
+			dame_level : plants_dame_level[1],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca26,
+			plant_types : [1,5],
+			plants_range : [plants_range[2]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 100,
+			obj_form : obj_kernelpult
+		},
+		{
+			plant_id : 27,
+			plant_name : "Lili Chilli",
+			description : "Blows a frosty cloud that slow and damage monsters up to 3 rows\n"+
+			"No one actually want to stay close to Lili Chillis. They can experience the very cold atmosphere when standing around them. Their souless look is enough to say all of that. They might not be the creature of this world, but of the underworld!",
+			quotation : "\"Get used to this cold feeling... 6 feet underground!\"",
+			plant_food : "She inhales a large amount of air then blows all away create frostbite waves that freeze the monsters that are up-close and slow the further ones",
+			picture : spr_lilichilli,
+			card_pucture : spr_ca27,
+			dame_level : plants_dame_level[2],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca27,
+			plant_types : [1,5],
+			plants_range : [plants_range[1],plants_range[3]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 200,
+			obj_form : obj_lilichilli
+		},
+		{
 			plant_id : 100,
 			plant_name : "Doom shroom",
 			description : "Creates a horrific explosion in nearly full room and leaves a crater\n"+

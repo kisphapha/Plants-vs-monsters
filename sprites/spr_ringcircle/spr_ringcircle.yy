@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"effect",
-    "path":"folders/Sprites/effect.yy",
+    "name":"monsters",
+    "path":"folders/Sprites/effect/monsters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"plants",
-    "path":"folders/Sprites/plants.yy",
+    "name":"cryland",
+    "path":"folders/Sprites/plants/cryland.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

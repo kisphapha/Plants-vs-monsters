@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"plants",
-    "path":"folders/Sprites/plants.yy",
+    "name":"kangdynasty",
+    "path":"folders/Sprites/plants/kangdynasty.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

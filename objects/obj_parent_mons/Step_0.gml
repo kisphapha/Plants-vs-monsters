@@ -142,3 +142,16 @@ if attack == 1 && object_index != obj_gigantic
 		}			
 	}
 }
+
+if (is_buttered && isBoss == 0 && !dead && switch_lane == 0){
+	speed = 0;
+	image_speed = 0
+	if (butter_duration > 0){
+		butter_duration -= 1;
+		if (butter_duration <= 0) {
+			is_buttered = false;
+			speed = const_speed
+			image_speed = 0.5
+		}
+	}
+}

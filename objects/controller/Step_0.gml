@@ -22,6 +22,14 @@ if planting == 0
 }
 else
 {
+	if plant_ = 26
+	{
+		cursor_sprite = spr_lilichilli
+	}
+	if plant_ = 25
+	{
+		cursor_sprite = spr_kp2
+	}
 	if plant_ = 24
 	{
 		cursor_sprite = spr_poisonshroom

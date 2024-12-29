@@ -6,7 +6,7 @@ if transparent == 0
 		if !dead
 		{
 			freeze = 1;
-			action_set_alarm(150, 1);
+			alarm[1] = max(alarm[1], 150);
 		}
 	}
 }

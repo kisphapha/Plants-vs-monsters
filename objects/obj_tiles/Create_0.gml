@@ -4,3 +4,5 @@ unplantable = 0;
 crystalize = 0;
 endangered = 0;
 choosing_card = noone
+plant = noone;
+plant_success = 0;

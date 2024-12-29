@@ -9,6 +9,7 @@ antiSpider = 0
 kidnapped = 0
 kidnapper = noone
 tile = noone
+love = noone
 alarm[0] = 1
 
 

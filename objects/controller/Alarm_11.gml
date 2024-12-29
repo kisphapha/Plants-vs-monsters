@@ -1,9 +1,9 @@
-with (obj_spectator) {
-action_move("000001000", 8);
-}
-var __b__;
-__b__ = action_if_variable(global.boss, 0, 0);
-if __b__
+with (obj_spectator)
 {
-action_set_alarm(90, 10);
+	action_move("000001000", 8);
+}
+
+if global.boss == 0
+{
+	alarm[10] = 90
 }

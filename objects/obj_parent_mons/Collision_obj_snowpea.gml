@@ -6,7 +6,7 @@ if transparent == 0
 		if !dead
 		{
 			cold = 1;
-			action_set_alarm(150, 0);
+			alarm[0] = max(alarm[0], 150);
 			hp += -1*(1-immortal);
 			with (other) {
 			action_kill_object();

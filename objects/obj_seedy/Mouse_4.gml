@@ -49,6 +49,13 @@ if drop == 1
 			action_kill_object();
 		}
 		action_set_alarm(distance_max/8, 0);
+		depth -= 400
+		for (var _i = 0; _i < 8; _i += 1)
+		{
+			var _aura = instance_create_depth(x,y,depth + 1, obj_aura)
+			_aura.facing = _i * 45
+			_aura.love = self
+		}
 		flying_toward_screen = 1;
 		global.seed[plant_id] = 1;
 		with (controller) 

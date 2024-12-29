@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"plants",
-    "path":"folders/Sprites/plants.yy",
+    "name":"shopee",
+    "path":"folders/Sprites/plants/shopee.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"add_rain_bomb",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"encapsulation",
+    "path":"folders/Scripts/encapsulation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

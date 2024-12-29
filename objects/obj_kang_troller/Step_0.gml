@@ -37,3 +37,8 @@ if (dead){
 
 
 }
+if (shoot_phase == -1 && speed == 0 && freeze == 0 && !is_buttered)
+{
+	speed = 8
+	direction = 0
+}

@@ -1,26 +1,4 @@
 action_inherited();
-if global.line[line] = 1{
-
-    for (i = 1; i <= instance_number(obj_enemies); i+=1){
-
-            _mons = isn(x,y,obj_enemies,i);
-
-            if _mons.line = line {mons = _mons; break;}
-
-        }
-}
-
-if !instance_exists(mons)
-{   
-	distance = 9999;
-}
-else
-{
-	distance = abs(x-mons.x);
-	if mons.line != line 
-	mons = noone;
-}
-
 
 
 
