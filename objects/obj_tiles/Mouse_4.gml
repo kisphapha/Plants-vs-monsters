@@ -19,8 +19,15 @@ if controller.planting = 1 and controller.plant_ >= 0 && planted = 0{
 		planted = 0
 	
     if global.bangchuyen = 1 and plant_success = 1
-    {global.amount -= 1; {with (global.chosing)
-    {instance_destroy()}}};  
+    {
+		global.amount -= 1; 
+		{
+			with (global.chosing)
+			{
+				instance_destroy()
+			}
+		}
+	};  
     controller.plant_ = 0;
 
 }

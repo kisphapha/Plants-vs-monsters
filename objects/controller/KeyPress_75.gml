@@ -1,4 +1,11 @@
-add_rain_bomb(400,608,3)
+
+bom = instance_create(random(640),random(480),obj_bucxanhiet)
+
+bom.dame = 75
+bom.image_xscale = 5
+bom.image_yscale = 5
+bom.grounded = 1
+//add_rain_bomb(400,608,3)
  
 //add_random_crystal(8,1,9)
 

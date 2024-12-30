@@ -9,28 +9,57 @@ if instance_number(obj_enemies) == 1
 		} else {
 		    _xx = x; _yy = y
 	    }
+		
+		var _current_level = instance_find(obj_lvl_prototype,0)
+		var _ref_level = global.world1_level
+		if _current_level.world_type == 2 _ref_level = global.world2_level		
+		if _current_level.world_type == 3 _ref_level = global.world3_level
+		if _current_level.world_type == 4 _ref_level = global.world4_level
+		if _current_level.world_type == 5 _ref_level = global.world5_level
+		if _current_level.world_type == 6 _ref_level = global.world6_level
+		if _current_level.world_type == 7 _ref_level = global.world7_level
 
-		if instance_number(lvl1_hometown) = 1
-		{if global.world1_level = 1
-		{_seed = instance_create(_xx,_yy,obj_ca3); _seed.drop =1;
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
+		if _current_level == lvl3_hometown
+		{
+			if _ref_level == _current_level.lvl
+			{
+				_seed = instance_create(_xx,_yy,obj_drop1);	
+				_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1
+			}
+		}
 
-		if instance_number(lvl3_hometown) = 1
-		{if global.world1_level = 3
-		{_seed = instance_create(_xx,_yy,obj_drop1);	
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
-
-		if instance_number(lvl4_hometown) = 1
-		{if global.world1_level = 4
-		{_seed = instance_create(_xx,_yy,obj_ca4); _seed.drop =1;
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
-
-		if instance_number(lvl5_hometown) = 1
-		{if global.world1_level = 5
-		{_seed = instance_create(_xx,_yy,obj_drop2); _seed.drop =1;
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
-
-		if instance_number(lvl6_hometown) = 1
+		if _current_level == lvl5_hometown
+		{
+			if _ref_level == _current_level.lvl
+			{
+				_seed = instance_create(_xx,_yy,obj_drop2); _seed.drop =1;
+				_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1
+			}
+		}
+		
+		if _current_level == lvl13_desert || _current_level == lvl14_cryland || _current_level == lvl12_swamp
+		{
+			if _ref_level == _current_level.lvl
+			{
+				_seed = instance_create(_xx,_yy,obj_drop3); _seed.drop =1;
+				_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1
+			}
+		}
+		
+		//Check if this level drop new seed
+		var _scope = {current_level : _current_level}
+		var _plant_info = array_find_index(game.plants_library, method(_scope, function (_plant){
+			return _plant.drop_at == current_level.object_index
+		}))
+		
+		if _plant_info != -1 && _ref_level == _current_level.lvl
+		{
+			_seed = instance_create(_xx,_yy,game.plants_library[_plant_info].card_type); _seed.drop =1;
+			_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1
+		}
+		
+		
+		/*if instance_number(lvl6_hometown) = 1
 		{if global.world1_level = 6
 		{_seed = instance_create(_xx,_yy,obj_ca5); _seed.drop =1;
 		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
@@ -77,8 +106,7 @@ if instance_number(obj_enemies) == 1
 
 		if instance_number(lvl13_desert) = 1
 		{if global.world2_level = 13
-		{_seed = instance_create(_xx,_yy,obj_drop3); _seed.drop =1;
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
+		{}}
 
 		if instance_number(lvl1_swamp) = 1
 		{if global.world3_level = 1
@@ -158,7 +186,7 @@ if instance_number(obj_enemies) == 1
 		if instance_number(lvl2_kang_dynasty) = 1
 		{if global.world5_level = 2
 		{_seed = instance_create(_xx,_yy,obj_ca27); _seed.drop =1;
-		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}
+		_arrow = instance_create(_xx,_yy-45,obj_arrow); _arrow.facing =270; _arrow.alarm[10] = 1}}*/
 	}
 }
 

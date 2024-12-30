@@ -26,7 +26,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 50,
-			obj_form : obj_sunflower
+			obj_form : obj_sunflower,
+			drop_at : noone,
+			cursor : spr_sf2
 		},
 		{
 			plant_id : 2,
@@ -46,7 +48,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 100,
-			obj_form : obj_peashooter
+			obj_form : obj_peashooter,
+			drop_at : noone,
+			cursor : spr_peashooter
 		},
 		{
 			plant_id : 3,
@@ -66,7 +70,9 @@ with game
 			hp : 2000,
 			recharge_time : 1500,
 			cost : 50,
-			obj_form : obj_wallnut
+			obj_form : obj_wallnut,
+			drop_at : lvl1_hometown,
+			cursor : spr_wallnut2
 		},
 		{
 			plant_id : 4,
@@ -86,7 +92,9 @@ with game
 			hp : 100,
 			recharge_time : 1500,
 			cost : 25,
-			obj_form : obj_potatobom
+			obj_form : obj_potatobom,
+			drop_at : lvl4_hometown,
+			cursor : spr_pm2
 		},
 		{
 			plant_id : 5,
@@ -106,7 +114,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 200,
-			obj_form : obj_repeater
+			obj_form : obj_repeater,
+			drop_at : lvl6_hometown,
+			cursor : spr_repeater
 		},
 		{
 			plant_id : 6,
@@ -126,7 +136,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 175,
-			obj_form : obj_icepea
+			obj_form : obj_icepea,
+			drop_at : lvl8_hometown,
+			cursor : spt_snowpea
 		},
 		{
 			plant_id : 7,
@@ -146,7 +158,9 @@ with game
 			hp : 10000,
 			recharge_time : 1500,
 			cost : 150,
-			obj_form : obj_cherrybom
+			obj_form : obj_cherrybom,
+			drop_at : lvl10_hometown,
+			cursor : spr_cb2
 		},
 		{
 			plant_id : 8,
@@ -166,7 +180,9 @@ with game
 			hp : 500,
 			recharge_time : 420,
 			cost : 175,
-			obj_form : obj_castuss
+			obj_form : obj_castuss,
+			drop_at : lvl1_desert,
+			cursor : spr_castuss
 		},
 		{
 			plant_id : 9,
@@ -186,7 +202,9 @@ with game
 			hp : 100,
 			recharge_time : 1200,
 			cost : 0,
-			obj_form : obj_iceletuce
+			obj_form : obj_iceletuce,
+			drop_at : lvl3_desert,
+			cursor : sprite104
 		},
 		{
 			plant_id : 10,
@@ -206,7 +224,9 @@ with game
 			hp : 120,
 			recharge_time : 1500,
 			cost : 50,
-			obj_form : obj_squash
+			obj_form : obj_squash,
+			drop_at : lvl4_desert,
+			cursor : spr_sq2
 		},
 		{
 			plant_id : 11,
@@ -226,7 +246,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 125,
-			obj_form : obj_splitpea
+			obj_form : obj_splitpea,
+			drop_at : lvl6_desert,
+			cursor : spr_splitpea
 		},
 		{
 			plant_id : 12,
@@ -246,7 +268,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 150,
-			obj_form : obj_dragonfruit
+			obj_form : obj_dragonfruit,
+			drop_at : lvl8_desert,
+			cursor : spr_df2
 		},
 		{
 			plant_id : 13,
@@ -266,7 +290,9 @@ with game
 			hp : 120,
 			recharge_time : 750,
 			cost : 50,
-			obj_form : obj_eggplant
+			obj_form : obj_eggplant,
+			drop_at : lvl10_desert,
+			cursor : spr_ep2
 		},
 		{
 			plant_id : 14,
@@ -286,7 +312,9 @@ with game
 			hp : 120,
 			recharge_time : 450,
 			cost : 25,
-			obj_form : obj_lilypad
+			obj_form : obj_lilypad,
+			drop_at : lvl1_swamp,
+			cursor : spr_lilypad
 		},
 		{
 			plant_id : 15,
@@ -306,7 +334,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 325,
-			obj_form : obj_threepeater
+			obj_form : obj_threepeater,
+			drop_at : lvl2_swamp,
+			cursor : spr_threepeater
 		},
 		{
 			plant_id : 16,
@@ -326,7 +356,9 @@ with game
 			hp : 10000,
 			recharge_time : 600,
 			cost : 50,
-			obj_form : obj_blover
+			obj_form : obj_blover,
+			drop_at : lvl3_swamp,
+			cursor : spr_bv2
 		},
 		{
 			plant_id : 17,
@@ -346,7 +378,9 @@ with game
 			hp : 500,
 			recharge_time : 450,
 			cost : 175,
-			obj_form : obj_chomper
+			obj_form : obj_chomper,
+			drop_at : lvl6_swamp,
+			cursor : spr_cp2
 		},
 		{
 			plant_id : 18,
@@ -366,7 +400,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 350,
-			obj_form : obj_bananaheart
+			obj_form : obj_bananaheart,
+			drop_at : lvl8_swamp,
+			cursor : spr_bh2
 		},
 		{
 			plant_id : 19,
@@ -386,7 +422,9 @@ with game
 			hp : 10000,
 			recharge_time : 1200,
 			cost : 100,
-			obj_form : obj_custarnade
+			obj_form : obj_custarnade,
+			drop_at : lvl9_swamp,
+			cursor : spr_cg2
 		},
 		{
 			plant_id : 20,
@@ -406,7 +444,9 @@ with game
 			hp : 80,
 			recharge_time : 360,
 			cost : 0,
-			obj_form : obj_puffshroom
+			obj_form : obj_puffshroom,
+			drop_at : lvl1_cryland,
+			cursor : spr_puffshroom
 		},
 		{
 			plant_id : 21,
@@ -426,7 +466,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 25,
-			obj_form : obj_sunshroom
+			obj_form : obj_sunshroom,
+			drop_at : lvl2_cryland,
+			cursor : spr_ss2
 		},
 		{
 			plant_id : 22,
@@ -446,7 +488,9 @@ with game
 			hp : 120,
 			recharge_time : 450,
 			cost : 25,
-			obj_form : obj_blasterflower
+			obj_form : obj_blasterflower,
+			drop_at : lvl3_cryland,
+			cursor : spr_bf2
 		},
 		{
 			plant_id : 23,
@@ -466,7 +510,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 300,
-			obj_form : obj_lightflower
+			obj_form : obj_lightflower,
+			drop_at : lvl5_cryland,
+			cursor : spr_lightflower
 		},
 		{
 			plant_id : 24,
@@ -486,7 +532,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 150,
-			obj_form : obj_sadshroom
+			obj_form : obj_sadshroom,
+			drop_at : lvl7_cryland,
+			cursor : spr_sadshroom
 		},
 		{
 			plant_id : 25,
@@ -506,7 +554,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 225,
-			obj_form : obj_possonshroom
+			obj_form : obj_possonshroom,
+			drop_at : lvl9_cryland,
+			cursor : spr_poisonshroom
 		},
 		{
 			plant_id : 26,
@@ -526,7 +576,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 100,
-			obj_form : obj_kernelpult
+			obj_form : obj_kernelpult,
+			drop_at : lvl1_kang_dynasty,
+			cursor : spr_kp2
 		},
 		{
 			plant_id : 27,
@@ -546,7 +598,9 @@ with game
 			hp : 120,
 			recharge_time : 300,
 			cost : 200,
-			obj_form : obj_lilichilli
+			obj_form : obj_lilichilli,
+			drop_at : lvl2_kang_dynasty,
+			cursor : spr_lilichilli
 		},
 		{
 			plant_id : 100,
@@ -566,7 +620,9 @@ with game
 			hp : 10000,
 			recharge_time : 2000,
 			cost : 200,
-			obj_form : obj_doomshroom
+			obj_form : obj_doomshroom,
+			drop_at : noone,
+			cursor : spr_doomshroom
 		},
 	]	
 }

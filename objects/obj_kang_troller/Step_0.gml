@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
+is_buttered = false
 event_inherited();
 
 if (shoot_phase == 0 || shoot_phase == 1)
@@ -36,9 +37,4 @@ if (dead){
 	shake_y = random_range(-2,2)
 
 
-}
-if (shoot_phase == -1 && speed == 0 && freeze == 0 && !is_buttered)
-{
-	speed = 8
-	direction = 0
 }

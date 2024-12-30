@@ -43,6 +43,7 @@ function special_condition(argument0) {
 		if type = 1 return !ignited && falling != 1
 	}
 	if object_index = obj_kang_troller{   
+		if type = 0 return x < 640
 		if type = 1 return false
 
 	}

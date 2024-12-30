@@ -18,12 +18,12 @@ if global.bangchuyen == 1
 		action_move("000010000", 0);
 	}
 }
-if drop=1 
+/*if drop=1 
 {
 	sprite_set_offset(sprite_index,24,30)
 }
 else
-	sprite_set_offset(sprite_index,0,0)
+	sprite_set_offset(sprite_index,0,0)*/
 
 if flying_toward_screen == 0
 {
@@ -42,5 +42,4 @@ if flying_toward_screen == 1
 	{		
 		size += 0.01;
 	}
-	action_sprite_transform(size+1, size+1, 0, 0);
 }

@@ -29,7 +29,9 @@ plants_library = [
 		hp : 0,
 		recharge_time : 1,
 		cost : 0,
-		obj_form : noone
+		obj_form : noone,
+		drop_at : noone,
+		cursor : spr_sunflower
 	}
 ]
 instance_create(x,y,obj_config_plants)

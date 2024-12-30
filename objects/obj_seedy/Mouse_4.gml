@@ -48,7 +48,7 @@ if drop == 1
 		{
 			action_kill_object();
 		}
-		action_set_alarm(distance_max/8, 0);
+		alarm[0] = distance_max/8;
 		depth -= 400
 		for (var _i = 0; _i < 8; _i += 1)
 		{

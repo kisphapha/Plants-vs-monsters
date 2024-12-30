@@ -3,13 +3,13 @@
 image_angle = facing
 facing += 5
 if (image_xscale < 4) {
-	image_yscale += 0.05
+	image_xscale += 0.05
 }
 if (image_yscale < 1) {
 	image_yscale += 0.05	
 }
 if instance_exists(love){
-	x = love.x + 24
-	y = love.y + 30
+	x = love.x
+	y = love.y
 	
 }
