@@ -23,7 +23,13 @@ if planting == 0
 else
 {
 	if (plant_ >= 0){
-		cursor_sprite = game.plants_library[plant_].cursor	
+		var _index = array_find_index( game.plants_library, function (_e){
+			return _e.plant_id == plant_ + 1	
+		})
+		if (_index != -1)
+		{
+			cursor_sprite = game.plants_library[_index].cursor	
+		}
 	}
 	if plant_ = -1
 	{

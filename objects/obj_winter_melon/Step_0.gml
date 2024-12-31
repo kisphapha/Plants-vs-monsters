@@ -16,6 +16,13 @@ if power_active == 1
 			image_speed = 0
 			image_index = 0
 			alarm[5] = 30
+			repeat 20 {
+				instance_create_depth(x + 16,y,depth - 1, obj_coldfog, {
+					speed : random_range(5,7),
+					direction : random(360)
+				})
+			}
+			
 		}
 	}
 }

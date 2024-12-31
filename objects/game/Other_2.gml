@@ -2,10 +2,10 @@ window_set_fullscreen(true)
 global.seed[1] = 1
 global.seed[2] = 1
 // plant store
-for (i = 3; i <= 30; i += 1){
+/*for (i = 3; i <= 30; i += 1){
     global.seed[i] = 0
-}
-global.seed[100] = 0
+}*/
+global.seed[200] = 0
 global.monster_reveal[1] = 1
 global.monster_reveal[100] = 0
 //Card config

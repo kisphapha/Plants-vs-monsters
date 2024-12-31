@@ -7,5 +7,5 @@ event_inherited();
 image_alpha = energy/100
 if (energy > 10)
 {
-	energy -= 2	
+	energy -= 2.5	
 }

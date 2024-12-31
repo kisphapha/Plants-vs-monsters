@@ -603,18 +603,40 @@ with game
 			cursor : spr_lilichilli
 		},
 		{
-			plant_id : 100,
+			plant_id : 28,
+			plant_name : "Melon-pult",
+			description : "???\n"+
+			"Coming soon!",
+			quotation : "\"...\"",
+			plant_food : "???",
+			picture : spr_melon,
+			card_pucture : spr_ca28,
+			dame_level : plants_dame_level[2],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca28,
+			plant_types : [1],
+			plants_range : [plants_range[1],plants_range[3]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 300,
+			obj_form : obj_melon_pult,
+			drop_at : lvl3_kang_dynasty,
+			cursor : spr_ml2
+		},
+		{
+			plant_id : 101,
 			plant_name : "Doom shroom",
 			description : "Creates a horrific explosion in nearly full room and leaves a crater\n"+
 			"This black thing is scared by both plants and monsters. The explosion created is the equivalent of the Hiroshima explosion. Storing these plants in your house isn't different much from storing nuclear weapons",
 			quotation : "\"A few people laughed, few people cried, but most people were silent\"",
 			plant_food : "*This thing is already too powerful for the plant food*",
 			picture : spr_doomshroom,
-			card_pucture : spr_ca0,
-			dame_level : plants_dame_level[4],
-			hp_level : plants_hp_level[5],
+			card_pucture : spr_ca101,
+			dame_level : plants_dame_level[3],
+			hp_level : plants_hp_level[1],
 			recharge_level : plants_recharge_level[0],
-			card_type : obj_ca0,
+			card_type : obj_ca101,
 			plant_types : [3],
 			plants_range : [plants_range[6]],
 			hp : 10000,
@@ -624,6 +646,28 @@ with game
 			drop_at : noone,
 			cursor : spr_doomshroom
 		},
+		{
+			plant_id : 102,
+			plant_name : "Winter Melon",
+			description : "???\n"+
+			"Coming soon!",
+			quotation : "\"...\"",
+			plant_food : "???",
+			picture : spr_winter_melon,
+			card_pucture : spr_ca102,
+			dame_level : plants_dame_level[2],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca102,
+			plant_types : [1,5],
+			plants_range : [plants_range[1],plants_range[3]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 500,
+			obj_form : obj_winter_melon,
+			drop_at : noone,
+			cursor : spr_wm2
+		}
 	]	
 }
 

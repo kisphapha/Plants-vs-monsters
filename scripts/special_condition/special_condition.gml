@@ -47,5 +47,9 @@ function special_condition(argument0) {
 		if type = 1 return false
 
 	}
+	if object_index = obj_zod{
+	    if type = 0 return bounce_phase != 2 && bounce_phase != 3
+		if type = 1 return bounce_phase != 2 && bounce_phase != 3
+	}
 	return true
 }

@@ -1,4 +1,6 @@
-library_index =  array_find_index(game.plants_library, function(element) { return element.plant_id == plant_id; });
+library_index =  array_find_index(game.plants_library, method({plant_id : plant_id}, function(_element) { 
+	return _element.plant_id == plant_id; 
+}));
 if game.plants_library[library_index].plant_types[0] == 0
 	sun_proc = 1
 

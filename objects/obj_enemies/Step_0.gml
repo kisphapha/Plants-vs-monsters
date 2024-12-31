@@ -25,7 +25,7 @@ else {
 
 if love.hp == 0
 {
-	if (love.object_index != obj_slime and love.object_index != obj_skelegon)
+	if (love.object_index != obj_slime and love.object_index != obj_skelegon  and love.object_index != obj_zod)
 	{
 		if love.isBoss == 0
 		{

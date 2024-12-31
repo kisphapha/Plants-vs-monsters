@@ -438,6 +438,24 @@ with game {
 			map : 5,
 			obj_form : obj_small_bomb
 		},
+		{
+			monster_name : "Zod",
+			quotation : "\"I love you Nguyễn Ân!\"",
+			mons_id : 25,
+			picture : spr_zod,
+			picture_scale : 1,
+			behavior : "??",
+			anecdote : "??",
+			toughness : monster_hp_level[3],
+			speed_lvl : monster_speed_level[5],
+			dame_lvl : monster_damage_level[4],
+			class : [0],
+			hp : 15,
+			basic_speed : 2,
+			dame : 2,
+			map : 5,
+			obj_form : obj_zod
+		},
 	]
 }
 
