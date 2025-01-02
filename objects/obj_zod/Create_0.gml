@@ -1,3 +1,4 @@
+heart = noone
 action_inherited();
 mons_id = 25
 sprite_walk = spr_zod_5

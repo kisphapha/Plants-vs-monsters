@@ -8,6 +8,5 @@ speed = const_speed
 direction = 180
 image_speed = 0.5
 bounce_phase = 4
-hpmax = 25
-hp = hpmax
+
 is_shell = 0

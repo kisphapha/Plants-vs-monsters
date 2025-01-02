@@ -4,7 +4,7 @@ if waterlogged = 1 && dead = false && is_shell != 2
 }
 else
 {
-	draw_sprite_ext(sprite_index,image_index,x,y + height,image_xscale,image_yscale,facing,image_blend,image_alpha)
+	draw_sprite_ext(sprite_index,image_index,x,y + height,image_xscale,image_yscale,facing + image_angle,image_blend,image_alpha)
 }
 if (!dead && is_buttered)
 {

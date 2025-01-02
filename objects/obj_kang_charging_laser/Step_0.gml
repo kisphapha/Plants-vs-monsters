@@ -27,3 +27,9 @@ if (phase == 3){
 		instance_destroy()
 	}
 }
+if (!instance_exists(love) || love.dead)
+{
+	//if (instance_exists(beam)) with beam instance_destroy()
+	//instance_destroy()
+	phase = 3
+}

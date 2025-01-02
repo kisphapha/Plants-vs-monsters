@@ -1,4 +1,7 @@
-if global.strongwind = 1{
-    dead = true; x = 5000
-}
+if global.strongwind = 1{
+
+    dead = true; x = 5000
+
+}
+
 

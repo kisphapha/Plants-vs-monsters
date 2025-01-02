@@ -12,12 +12,12 @@ if dead && is_shell == 1{
 	bounce_phase = 2
 	alarm[3] = 30
 	speed = 0
-	hp = 0
+	hpmax = 25
+	hp = hpmax
 	attack = 0
 	sprite_walk = spr_zod_2
 	sprite_attack = spr_zod_3
 	sprite_dead = spr_zod_4
-	
 	sprite_index = sprite_walk
 	image_speed = 0
 	repeat 6
@@ -55,12 +55,20 @@ else if bounce_phase == 2
 else if bounce_phase == 3
 {
 	height += 5
-	if (facing mod 360 >= 10 && facing mod 180 < 170)
+	if (facing mod 360 >= 10 && facing mod 360 < 180)
 	{
 		facing -= 10	
 	}
-	if (facing mod 360 >= 190 && facing mod 180 < 350)
+	if (facing mod 360 >= 180 && facing mod 360 < 350)
 	{
 		facing += 10	
 	}
+}
+
+if global.strongwind = 1 && (bounce_phase == 2 || bounce_phase == 3){
+
+    speed = 20; direction = 0;
+
+    with heart instance_destroy()
+
 }

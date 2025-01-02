@@ -96,7 +96,7 @@ if dead == true
 					spin += dead_spin;
 				}
 			}
-			action_sprite_transform(1, 1, -spin, 0);
+			image_angle = -spin
 			image_alpha = 1-dying/60;
 			if dying > 60
 			{

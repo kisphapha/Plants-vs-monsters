@@ -5,8 +5,8 @@ if global.last_stand == 0 && global.pause = 0
 	{
 		if global.map != 3 && global.bangchuyen == 0
 		{
-			sun = instance_create(random(640),0,obj_sunny)
-			sun.size = 1
+			var _sun = instance_create(random(640),0,obj_sunny)
+			_sun.size = 1
 		}
 	}
 }

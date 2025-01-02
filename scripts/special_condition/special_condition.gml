@@ -23,6 +23,7 @@ function special_condition(argument0) {
 		}
 	}
 	if object_index = obj_slime{
+		if type = 0 return switch_lane == 0
 	    if type = 1 return jump == 0
 	}
 	if object_index = obj_crystard{

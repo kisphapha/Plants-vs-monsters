@@ -3,7 +3,7 @@
 alarm[2] = 60
 var _wave = instance_create_depth(x,y,depth - 1, obj_icewave_1)
 _wave.span = 30
-_wave.speed = 6
+_wave.speed = 5.4
 _wave.direction = 0
 
 repeat 15 {

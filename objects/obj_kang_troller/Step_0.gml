@@ -28,9 +28,9 @@ if (dead){
 		if (instance_exists(heart)){
 			with heart instance_destroy()
 		}
-		if (instance_exists(beam_charge)){
+		/*if (instance_exists(beam_charge)){
 			beam_charge.phase = 3
-		}
+		}*/
 		alarm[7] = 30
 	}
 	shake_x = random_range(-2,2)	
