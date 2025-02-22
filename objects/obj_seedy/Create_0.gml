@@ -31,4 +31,3 @@ distance_max = distance_to_point(320,160);
 flying_toward_screen = 0;
 library_index = 0;
 action_set_alarm(1, 2);
-action_set_relative(0);

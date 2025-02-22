@@ -15,4 +15,4 @@ conveyor_num = 6
 conveyor_array = [obj_ca14,obj_ca15,obj_ca16,obj_ca17,obj_ca18,obj_ca19]
 boss = obj_urusal
 boss_health = 3000
-action_set_alarm(60, 11);
+alarm[11] = 60

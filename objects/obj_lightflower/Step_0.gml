@@ -1,5 +1,5 @@
 action_inherited();
-if launch = 1 {
+if launch = 1 && global.begining == 0 {
 
     launch = 2;
 

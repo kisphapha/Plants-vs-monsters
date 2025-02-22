@@ -37,6 +37,7 @@ y0 = y
 line = 0
 throwing = 0
 throws = 0
+floating = 0
 if y <= 160
 {
 	line = 1;
@@ -64,4 +65,5 @@ if _index != -1 {
 	hpmax = hp
 	dame = game.monsters_library[_index].dame
 	const_speed = game.monsters_library[_index].basic_speed
+	floating = game.monsters_library[_index].floating
 }

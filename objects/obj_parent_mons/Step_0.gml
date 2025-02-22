@@ -112,14 +112,14 @@ if dead == true
 		}
 	}
 }
-if attack == 1 && object_index != obj_gigantic
+if attack == 1 && object_index != obj_gigantic  && object_index != obj_big_bomb
 {
 	var _flag = false
 	if !instance_exists(target)
 	{		
 		_flag = true
 	} else {
-		if (target.y < 00 or target.lowground = 3)
+		if (target.y < 00 or target.lowground = 3 or target.is_dragged)
 		{
 			_flag = true	
 		}

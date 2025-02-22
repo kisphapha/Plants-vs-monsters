@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"find_coordinate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"find_coordinate",
+  "parent":{
+    "name":"encapsulation",
+    "path":"folders/Scripts/encapsulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -11,7 +11,7 @@ with game
 		{
 			plant_id : 1,
 			plant_name : "Sun flower",
-			description : "An essential plant that can't be miss in every game. She produce suns which are the fuel to born other plants\n"+
+			description : "An essential plant that can't be missed in every game. She produce suns which are the fuel to born other plants\n"+
 			"She likes dancing and singing like a typical cartoon flower. Every plant in the garden seems to love her. Her optimistic energy emanating from her petals making other plants boost up their spirit and fight against the monsters",
 			quotation : "\"I wish the world one day is full of joy and no more sorrow\"",
 			plant_food : "She obsurb the energy of the sun and produce a bunch of sun immediately",
@@ -200,7 +200,7 @@ with game
 			plant_types : [4],
 			plants_range : [plants_range[4]],
 			hp : 100,
-			recharge_time : 1200,
+			recharge_time : 900,
 			cost : 0,
 			obj_form : obj_iceletuce,
 			drop_at : lvl3_desert,
@@ -628,8 +628,8 @@ with game
 			plant_id : 29,
 			plant_name : "Jalapeno",
 			description : "Explode a straight line\n"+
-			"!",
-			quotation : "\"!\"",
+			"Well! They're just hot headed as the cherry-bombs. They must take a calm lessons, often from Bamboozoka, to stay alive as long as possible!",
+			quotation : "\"Are you looking at with THE SIDE E... BOOOOOOMMMMM!\"",
 			plant_food : "*Mystery*",
 			picture : spr_jalapeno,
 			card_pucture : spr_ca29,
@@ -645,6 +645,50 @@ with game
 			obj_form : obj_jalapeno,
 			drop_at : lvl5_kang_dynasty,
 			cursor : spr_jalapeno
+		},
+		{
+			plant_id : 30,
+			plant_name : "Bamboozoka",
+			description : "Click on him to launch the powerful bamboo missile to any place. It will detonate and create bamboo spikes\n"+
+			"He is a philosopher. He often yaps to other plants about the meaning of life. He believes in reincarnation hypothesis. You might want to shit down and listen to a 30 minutes lecture from him.",
+			quotation : "\"Old bamboo, new shoots grow! Infinite circle of life...\"",
+			plant_food : "*Mystery*",
+			picture : spr_bamboozoka,
+			card_pucture : spr_ca30,
+			dame_level : plants_dame_level[4],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca30,
+			plant_types : [1,3],
+			plants_range : [plants_range[7]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 450,
+			obj_form : obj_bamboozoka,
+			drop_at : lvl6_kang_dynasty,
+			cursor : spr_bb2
+		},
+		{
+			plant_id : 31,
+			plant_name : "Nuclear Power Plant",
+			description : "Alternative sun producer. Set around other plants to optimize her power. For each sun-producer, produce an extra sun. If the surround plants aren't sun producers, activate the launch potato-mine ability. Each regular plant will decrease the cool down of this skill by 5s.\n" +
+			"She is as complex as her use. She emit a mysterious scent that enough to hypotize any living nearby. Many plants that have crush on her. Some says that her species are created from the ancient, using the petals of mysterious purple flowers. Other plants are willing to share their power to help her to reach the maximum power",
+			quotation : "\"Unity Is Strength!\"",
+			plant_food : "Activate plant food for surronding sun producers immediately. For each surround non sun producer, launchs a potato mine toward the start of the lawn",
+			picture : spr_nuclearpowerplant,
+			card_pucture : spr_ca31,
+			dame_level : plants_dame_level[4],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[1],
+			card_type : obj_ca31,
+			plant_types : [0,1],
+			plants_range : [plants_range[7]],
+			hp : 120,
+			recharge_time : 1500,
+			cost : 250,
+			obj_form : obj_nuclearpowerplant,
+			drop_at : lvl7_kang_dynasty,
+			cursor : spr_nuclearpowerplant
 		},
 		{
 			plant_id : 101,

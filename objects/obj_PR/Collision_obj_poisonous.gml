@@ -1,20 +1,17 @@
-action_set_relative(1);
-var __b__;
-__b__ = action_if_variable(lowground, 0, 0);
-if __b__
+
+if lowground == 0
 {
-__b__ = action_if_variable(powering, 0, 0);
-if __b__
+	if powering == 0
+	{
+		hp -= 12;
+	}
+}
+
+if hp < 0
 {
-hp += -12;
+	instance_destroy();
 }
-}
-__b__ = action_if_variable(hp, 0, 1);
-if __b__
+with (other) 
 {
-action_kill_object();
+	instance_destroy();
 }
-with (other) {
-action_kill_object();
-}
-action_set_relative(0);

@@ -22,7 +22,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 1,
-			obj_form : obj_monster
+			obj_form : obj_monster,
+			weight : 1,
+			floating : 0
 		},
 		{
 			mons_id : 2,
@@ -40,7 +42,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 1,
-			obj_form : obj_brownie
+			obj_form : obj_brownie,
+			weight : 2,
+			floating : 0
 		},
 		{
 			mons_id : 3,
@@ -58,7 +62,9 @@ with game {
 			basic_speed : 0.6,
 			dame : 1.2,
 			map : 1,
-			obj_form : obj_monsterdog
+			obj_form : obj_monsterdog,
+			weight : 2,
+			floating : 0
 		},
 		{
 			mons_id : 4,
@@ -76,7 +82,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 1,
-			obj_form : obj_hardcore
+			obj_form : obj_hardcore,
+			weight : 4,
+			floating : 0
 		},
 		{
 			mons_id : 5,
@@ -94,7 +102,9 @@ with game {
 			basic_speed : 0.4,
 			dame : 0,
 			map : 1,
-			obj_form : obj_gigantic
+			obj_form : obj_gigantic,
+			weight : 10,
+			floating : 0
 		},
 		{
 			mons_id : 6,
@@ -112,7 +122,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 1,
-			obj_form : obj_imp
+			obj_form : obj_imp,
+			weight : 1,
+			floating : 0
 		},
 		{
 			mons_id : 7,
@@ -130,7 +142,9 @@ with game {
 			basic_speed : 1.2,
 			dame : 1.2,
 			map : 2,
-			obj_form : obj_blackdog
+			obj_form : obj_blackdog,
+			weight : 3,
+			floating : 0
 		},
 		{
 			mons_id : 8,
@@ -148,7 +162,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 2,
-			obj_form : obj_scorpion
+			obj_form : obj_scorpion,
+			weight : 3,
+			floating : 0
 		},
 		{
 			mons_id : 9,
@@ -166,7 +182,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 2,
-			obj_form : obj_driller
+			obj_form : obj_driller,
+			weight : 3,
+			floating : 0
 		},
 		{
 			mons_id : 10,
@@ -184,7 +202,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 2,
-			obj_form : obj_rex
+			obj_form : obj_rex,
+			weight : 4,
+			floating : 0
 		},
 		{
 			mons_id : 11,
@@ -202,7 +222,9 @@ with game {
 			basic_speed : 2,
 			dame : 99,
 			map : 2,
-			obj_form : obj_scopiking
+			obj_form : obj_scopiking,
+			weight : 999,
+			floating : 0
 		},
 		{
 			mons_id : 12,
@@ -220,7 +242,9 @@ with game {
 			basic_speed : 0.8,
 			dame : 1,
 			map : 3,
-			obj_form : obj_dragonfly
+			obj_form : obj_dragonfly,
+			weight : 1,
+			floating : 1
 		},
 		{
 			mons_id : 13,
@@ -238,7 +262,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1.2,
 			map : 3,
-			obj_form : obj_krockodile
+			obj_form : obj_krockodile,
+			weight : 3,
+			floating : 0
 		},
 		{
 			mons_id : 14,
@@ -256,7 +282,9 @@ with game {
 			basic_speed : 0,
 			dame : 0,
 			map : 3,
-			obj_form : obj_spider
+			obj_form : obj_spider,
+			weight : 5,
+			floating : 1
 		},
 		{
 			mons_id : 15,
@@ -274,7 +302,9 @@ with game {
 			basic_speed : 1.2,
 			dame : 1,
 			map : 3,
-			obj_form : obj_slime
+			obj_form : obj_slime,
+			weight : 5,
+			floating : 0
 		},
 		{
 			mons_id : 16,
@@ -292,7 +322,9 @@ with game {
 			basic_speed : 0,
 			dame : 99,
 			map : 3,
-			obj_form : obj_urusal
+			obj_form : obj_urusal,
+			weight : 999,
+			floating : 0
 		},
 		{
 			mons_id : 17,
@@ -310,7 +342,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 4,
-			obj_form : obj_skelegon
+			obj_form : obj_skelegon,
+			weight : 3,
+			floating : 0
 		},
 		{
 			mons_id : 18,
@@ -328,7 +362,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 1,
 			map : 4,
-			obj_form : obj_crystard
+			obj_form : obj_crystard,
+			weight : 4,
+			floating : 0
 		},
 		{
 			mons_id : 19,
@@ -346,7 +382,9 @@ with game {
 			basic_speed : 0.3,
 			dame : 0,
 			map : 4,
-			obj_form : obj_helahula
+			obj_form : obj_helahula,
+			weight : 4,
+			floating : 0
 		},
 		{
 			mons_id : 20,
@@ -364,7 +402,9 @@ with game {
 			basic_speed : 2,
 			dame : 1,
 			map : 4,
-			obj_form : obj_eyebat
+			obj_form : obj_eyebat,
+			weight : 1,
+			floating : 1
 		},
 		{
 			mons_id : 21,
@@ -382,7 +422,9 @@ with game {
 			basic_speed : 0.2,
 			dame : 1,
 			map : 4,
-			obj_form : obj_darkpatrol
+			obj_form : obj_darkpatrol,
+			weight : 6,
+			floating : 0
 		},
 		{
 			mons_id : 22,
@@ -400,7 +442,9 @@ with game {
 			basic_speed : 0,
 			dame : 1.2,
 			map : 4,
-			obj_form : obj_annabelle
+			obj_form : obj_annabelle,
+			weight : 4,
+			floating : 0
 		},
 		{
 			monster_name : "Vollo",
@@ -418,7 +462,9 @@ with game {
 			basic_speed : 2,
 			dame : 99,
 			map : 4,
-			obj_form : obj_vollo
+			obj_form : obj_vollo,
+			weight : 999,
+			floating : 1
 		},
 		{
 			monster_name : "Bombi",
@@ -436,7 +482,9 @@ with game {
 			basic_speed : 0.6,
 			dame : 1,
 			map : 5,
-			obj_form : obj_small_bomb
+			obj_form : obj_small_bomb,
+			weight : 1,
+			floating : 0
 		},
 		{
 			monster_name : "Zod",
@@ -454,7 +502,69 @@ with game {
 			basic_speed : 2,
 			dame : 2,
 			map : 5,
-			obj_form : obj_zod
+			obj_form : obj_zod,
+			weight : 3,
+			floating : 0
+		},
+		{
+			monster_name : "Grabot",
+			quotation : "\"uuuu....oooooo.....\"",
+			mons_id : 26,
+			picture : spr_grabot,
+			picture_scale : 1,
+			behavior : "Grabot will throws his hook then drags your plants toward him and ruins your defense. He won't spent time destroying your plant but will run over them!",
+			anecdote : "Grabot is fairly common in Kang's army. He often used them as a tool to catch the escaper. It turns out very effective since no one have ever escaped from their hooks. They look like a baker and may insert their victim in to sustain.",
+			toughness : monster_hp_level[3],
+			speed_lvl : monster_speed_level[1],
+			dame_lvl : monster_damage_level[5],
+			class : [0,3],
+			hp : 40,
+			basic_speed : 0.3,
+			dame : 10,
+			map : 5,
+			obj_form : obj_grabot,
+			weight : 5,
+			floating : 0
+		},
+		{
+			monster_name : "Bomba",
+			quotation : "\"Before I die, I will take you down with me!\"",
+			mons_id : 27,
+			picture : spr_bigbomb,
+			picture_scale : 2,
+			behavior : "Bomba is a giant version of Bombi! He releases Bombis from his body to help him demolish your defense. If not put off his fire, he will explode a very big area on dead!",
+			anecdote : "Bomba is another terrorist that Kang made. He is not so easy to detonate like Bombi. He calculate very carefully what is the perfect time to statisfy Kang most, although he will not be there to witness his success!",
+			toughness : monster_hp_level[4],
+			speed_lvl : monster_speed_level[3],
+			dame_lvl : monster_damage_level[5],
+			class : [2,3],
+			hp : 85,
+			basic_speed : 0.45,
+			dame : 0,
+			map : 5,
+			obj_form : obj_big_bomb,
+			weight : 5,
+			floating : 0
+		},
+		{
+			mons_id : 28,
+			picture : spr_kang_regular,
+			picture_scale : 1,
+			monster_name : "Kang",
+			quotation : "\"I conquered many worlds,... but not her heart!\"",
+			behavior : "",
+			anecdote : "",
+			toughness : monster_hp_level[6],
+			speed_lvl : monster_speed_level[0],
+			dame_lvl : monster_damage_level[6],
+			class : [6],
+			hp : 4000,
+			basic_speed : 8,
+			dame : 99,
+			map : 5,
+			obj_form : obj_kang,
+			weight : 999,
+			floating : 1
 		},
 	]
 }

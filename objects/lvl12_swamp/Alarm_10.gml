@@ -1,4 +1,3 @@
-with (obj_spectator) {
-action_move("000100000", 8);
-}
-action_set_alarm(60, 9);
+obj_spectator.direction = 180
+obj_spectator.speed = 8
+alarm[9] = 30

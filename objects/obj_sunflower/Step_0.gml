@@ -1,10 +1,7 @@
-action_inherited();
-var __b__;
-	__b__ = action_if_variable(power_active, 1, 0);
-if __b__
+event_inherited();
+if power_active == 1
 {
-	__b__ = action_if_variable(powering, 0, 0);
-	if __b__
+	if powering == 0
 	{	
 		a1 = instance_create(x,y+40,obj_vtmp);
 		a2 = instance_create(x,y+40,obj_light);

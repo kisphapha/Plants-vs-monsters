@@ -62,6 +62,8 @@ if eating = 4 and image_index = 0 && instance_exists(pr){
 	eating = 0;
 
 	pr.lowground = 3
+	
+	pr.hp = pr.hp_max
 }
 
 

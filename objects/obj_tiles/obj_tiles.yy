@@ -14,8 +14,8 @@
   "name":"obj_tiles",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"constructors",
+    "path":"folders/Objects/constructors.yy",
   },
   "parentObjectId":null,
   "persistent":false,

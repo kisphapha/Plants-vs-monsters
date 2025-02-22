@@ -1,6 +1,6 @@
 
 
-if powering == 0 && charged && distance < 192
+if powering == 0 && charged && distance < 192  && global.begining == 0
 {
 	charged = false
 	sprite_index = spr_lilichilli_2

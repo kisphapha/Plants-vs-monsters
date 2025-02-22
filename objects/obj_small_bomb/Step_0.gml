@@ -5,10 +5,20 @@ if (cold == 1 || freeze == 1) && ignited {
 	ignited = false;
 	sprite_walk = spr_smallbomb4
 	if (sprite_index == spr_smallbomb2) sprite_index = sprite_walk
+	if (sprite_index == spr_smallbomb8) sprite_index = spr_smallbomb9
+}
+if is_bombing
+{
+	speed = 0	
+}
+if (falling == -1)
+{
+	y -= max(0, alarm[3]/5)	
 }
 if (falling == 1) {
 	y += 8
 	image_angle += 20
+	sprite_index = spr_smallbomb7
 
 	var _fell_flag = false
 	if (dest_fall_line == 1 && y > 124){

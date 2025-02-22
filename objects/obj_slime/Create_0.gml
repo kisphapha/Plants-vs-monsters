@@ -18,6 +18,7 @@ sprite_dead = spr_sime4
 image_index = 0; image_speed = 0
 
 y0 = y
+size = 2
 
 if (global.begining == 0) {
 	if global.monster_reveal[mons_id] == 0 {

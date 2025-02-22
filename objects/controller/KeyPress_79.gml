@@ -1,4 +1,6 @@
-global.lawnmover = 1;
+with obj_seedy alarm[1] = 1
+
+/*global.lawnmover = 1;
 global.shovel = 1;
 global.food = 1;
 global.maxpf = 4;

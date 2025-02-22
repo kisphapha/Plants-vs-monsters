@@ -11,9 +11,9 @@ if respawn = 1{
 
     alarm[0] = 10
 
-    for ( i = 0; i <= 6; i += 1){
+    for (var _i = 0; _i <= 6; _i += 1){
 
-        with s[i] instance_destroy();
+        with s[_i] instance_destroy();
 
     }
 

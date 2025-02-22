@@ -1,1 +1,1 @@
-action_create_object(obj_pLants, __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2, __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2);
+instance_create_depth(view_get(0)+view_get(2)/2,view_get(1)+view_get(3)/2,-10000,obj_pLants);

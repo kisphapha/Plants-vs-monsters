@@ -1,4 +1,4 @@
-if global.line[line] = 1 && image_index = 0 && distance < 288{
+if global.line[line] = 1 && image_index = 0 && distance < 288 && global.begining == 0{
 
     image_index = 1;
 

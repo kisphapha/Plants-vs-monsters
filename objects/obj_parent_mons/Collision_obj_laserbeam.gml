@@ -1,6 +1,6 @@
 if !dead
 {
-	if transparent == 0
+	if transparent == 0 && special_condition(0)
 	{
 		if object_index = obj_annabelle
 		{

@@ -38,5 +38,7 @@ global.strongwind = 0
 global.lvl = noone
 global.confirm_result = -1
 global.map = 0
+global.init_recharge = false
+reset_leveltype()
 /* */
 /*  */

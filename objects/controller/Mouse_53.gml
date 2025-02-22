@@ -1,5 +1,5 @@
 
-if global.plantable == 0
+if global.plantable == 0 && plant_ != -3
 {
 	with (controller) 
 	{

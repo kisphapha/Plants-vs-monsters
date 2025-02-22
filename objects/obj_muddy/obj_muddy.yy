@@ -8,8 +8,8 @@
   "name":"obj_muddy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"effect",
+    "path":"folders/Objects/effect.yy",
   },
   "parentObjectId":null,
   "persistent":false,

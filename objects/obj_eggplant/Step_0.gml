@@ -23,7 +23,7 @@ else
 	mons = noone;
 }
 
-if distance < 100 && distance > 0 && charge = 0 && powering = 0 && instance_exists(pr)
+if distance < 100 && distance > 0 && charge = 0 && powering = 0 && instance_exists(pr) && global.begining == 0
 {
 
     charge = 1;

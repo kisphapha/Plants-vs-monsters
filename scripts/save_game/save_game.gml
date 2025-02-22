@@ -33,6 +33,7 @@ function save_game(){
 			ds_map_add(_content, "have_tutorial_1", global.tutor1);			
 			ds_map_add(_content, "monsters", _monsters);
 			ds_map_add(_content, "plants", _plants);			
+			ds_map_add(_content, "init_recharge", global.init_recharge);		
 			ds_map_add(_content, "balance", 0);
 
 			var _file_name = game.selected_user;

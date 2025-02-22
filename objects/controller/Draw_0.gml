@@ -36,7 +36,10 @@ if chosing = 1
 	{ 
 		if (global.slot[_k+1] > 0)
 		{		
-			draw_sprite(game.plants_library[global.slot[_k+1] - 1].card_pucture,0,view_get(0)+80+_k*cd,view_get(1))
+			var _index = array_find_index(game.plants_library, method({to_find : global.slot[_k+1]}, function(_e) {
+				return _e.plant_id == to_find
+			}))
+			draw_sprite(game.plants_library[max(0,_index)].card_pucture,0,view_get(0)+80+_k*cd,view_get(1))
 		}
 
 	}

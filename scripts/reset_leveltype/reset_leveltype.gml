@@ -5,8 +5,7 @@ function reset_leveltype() {
 	global.last_stand = 0
 	global.tree_of_wisdom = 0
 	global.restrict = 0
-	global.pattern = 0
-
-
-
+	global.pattern = 0	
+	global.timer = 0	
+	global.endless_survival = 0
 }

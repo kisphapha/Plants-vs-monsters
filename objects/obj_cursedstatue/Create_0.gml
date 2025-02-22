@@ -12,6 +12,5 @@ tile = instance_nearest(x-20,y-20,obj_tiles)
 
 tile.unplantable = 1
 
-tile.visible = true
 
 depth = -(y+35)

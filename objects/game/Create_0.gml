@@ -2,6 +2,8 @@
 // You can write your code in this editor
 user_name = ""
 selected_user = ""
+xx[1] = 80; xx[2] = 144; xx[3] = 208; xx[4] = 272; xx[5] = 336; xx[6] = 400; xx[7] = 464; xx[8] = 528; xx[9] = 592
+yy[1] = 110; yy[2] = 190; yy[3] = 275; yy[4] = 350; yy[5] = 440
 
 //Database
 //=====================================================================================================
@@ -57,7 +59,9 @@ monsters_library = [
 		basic_speed : 0,
 		dame : 0,
 		map : 0,
-		obj_form : obj_monster
+		obj_form : obj_monster,
+		weight : 0,
+		floating : 0
 	}
 ]
 instance_create(x,y,obj_config_monsters)

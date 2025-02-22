@@ -39,6 +39,10 @@ else
 	{
 		cursor_sprite = (spr_plantfood);
 	}
+	if plant_ = -3
+	{
+		cursor_sprite = (spr_bamboo_target);
+	}
 }
 if planting = 0
 {

@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"kangDynasty",
-    "path":"folders/Sprites/monster/kangDynasty.yy",
+    "name":"kangEffect",
+    "path":"folders/Sprites/monster/kangDynasty/kangEffect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

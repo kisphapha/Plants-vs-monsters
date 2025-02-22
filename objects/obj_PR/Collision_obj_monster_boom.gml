@@ -1,5 +1,5 @@
 
-if powering == 0
+if powering == 0 && !other.harmless
 {
 	hp -= 20;
 }

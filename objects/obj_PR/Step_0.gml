@@ -12,6 +12,3 @@ if instance_exists(tile)
 	    instance_destroy()
 	}
 }
-
-
-

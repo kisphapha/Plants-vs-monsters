@@ -74,7 +74,18 @@ if instance_number(obj_voyager) == 1 && array_length(conveyor_array) > 0
 		obj_voyager.plant[_index+1] = _item
 	})
 }	
-
+if (global.pattern == 1 && global.begining == 0 && instance_exists(controller) && controller.final == 0)
+{
+	pattern_flag = true
+	with obj_pseudo_plants { if (!satisfy) {other.pattern_flag = false}}
+	if (pattern_flag)
+	{
+		controller.final = 1;
+		timeline_index = timeline0;
+		timeline_position = 0;
+		timeline_running = true;
+	}
+}
 if instance_number(obj_pLants) == 1
 {
 	controller.lvl = id;

@@ -5,7 +5,7 @@ if (powering=1 or squashing = 1) && instance_exists(pr)
 	pr.hp = hp_max;
 }
 mons = instance_nearest(x,y,obj_enemies);
-if instance_exists(mons)
+if instance_exists(mons)  && global.begining == 0
 {
 	distance = distance_to_point(mons.x,mons.y);
 	if ((distance <75 and mons.line = line) and powering = 0 and mons.immue=0)

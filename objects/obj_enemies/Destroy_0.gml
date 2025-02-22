@@ -1,4 +1,13 @@
-
+var _level = instance_find(obj_lvl_prototype,0)
+if (instance_exists(_level))
+{
+	var _deduct = min(60, 200 / max(1, instance_number(obj_enemies)))
+	if _level.alarm[0] > _deduct 
+	{
+		_level.alarm[0] -= _deduct
+		if (_level.alarm[0] < 1) _level.alarm[0] = 1
+	}
+}
 if instance_number(obj_enemies) == 1
 {
 	var _xx, _yy, _seed, _arrow;
@@ -19,7 +28,7 @@ if instance_number(obj_enemies) == 1
 		if _current_level.world_type == 6 _ref_level = global.world6_level
 		if _current_level.world_type == 7 _ref_level = global.world7_level
 
-		if _current_level == lvl3_hometown
+		if _current_level.object_index == lvl3_hometown
 		{
 			if _ref_level == _current_level.lvl
 			{
@@ -28,7 +37,7 @@ if instance_number(obj_enemies) == 1
 			}
 		}
 
-		if _current_level == lvl5_hometown
+		if _current_level.object_index == lvl5_hometown
 		{
 			if _ref_level == _current_level.lvl
 			{
@@ -37,7 +46,8 @@ if instance_number(obj_enemies) == 1
 			}
 		}
 		
-		if _current_level == lvl13_desert || _current_level == lvl14_cryland || _current_level == lvl12_swamp
+		if _current_level.object_index == lvl13_desert || _current_level.object_index == lvl14_cryland || _current_level.object_index == lvl12_swamp
+			|| _current_level.object_index == lvl10_kang_dynasty
 		{
 			if _ref_level == _current_level.lvl
 			{

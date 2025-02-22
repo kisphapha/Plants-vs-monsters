@@ -3,6 +3,7 @@ action_inherited();
 a = noone
 mons_id = 17
 weird_death = 1;
+s = [noone,noone,noone,noone,noone,noone,noone]
 if global.begining == 0
 {
 	action_move("000100000", 0.3);

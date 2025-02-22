@@ -6,3 +6,4 @@ endangered = 0;
 choosing_card = noone
 plant = noone;
 plant_success = 0;
+endanger_tile = noone;

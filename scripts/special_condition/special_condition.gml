@@ -10,7 +10,8 @@ function special_condition(argument0) {
 	    if type = 1 return sprite_index != spr_scorpion3; 
 	}
 	if object_index = obj_driller{
-	    return digging != 1; 
+	    if type = 0 return digging != 1; 	    
+		if type = 1 return digging == 0; 
 	}
 	if object_index = obj_rex{
 	    if type =1 return sprite_index != spr_rex3;
@@ -41,7 +42,7 @@ function special_condition(argument0) {
 	}
 	if object_index = obj_small_bomb{
 	    if type = 0 return !is_bombing && falling != 1    
-		if type = 1 return !ignited && falling != 1
+		if type = 1 return !ignited && falling == 0
 	}
 	if object_index = obj_kang_troller{   
 		if type = 0 return x < 640

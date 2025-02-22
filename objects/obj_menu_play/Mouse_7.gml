@@ -21,6 +21,7 @@ if image_index == 0 {
 			global.lawnmover = variable_instance_exists(_data, "have_lawn_mover") && is_real(_data.have_lawn_mover) ? _data.have_lawn_mover : 0
 			global.shovel = variable_instance_exists(_data, "have_shovel") && is_real(_data.have_shovel) ? _data.have_shovel : 0
 			global.tutor1 = variable_instance_exists(_data, "tutorial_1") && is_real(_data.tutorial_1) ? _data.tutorial_1 : 0
+			global.init_recharge = variable_instance_exists(_data, "init_recharge") && is_bool(_data.init_recharge) ? _data.init_recharge : false
 			global.plant_amount = variable_instance_exists(_data, "plant_amount") && is_real(_data.slot_number) ? _data.plant_amount : 2
 			global.world1_level = variable_instance_exists(_data, "world_levels") && is_real(_data.world_levels[0]) ? _data.world_levels[0] : 1
 			global.world2_level = variable_instance_exists(_data, "world_levels") && is_real(_data.world_levels[1]) ? _data.world_levels[1] : 0

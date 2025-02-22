@@ -1,4 +1,5 @@
-if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1) and untouch = 0) && switch_lane == 0
+if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1) and untouch = 0) 
+	&& switch_lane == 0 && !other.is_dragged
 {
 	if ((other.lowground != 2 and other.lowground != 3) or (other.lowground == 2 and waterlogged == 1))
 	{
