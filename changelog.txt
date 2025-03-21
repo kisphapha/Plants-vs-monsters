@@ -112,7 +112,7 @@ get from other worlds in the early game
 unlocked too. To open almanac, click the the top right corner button in islands screen
 - Change : Now the game will auto-save after each time you finish a level.
 - Change : Make the unlocked plant darker and harder to see. Create a mysterious feelings
-- Change : Monster all die in the begining of the level. They now disapear instead
+- Change : All monster die in the begining of the level. They now disapear instead
 - Change : Nerf ability recharge of Dark Patrol. He can't also use ability while Freezing
 - Change : Decrease the monsters density of level 4 - 8
 - Change : Chompers's health are now equal to Castuses
@@ -139,3 +139,16 @@ unlocked too. To open almanac, click the the top right corner button in islands 
 - Added monsters alamanac. You can now have a preference for monsters just like as plant. Infomation of the monster in the alamanac will be unlocked if you first discover that monster in the game.
 - Fixed : Annabelle dodging sometime crash the game
 - Fixed : Readjust hitbox of eyebat since it can phase through projectiles of the same rank
+=================================================================
+21/03/2025 --- RELEASE 1.3 - THE KANG DYNASTY WORLD
+=================================================================
+- Added 10 Kang Dynasty levels:
+	+ 6 new plants: Kernel-pults, Melon-pults, Lilichilli, Jalapeno, Bamboozoka, Nuclear Power Plant. Discover yourself!
+	+ 4 new monsters: Bombi, Zod, Grabot, Bomba. Let's check the alamanac!
+	+ New boss: Kang, mastermind of world 5.
+	+ World gimmick: Kang will appear each flag of each level to demolish your entire line of plants. Stop him! Also, there are rain bombs!
+	+ New mode: Pattern mode. You have to complete a pattern of plants to win the game.
+- Added Survival Endless mode (beta).
+- Added Skip Initial Recharge buff. Receive after beating world 5. Plant seeds will instantly recharged at the start of any game.
+- Added aura light when receive a new plant seed.
+- Change: Chompers will restore full health after diggesting any monsters.

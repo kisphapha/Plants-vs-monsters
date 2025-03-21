@@ -23,7 +23,7 @@ if instance_number(obj_letrock2) == 0
 		if recharge == 0
 		{
 			alarm[1] = recharge_max
-			if sun_proc == 1
+			if sun_proc == 1 || global.init_recharge
 				alarm[1] = 1
 		}
 	}

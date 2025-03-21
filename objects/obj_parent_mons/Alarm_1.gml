@@ -12,7 +12,7 @@ if switch_lane = 1
 
     if y >= 328 and y < 408 {line = 4; y = 350}
 
-    if y >= 408 and y < 488 {line = 5; y = 440}
+    if y >= 408 {line = 5; y = 440}
 
 	if object_index == obj_slime y += 40
     y0 = y

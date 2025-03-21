@@ -16,7 +16,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"world5",
-    "path":"folders/Objects/level/world5.yy",
+    "path":"folders/Objects/monsters/level/world5.yy",
   },
   "parentObjectId":{
     "name":"obj_lvl_prototype",
