@@ -5,7 +5,7 @@ if (powering == 0 && instance_exists(mons))
 
 	 var _blt = instance_create(x,y-54,obj_melon_projectile)
 
-	_blt.d = distance-32;
+	_blt.d = distance-16;
 
 	_blt.dest = _dest
 

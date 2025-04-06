@@ -9,7 +9,7 @@ if (powering == 0 && instance_exists(mons))
 		image_index : 1	 
 	 })
 
-	_blt.d = distance-32;
+	_blt.d = distance-16;
 
 	_blt.dest = _dest
 

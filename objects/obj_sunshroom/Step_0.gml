@@ -1,14 +1,13 @@
 action_inherited();
-if grow = 1 && size <= 0.5
-	size += 0.01
-
-action_sprite_transform(size+0.5, size+0.5, 0, 0);
-var __b__;
-	__b__ = action_if_variable(power_active, 1, 0);
-if __b__
+if grow = 1 && size_x <= 1
 {
-	__b__ = action_if_variable(powering, 0, 0);
-	if __b__
+	size_x += 0.01	
+	size_y += 0.01
+}
+
+if power_active == 1
+{
+	if powering == 0
 	{		
 		a1 = instance_create(x,y+40,obj_vtmp);
 		a2 = instance_create(x,y+40,obj_light)

@@ -44,8 +44,11 @@ image_alpha = 0.5
 if dead
 {
 	hp = 0;
-	global.kill = 1
-	controller.final = 1
+	if global.boss == 1
+	{
+		global.kill = 1
+		controller.final = 1
+	}
 	if dying < 100
 	{
 		earthquake(4);dying += 1;    

@@ -14,7 +14,7 @@ dest_fall_line = 0;
 
 if global.begining == 0
 {
-	speed = game.monsters_library[mons_id - 1].basic_speed
+	speed = const_speed
 	direction = 180
 	sprite_index = sprite_walk
 	if global.monster_reveal[mons_id] == 0 {

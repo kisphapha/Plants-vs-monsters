@@ -19,6 +19,7 @@
   "height":520,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"a1403321-752e-4320-bebb-b6658d235822","blendMode":0,"displayName":"Layer 1","isLocked":true,"name":"a1403321-752e-4320-bebb-b6658d235822","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"67268e84-f683-46d5-8d1a-7fc77fa1a217","blendMode":0,"displayName":"default","isLocked":false,"name":"67268e84-f683-46d5-8d1a-7fc77fa1a217","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"kangdynasty",

@@ -1,6 +1,5 @@
-var __b__;
-__b__ = action_if_variable(water, 0, 0);
-if __b__
+
+if water == 0
 {
-water = 1;
+	water = 1;
 }

@@ -9,10 +9,10 @@ if abs(dest_y - y) < 10 {
 
 
 
-if love.hp = 0 
-
-dead = true
-
+if !instance_exists(love) || love.hp = 0 
+{
+	dead = true
+}
 
 
 if dead = true{

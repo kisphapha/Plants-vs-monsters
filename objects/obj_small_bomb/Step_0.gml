@@ -39,6 +39,7 @@ if (falling == 1) {
 	}
 	
 	if (_fell_flag){
+		switch_lane = 1
 		alarm[1] = 1;
 		falling = 2	
 	}

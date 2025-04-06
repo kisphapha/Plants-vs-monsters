@@ -9,7 +9,7 @@ sprite_dead = spr_zod_5
  
 if global.begining == 0
 {	
-	speed = game.monsters_library[mons_id - 1].basic_speed
+	speed = const_speed
 	direction = 180
 	sprite_index = sprite_walk
 	image_speed = 1

@@ -8,5 +8,6 @@ x = x_0
 
 y = y_0
 
+is_idle = true;
 
 action_move("000010000", 0);

@@ -1,3 +1,4 @@
+//instance_create(680+random_range(-32,32),game.yy[3],obj_white_thing)
 //instance_create(680+random_range(-32,32),script0(0),obj_big_bomb)
 bom = instance_create(random(640),random(480),obj_bucxanhiet)
 

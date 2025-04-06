@@ -152,3 +152,9 @@ unlocked too. To open almanac, click the the top right corner button in islands 
 - Added Skip Initial Recharge buff. Receive after beating world 5. Plant seeds will instantly recharged at the start of any game.
 - Added aura light when receive a new plant seed.
 - Change: Chompers will restore full health after diggesting any monsters.
+=================================================================
+--/--/---- --- RELEASE 1.4
+=================================================================
+- Change: All plants now have a bouncy idle animation.
+- Change: Sad shroom will prioritize to attack the monster on their lanes rather than attack all randomly.
+- Fixed: Plants not attacking Bombi that is shot from Kang's cannon when it land on some bottom lanes.

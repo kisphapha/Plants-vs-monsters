@@ -1,3 +1,5 @@
-action_set_relative(1);
+image_speed = 0
+
+/*action_set_relative(1);
 action_create_object(obj_wavy, 36, 36);
 action_set_relative(0);

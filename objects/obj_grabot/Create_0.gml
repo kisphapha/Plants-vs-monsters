@@ -13,7 +13,7 @@ sprite_dead = spr_grabot
 
 if global.begining == 0
 {
-	speed = game.monsters_library[mons_id - 1].basic_speed * 2
+	speed = const_speed * 2
 	direction = 180
 	sprite_index = sprite_walk
 	image_speed = 1

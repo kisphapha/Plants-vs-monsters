@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_waterlogged",
-    "path":"sprites/spr_waterlogged/spr_waterlogged.yy",
+    "name":"spr_superwatertile",
+    "path":"sprites/spr_superwatertile/spr_superwatertile.yy",
   },
   "spriteMaskId":null,
   "visible":true,

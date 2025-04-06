@@ -10,7 +10,16 @@ ready = 0;
 line = 0
 volatile = 0;
 squashing = 0;
-tile = noone
+tile = noone;
+is_idle = true;
+bounce_interval = 30;
+bounce_phase = 0;
+bounce_step = 0;
+bounce_y = 0;
+bounce_size_delta = 0;
+size_x = 1;
+size_y = 1;
+
 if y <= 160
 {
 	line = 1;
@@ -31,6 +40,7 @@ if (y > 408 and y < 488)
 {
 	line = 5;
 }
+y0 = y
 var _index =  array_find_index(game.plants_library, function(_element) { return _element.obj_form == object_index; });
 if _index != -1 {
 	hp_max =  game.plants_library[_index].hp 

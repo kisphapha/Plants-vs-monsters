@@ -4,4 +4,6 @@ action_set_alarm(60, 0);
 action_set_alarm(1800, 2);
 grow = 0;
 chain = 7;
-size = 0
+size_x = 0.5
+size_y = 0.5
+

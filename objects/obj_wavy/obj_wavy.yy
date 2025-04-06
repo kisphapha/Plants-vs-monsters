@@ -35,5 +35,5 @@
     "path":"sprites/spr_wavy/spr_wavy.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

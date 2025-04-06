@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"bck_desert",
   "bboxMode":0,
-  "bbox_bottom":63,
+  "bbox_bottom":519,
   "bbox_left":0,
-  "bbox_right":63,
+  "bbox_right":859,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,13 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"93f92408-18f4-4f82-a253-e295a79fdc0b","name":"93f92408-18f4-4f82-a253-e295a79fdc0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5255efc2-e02b-4db4-8076-67ae3f84cec1","name":"5255efc2-e02b-4db4-8076-67ae3f84cec1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":520,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"53126d78-59e1-4db1-a2a2-18573cd7cb38","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"53126d78-59e1-4db1-a2a2-18573cd7cb38","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"b66fb6b1-d8e5-46fa-98d3-c9e27d957903","blendMode":0,"displayName":"default","isLocked":false,"name":"b66fb6b1-d8e5-46fa-98d3-c9e27d957903","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"bck_desert",
@@ -69,8 +70,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"93f92408-18f4-4f82-a253-e295a79fdc0b","path":"sprites/bck_desert/bck_desert.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"711b4e55-ce08-4123-a0a3-02b008996b98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5255efc2-e02b-4db4-8076-67ae3f84cec1","path":"sprites/bck_desert/bck_desert.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f7f3f5da-be42-479d-8a9e-a8cc981b5663","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

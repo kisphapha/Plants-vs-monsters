@@ -3,5 +3,6 @@ action_sprite_set(spr_sadshroom, 1, 0);
 action_set_alarm(60, 0);
 
 pos = 0
+mons = noone
 
 

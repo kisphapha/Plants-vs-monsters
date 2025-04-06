@@ -2,7 +2,7 @@
 // You can write your code in this editor
 with game {
 	monster_speed_level = ["Static","Sluggish","Slow","Basic","Speedy","Fast","The Flash"]
-	monster_hp_level = ["Vulnerable","Low","Fairly Durable","High","Quite Strong","Transcendent","Gigachad"]
+	monster_hp_level = ["Vulnerable","Low","Fairly Durable","High","Quite Strong","Transcendent","Gigachad","Beyonder"]
 	monster_damage_level = ["Peaceful","Kitten","Normal","Considerable","Dangerous","Super Dangerous","Extreme Destructive"]
 	monster_class = ["Walker","Shooter","Tanker","Ruiner","Supporter","Irregular","Boss"]
 	monsters_library = [
@@ -127,6 +127,26 @@ with game {
 			floating : 0
 		},
 		{
+			mons_id : 29,
+			picture : spr_white_1,
+			picture_scale : 1,
+			monster_name : "White",
+			quotation : "\"Little scratch! This is all you got?\"",
+			behavior : "",
+			anecdote : "",
+			toughness : monster_hp_level[6],
+			speed_lvl : monster_speed_level[2],
+			dame_lvl : monster_damage_level[2],
+			class : [0,2],
+			hp : 1000,
+			basic_speed : 0.3,
+			dame : 1,
+			map : 1,
+			obj_form : obj_white_thing,
+			weight : 20,
+			floating : 0
+		},
+		{
 			mons_id : 7,
 			picture : spr_blackdog,
 			picture_scale : 1,
@@ -214,7 +234,7 @@ with game {
 			quotation : "\"A true king doesn't make his people die, but make them die fighting\"",
 			behavior : "He is the apex leader of monsters in the Desert World. He'll not attack your base directly but through his army, his projectiles and his lasers",
 			anecdote : "A pawn can be promoted to a Queen \n. A big tree came from a small sapling \nThe evolution can be seen \nThis Scorpio has become a king. \nAmong all the monsters that were summoned in the Desert World, the Dark Lord has promoted the strongest and wisest monster to the Scorpiking. Therefore unlock all potential abilities of this single Scorpio to the highest power level of a monster. Every other monster, whether they want it or not, kneels to this new king. He is the root of all chaos in the Desert World, the attacks, the sandstorms, etc. You must face him in the last battle of the Desert in order to release this world from stains.",
-			toughness : monster_hp_level[6],
+			toughness : monster_hp_level[7],
 			speed_lvl : monster_speed_level[0],
 			dame_lvl : monster_damage_level[6],
 			class : [6],
@@ -314,7 +334,7 @@ with game {
 			quotation : "\"GraaaaaaaAAAAHHHHhhhhhh.......\"",
 			behavior : "He's not moving but staying there, summoning and commanding the monsters. He also takes some of your plants with his dirty long toungue and crushes them with the ball of poison",
 			anecdote : "This is the head of spawm's monsters. Is he a type of godly Slime?, or is he a Slime that is promoted?. No, he is created by the Dark Lord using the dark magic. He is the combination of earth, water and even plants. He emits a deadly stinky smell that capable of killing any humans surrounding just by smelling. The weird, scary appearence is enough for the enemies to retreat. Will you face him and release this world?",
-			toughness : monster_hp_level[6],
+			toughness : monster_hp_level[7],
 			speed_lvl : monster_speed_level[0],
 			dame_lvl : monster_damage_level[6],
 			class : [6],
@@ -454,7 +474,7 @@ with game {
 			picture_scale : 1,
 			behavior : "He have two phases. In the first phase, he'll act quite friendly with summoning monsters, throwing spears around cover your planting tiles, and rising crystals. The second phases, he would become something you see from a nightmare, the crystals turn red and heal him. Summoning monsters more intense and deploying fire skull attack. Fire skulls can also blow up your base and make you lose the game ",
 			anecdote : "So what the heck is Vollo came from? Vollo, when newly created by the Dark Lord, is just a floating dry black fish-like skeleton. He then go around absorbing the soul of sinners, trapping them inside his body and then gain powers. No one can count how many did he ate. He is sometimes called Soul Eater, or the Death. With enough source of power, he came to a place where purple crystals rise across the land, trapped some of the souls he collected into the crystals to decorate his new kingdom. Now he'll take lead of monsters in this Cryland World to destroy the base here by order of the Dark Lord",
-			toughness : monster_hp_level[6],
+			toughness : monster_hp_level[7],
 			speed_lvl : monster_speed_level[0],
 			dame_lvl : monster_damage_level[6],
 			class : [6],
@@ -552,9 +572,9 @@ with game {
 			picture_scale : 1,
 			monster_name : "Kang",
 			quotation : "\"I conquered many worlds,... but not her heart!\"",
-			behavior : "",
-			anecdote : "",
-			toughness : monster_hp_level[6],
+			behavior : "Kang will first appear carrying only his laser gun. Each phase, he will integrate a new equidment that will soon make your entire lawn become empty. Watch out his Bombi cannon, energetic gatling gun and 'encourage' waves",
+			anecdote : "Everywhere he goes, everything collapsed under his feet. With an enormous army, it is a piece of cake for him to conquer many star systems. Coincidentally, he placed his kingdom at where one of the seven Seal Heart is placed. Kang is not a subordinate of Dark Queen like other bosses. He is hired to destroy the Heart placed on his own territory.",
+			toughness : monster_hp_level[7],
 			speed_lvl : monster_speed_level[0],
 			dame_lvl : monster_damage_level[6],
 			class : [6],

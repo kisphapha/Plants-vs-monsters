@@ -1,10 +1,7 @@
 action_inherited();
-var __b__;
-__b__ = action_if_variable(power_active, 1, 0);
-if __b__
+if power_active == 1
 {
-	__b__ = action_if_variable(powering, 0, 0);
-	if __b__
+	if powering == 0
 	{
 		{
 			power_active = 0;
