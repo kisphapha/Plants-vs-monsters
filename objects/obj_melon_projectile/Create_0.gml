@@ -10,7 +10,7 @@ alarm[0] = 30
 y0 = y
 x0 = x
 
-depth = -(y+200)/100
+depth = -y
 image_speed = 0
 pos = 0
 

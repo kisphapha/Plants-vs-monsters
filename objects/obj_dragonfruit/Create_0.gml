@@ -5,3 +5,4 @@ charge = 0
 distance = 0
 mons = noone
 alarm[3] = random_range(5,15)
+fire_resist = 1;

@@ -15,6 +15,7 @@ image_yscale = 2
 falling = 0;
 dest_fall_line = 0;
 weird_death = 1
+scale = 2;
 if global.begining == 0
 {
 	speed = const_speed

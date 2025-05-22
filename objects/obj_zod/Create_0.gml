@@ -28,7 +28,7 @@ else
 
 
 height = 0
-
+floating = 0
 facing = 0
 alarm[2] = 16
 if global.monster_reveal[mons_id] == 0 {

@@ -3,5 +3,5 @@
 if (phase == 0)
 {
 	phase = 1	
-	alarm[0] = random_range(10,30)
+	alarm[0] = random_range(10,30 + is_magma ? 30 : 0)
 }

@@ -14,12 +14,14 @@ if is_bombing
 if (falling == -1)
 {
 	y -= max(0, alarm[3]/5)	
+	floating = 1
 }
 if (falling == 1) {
 	y += 8
 	image_angle += 20
 	sprite_index = spr_smallbomb7
-
+	floating = 1
+	line = dest_fall_line
 	var _fell_flag = false
 	if (dest_fall_line == 1 && y > 124){
 		y = 108

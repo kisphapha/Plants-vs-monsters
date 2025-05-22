@@ -1,13 +1,19 @@
 action_inherited();
 if throws = 1
-
-	{if phase = 1 y-=1
+{
+	if phase = 1 y-=1
 
 	if phase = 3 y+=3 
 
-	throwing += 72/17*3}
+	throwing += 72/17*3
+	
+	floating = 1
+}
 
-else throwing = 0
+else {
+	throwing = 0
+	floating = 0
+}
 
 
 

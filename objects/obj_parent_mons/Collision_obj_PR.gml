@@ -1,7 +1,8 @@
 if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1) and untouch = 0) 
 	&& switch_lane == 0 && !other.is_dragged
 {
-	if ((other.lowground != 2 and other.lowground != 3) or (other.lowground == 2 and waterlogged == 1))
+	if (((other.lowground != 2 and other.lowground != 3) or (other.lowground == 2 and (waterlogged == 1 or floating == 1)))
+		&& object_index != obj_lavabull)
 	{
 		
 		if attack == 0
@@ -28,17 +29,17 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1)
 			}
 			if other.bam2 == 1
 			{
-				with (other) action_kill_object();
+				with (other) instance_destroy();
 				freeze = 1;			
-				action_set_alarm(300, 1);
+				alarm[1] = 300;
 				cold = 1;
-				action_set_alarm(600, 0);
+				alarm[0] = 600;
 			}
 		}
 		if other.bam == 1
 		{	
 			with (other) {
-				action_kill_object();
+				instance_destroy();
 			}
 			action_create_object(obj_shutdown, other.x + 0, other.y + 40);
 		}

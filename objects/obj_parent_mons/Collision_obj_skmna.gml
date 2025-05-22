@@ -7,6 +7,14 @@ if transparent == 0
 		{
 			freeze = 1;
 			alarm[1] = max(alarm[1], 150);
+			if (reduce_fire < 1){
+				hp -= 1 * reduce_ice
+				if (hp <= 0)
+				{
+					dead_type = 0;
+					dead = true;
+				}
+			}
 		}
 	}
 }

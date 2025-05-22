@@ -18,4 +18,5 @@ sprite_attack = spr_dragonfly
 sprite_dead = spr_dragonfly2
 height = 0
 fly_high = 0
+floating = 1
 phase = 0; alarm[3] = 20

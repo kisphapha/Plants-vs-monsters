@@ -3,8 +3,8 @@ powering = 0
 tree = 0
 lowground = 0
 special = 0
-bam = 0
-bam2 = 0
+bam = 0 //potato
+bam2 = 0 //iceberg sama
 antiSpider = 0
 kidnapped = 0
 kidnapper = noone
@@ -14,6 +14,7 @@ new_tile = noone
 is_dragged = false
 hp = 120
 hp_max = hp
+fire_resist = 0;
 alarm[0] = 1
 
 

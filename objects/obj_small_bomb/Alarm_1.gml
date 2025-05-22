@@ -8,3 +8,4 @@ image_angle = 0
 alarm[2] = 45
 image_speed = 1
 sprite_index = spr_smallbomb8
+floating = 0

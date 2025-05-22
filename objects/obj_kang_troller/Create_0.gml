@@ -30,3 +30,4 @@ x_0 = -1
 y_0 = -1
 shake_x = 0
 shake_y = 0
+floating = 1

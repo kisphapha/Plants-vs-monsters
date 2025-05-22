@@ -1,3 +1,5 @@
+event_inherited()
+
 if global.line[line] = 1{
 
         for (i = 1; i <= instance_number(obj_enemies); i+=1){
@@ -63,7 +65,7 @@ if eating = 4 and image_index = 0 && instance_exists(pr){
 
 	pr.lowground = 3
 	
-	pr.hp = pr.hp_max
+	pr.hp = hp
 }
 
 

@@ -1,11 +1,6 @@
 action_color(0);
 action_font(font0, 1);
 
-with obj_small_bomb {
-	draw_text(x,y,line)	
-}
-
-
 if global.pause = 1 {
 	draw_set_alpha(0.5)
 	draw_set_color(c_black)

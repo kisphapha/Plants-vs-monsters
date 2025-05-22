@@ -1,4 +1,4 @@
-if ready == 1
+if ready == 1 && object_index != obj_chomper
 {
 	if !instance_exists(pr)
 	{
@@ -46,4 +46,4 @@ if (is_idle)
 		}
 	}
 }
-depth = -(y + sprite_height - sprite_yoffset);
+depth = -(y);// + sprite_height - sprite_yoffset

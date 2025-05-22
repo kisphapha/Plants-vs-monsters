@@ -9,6 +9,7 @@ if object_index != obj_chomper{
 	pr.line = line;  
 	pr.tile = tile
     pr.cost = cost
+	pr.fire_resist = fire_resist
     pr.love = instance_nearest(x,y,object_index)
 
 }

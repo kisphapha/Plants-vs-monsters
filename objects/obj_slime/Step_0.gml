@@ -27,13 +27,13 @@ if switch_lane = 0 and jump != 1 and size <= 3
 
 {   if place_meeting(x+sprite_width/2-8,y,obj_waterlogged) = true and waterlogged = 0{
 
-        y = y0+10; if controller.lost = 0 depth = -(y+sprite_height - sprite_yoffset - 40); waterlogged = 1
+       if controller.lost = 0 depth = -(y+sprite_height - sprite_yoffset - 40); waterlogged = 1
 
     } 
 
     if place_meeting(x-8,y,obj_waterlogged) = false and waterlogged = 1 {
 
-        y = y0; if controller.lost = 0  depth = -(y+sprite_height - sprite_yoffset); waterlogged = 0
+        if controller.lost = 0  depth = -(y+sprite_height - sprite_yoffset); waterlogged = 0
 
     }
 

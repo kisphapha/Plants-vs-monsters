@@ -17,3 +17,4 @@ action_set_alarm(85, 2);
 action_set_alarm(20, 3);
 phase = 1;
 heart = noone;
+floating = 0;

@@ -55,6 +55,7 @@ beam_charge = noone
 phase = 0
 shoot_phase = 0
 xx = 0; yy = 0;
+floating = 1;
 if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }

@@ -1,4 +1,4 @@
-
+depth = -y
 tick += 1
 v = (160*tick)/225
 if phase = 1{
@@ -8,8 +8,8 @@ else {
     y += v;
 }
 image_angle = tick*5
-if phase = 2 and dest.y < y {
-    with dest {alarm[0] = 10; active = 1}
+if instance_exists(dest) and phase = 2 and dest.y < y {
+    with dest {alarm[0] = 10; active = 1; detonate()}
 	repeat 5 {
 				
 		var _splash = instance_create_depth(x,y,depth -1, obj_melon_splash, {
@@ -17,6 +17,7 @@ if phase = 2 and dest.y < y {
 			speed : random_range(5,10)
 		})		
 		_splash.image_index = image_index
+		if sprite_index == spr_melon_projectile_fire _splash.image_index = 2
 	}
     instance_destroy()
 }

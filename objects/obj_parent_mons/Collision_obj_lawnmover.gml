@@ -6,5 +6,6 @@ if isBoss = 0
 		splited = 2;
 		dead = true;
 		dead_type = 2;
+		speed = 0;
 	}
 }

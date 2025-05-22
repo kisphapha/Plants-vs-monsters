@@ -7,7 +7,7 @@ if transparent == 0
 		{
 			cold = 1;
 			alarm[0] = max(alarm[0], 150);
-			hp += -1*(1-immortal);
+			hp += -1*(1-immortal) * reduce_ice;
 			with (other) {
 			action_kill_object();
 			}

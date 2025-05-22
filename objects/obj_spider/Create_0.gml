@@ -21,7 +21,7 @@ image_index = 0
 image_speed = 0
 
 phase = -1
-
+floating = 1
 alarm[11] = 1
 
 if (global.begining ==  0) {

@@ -15,16 +15,16 @@ if freeze = 1  && switch_lane = 0
 {speed = 0; image_speed = 0}
 
 if switch_lane = 0 && untouch <= 1 && throwing = 0 && throws ==0
-    && object_index != obj_krockodile && object_index != obj_slime
+    && object_index != obj_krockodile && object_index != obj_slime && floating == 0 && isBoss == 0
 {   
 	if place_meeting(x+sprite_width/2-8,y,obj_waterlogged) = true and waterlogged = 0
 	{
-        y = y0+10; waterlogged = 1
+        waterlogged = 1
 	} 
 
     if place_meeting(x-8,y,obj_waterlogged) = false and waterlogged = 1 
 	{
-        y = y0; waterlogged = 0
+        waterlogged = 0
     }
 }
 
@@ -50,7 +50,7 @@ if poison > 0 {
     }
 }
 
-if x < 24
+if x < 24 && !dead
 {
 	{
 		if controller.lost == 0
@@ -112,7 +112,8 @@ if dead == true
 		}
 	}
 }
-if attack == 1 && object_index != obj_gigantic  && object_index != obj_big_bomb
+if attack == 1 && object_index != obj_gigantic  && object_index != obj_big_bomb 
+	&& object_index != obj_lavabull && object_index != obj_goluk
 {
 	var _flag = false
 	if !instance_exists(target)

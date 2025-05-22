@@ -9,6 +9,7 @@ global.sun = 50;
 global.amount = 0;
 lost = 0;
 final = 0;
+gravity_mode = 0
 action_set_alarm(60, 11);
 action_set_alarm(300, 0);
 global.plantable = 0;

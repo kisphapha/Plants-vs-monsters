@@ -8,5 +8,5 @@ speed = const_speed
 direction = 180
 image_speed = 0.5
 bounce_phase = 4
-
+floating = 0
 is_shell = 0

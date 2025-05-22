@@ -38,6 +38,13 @@ line = 0
 throwing = 0
 throws = 0
 floating = 0
+scale = 1;
+height = 0;
+shadow_offset = 0;
+facing = 0;
+reduce_fire = 1;
+reduce_ice = 1;
+
 if y <= 160
 {
 	line = 1;

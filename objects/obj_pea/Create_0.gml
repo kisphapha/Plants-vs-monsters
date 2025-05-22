@@ -4,3 +4,4 @@ event_inherited()
 twist = 0
 form = 0
 depth = -1000
+untorchwood = []

@@ -1,4 +1,4 @@
-action_set_alarm(60, 0);
+alarm[0] = 60
 if global.line[line] == 1  && global.begining == 0
 {
 	blt = instance_create(x,y-8,obj_pea)

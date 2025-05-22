@@ -8,7 +8,7 @@ if fly = 1{
         y += v;
 	}
     image_angle = tick*5
-    if phase = 2 and dest.y < y {
+    if instance_exists(dest) and phase = 2 and dest.y < y {
         with dest {alarm[0] = 10; active = 1}
         instance_destroy()
     }

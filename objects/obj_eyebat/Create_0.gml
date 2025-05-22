@@ -15,6 +15,7 @@ sprite_attack = spr_eyebat
 
 sprite_dead = spr_eyebat2
 
+floating = 1;
 
 
 

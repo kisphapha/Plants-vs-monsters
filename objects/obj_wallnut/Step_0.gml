@@ -13,5 +13,11 @@ if instance_exists(pr){
 		}
 	}
 	action_sprite_set(spr_wallnut, max(0,round(pr.hp*6/4000)-1), 0);
+	
+	if pr.hp > hp_max / 2 {
+		pr.fire_resist = 2
+	} else {
+		pr.fire_resist = 0	
+	}
 }
 

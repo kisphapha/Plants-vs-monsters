@@ -153,8 +153,14 @@ unlocked too. To open almanac, click the the top right corner button in islands 
 - Added aura light when receive a new plant seed.
 - Change: Chompers will restore full health after diggesting any monsters.
 =================================================================
---/--/---- --- RELEASE 1.4
+--/--/---- --- RELEASE 1.4 - VOLCANIC
 =================================================================
+- Added monsters and plants shadow
+- Added bouncy idle state for plants
+- Change: High graphic background for all worlds
 - Change: All plants now have a bouncy idle animation.
 - Change: Sad shroom will prioritize to attack the monster on their lanes rather than attack all randomly.
+- Change: Buff chomper's damage when applying to big monsters
+- Change: Smoothen Threepeater's plant food
+- Change: Enhance waterlogged logic and visual
 - Fixed: Plants not attacking Bombi that is shot from Kang's cannon when it land on some bottom lanes.

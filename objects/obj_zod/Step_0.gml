@@ -15,6 +15,7 @@ if dead && is_shell == 1{
 	hpmax = 25
 	hp = hpmax
 	attack = 0
+	floating = 1
 	sprite_walk = spr_zod_2
 	sprite_attack = spr_zod_3
 	sprite_dead = spr_zod_4
