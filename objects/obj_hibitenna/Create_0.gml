@@ -12,3 +12,4 @@ distance = 9999
 bolt = noone
 coords = [{xx : x, yy : y - 32}]
 coord = find_coordinate()
+for_fire = false;

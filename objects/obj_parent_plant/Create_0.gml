@@ -21,6 +21,7 @@ size_x = 1;
 size_y = 1;
 shadow_offset = 0;
 fire_resist = 0; //1 - full resist; 0 - no resist; 2 take damage
+foodable_progress = 0;
 
 if y <= 160
 {

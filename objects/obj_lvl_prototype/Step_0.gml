@@ -86,7 +86,7 @@ if (global.pattern == 1 && global.begining == 0 && instance_exists(controller) &
 		timeline_running = true;
 	}
 }
-if instance_number(obj_pLants) == 1
+if instance_exists(controller) == 1 && controller.lvl == noone
 {
 	controller.lvl = id;
 }

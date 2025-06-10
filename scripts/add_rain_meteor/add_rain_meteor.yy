@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"add_rain_meteor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"add_rain_meteor",
+  "parent":{
+    "name":"encapsulation",
+    "path":"folders/Scripts/encapsulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

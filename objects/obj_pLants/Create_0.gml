@@ -1,2 +1,9 @@
-action_set_alarm(30, 0);
-action_sprite_set(spr_pLants, 0, 0);
+if global.timer == 0
+	alarm[0] = 30
+else {
+	if instance_exists(obj_hourglass){
+		obj_hourglass.sparkling = false
+		obj_hourglass.alarm[1] = 1;
+	}
+}
+image_speed = 0

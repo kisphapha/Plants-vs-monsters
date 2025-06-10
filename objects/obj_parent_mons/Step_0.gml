@@ -113,7 +113,7 @@ if dead == true
 	}
 }
 if attack == 1 && object_index != obj_gigantic  && object_index != obj_big_bomb 
-	&& object_index != obj_lavabull && object_index != obj_goluk
+	&& object_index != obj_lavabull && object_index != obj_goluk && object_index != obj_jigoku
 {
 	var _flag = false
 	if !instance_exists(target)
@@ -153,6 +153,30 @@ if (is_buttered && isBoss == 0 && !dead && switch_lane == 0){
 			is_buttered = false;
 			speed = const_speed
 			image_speed = 0.5
+		}
+	}
+}
+
+if (toss_max > 0)
+{
+	height += (tossed - toss_max/2) / 2
+	tossed += 1
+	if (tossed >= toss_max)
+	{
+		tossed = 0	
+		toss_max = 0
+		if floating = 3 floating = 0;
+		alarm[1] = 1
+	}
+	
+	if global.strongwind = 1 && floating == 3  {
+	    speed = 20; direction = 0;
+	    with heart instance_destroy()
+		if (x > 800 && weak_flying < 0.66) {	 
+			instance_destroy()	
+		}
+		if (x > 600 && weak_flying >= 0.66){
+			speed = 0
 		}
 	}
 }

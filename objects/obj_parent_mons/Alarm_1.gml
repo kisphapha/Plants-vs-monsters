@@ -20,9 +20,14 @@ if switch_lane = 1
 }
 
 
-sprite_index = sprite_walk;
-image_speed = 0.5;
-speed = const_speed;
-direction = 180;
+
+if !isBoss
+{
+	sprite_index = sprite_walk;
+	image_speed = 0.5;
+	speed = const_speed;
+	direction = 180;
+}
+
 attack = 0;
 freeze = 0;

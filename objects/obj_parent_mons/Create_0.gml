@@ -44,6 +44,10 @@ shadow_offset = 0;
 facing = 0;
 reduce_fire = 1;
 reduce_ice = 1;
+tossed = 0;
+toss_max = 0;
+weak_flying = random(1);
+draw_shadow = true;
 
 if y <= 160
 {

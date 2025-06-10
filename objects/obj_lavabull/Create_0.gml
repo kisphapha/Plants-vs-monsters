@@ -7,8 +7,6 @@ sprite_attack = spr_lavabull_3
 
 sprite_dead = spr_lavabull_5
 
-alarm[2] = random_range(30,90)
-
 ramming = 0
 fade = false
 image_speed = 0.5
@@ -21,6 +19,7 @@ if global.begining == 0
 	if global.monster_reveal[mons_id] == 0 {
 		global.monster_reveal[mons_id] = 1
 	}
+	alarm[2] = random_range(30,90)
 }
 weird_death = 1
 reduce_fire = 1/2;

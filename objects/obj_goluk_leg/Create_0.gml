@@ -3,12 +3,13 @@
 
 // Inherit the parent event
 event_inherited();
-
+waterlogged = 0;
 base_y = y + 56
 moving_step = 0;
 moving = 0;
 
-
+passed_speed = 0;
+passed_direction = 0;
 recheck = true;
 base_xx = xx;
 base_yy = yy;
@@ -17,6 +18,16 @@ alarm[0] = 1
 function move(){
 	moving = 1;
 	moving_step = 0;
+	waterlogged = 0;
+	alarm[1] = 5;
+}
+
+function free_move(_speed,_direction){
+	moving = 4;
+	moving_step = 0;
+	passed_direction = _direction
+	passed_speed = _speed
+	waterlogged = 0;
 	alarm[1] = 5;
 }
 
@@ -26,4 +37,5 @@ function stomp(){
 	base_xx = xx;
 	base_yy = yy;
 	alarm[1] = 5;
+	waterlogged = 0;
 }

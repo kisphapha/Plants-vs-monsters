@@ -14,9 +14,12 @@ if (moving == 1)
 		moving = 0;
 		recheck = false;
 		love.speed = 0;
-		love.moving = 0;
-		love.alarm[2] = 45;
-		love.is_right_turn = !love.is_right_turn
+		if (!love.dead)
+		{
+			love.moving = 0;
+			love.alarm[2] = 45;
+			love.is_right_turn = !love.is_right_turn
+		}
 	}
 }
 
@@ -44,5 +47,30 @@ if (moving == 2 or moving = 3)
 			_quake.lvl = 2;
 			var _smash = instance_create_depth(x-40,y,depth,obj_smassh);
 		}
+	}
+}
+
+if (moving == 4)
+{
+	moving_step += 1
+	xx += lengthdir_x(passed_speed,passed_direction)	
+	yy -= (30 - moving_step)/30
+	if (y + 56 > base_y && recheck)
+	{
+		moving = 0;
+		recheck = false;
+	}
+}
+
+if (moving == 0)
+{
+	if place_meeting(x+sprite_width/2-8,y,obj_waterlogged) and waterlogged = 0
+	{
+	    waterlogged = 1
+	} 
+
+	if !place_meeting(x-8,y,obj_waterlogged) and waterlogged = 1 
+	{
+	    waterlogged = 0
 	}
 }

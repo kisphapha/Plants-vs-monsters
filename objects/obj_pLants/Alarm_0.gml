@@ -1,2 +1,2 @@
 visible = true;
-action_sprite_set(spr_pLants, 0, 0.05);
+image_speed = 0.05

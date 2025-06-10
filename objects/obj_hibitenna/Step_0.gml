@@ -22,13 +22,16 @@ if power_active == 1
 	}
 }
 
-if (instance_exists(mons) && mons.floating > 0 && (abs(mons.x - x) < (full_range ? 9999 : 112))
+if (instance_exists(mons) && mons.floating > 0 
+	&& (abs(mons.x - x) < (full_range ? 9999 : 112))
+	&& (abs(mons.y - y) < (full_range ? 9999 : 112))
 	&& (full_range ? (true) : (mons.line >= line - 1 && mons.line <= line + 1))){
 	if (!instance_exists(bolt))
 	{
 		bolt = instance_create_depth(mons.x,mons.y,depth,obj_airzap)
 		bolt.dame = powered ? 10 : 5
 		bolt.lifespan = 300
+		if (mons.object_index != obj_parent_mons) bolt.for_fire = 1
 	} else {
 		bolt.x = mons.x
 		bolt.y = mons.y

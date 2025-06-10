@@ -1,3 +1,4 @@
-action_set_alarm(5400, 0);
+alarm[0] = 5400
 fade = 0;
-action_set_alarm(1, 1);
+alarm[1] = 1 
+tile = noone

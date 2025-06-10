@@ -78,3 +78,5 @@ with controller.lvl
 	}
 }
 
+with obj_hourglass {charging = 3}
+

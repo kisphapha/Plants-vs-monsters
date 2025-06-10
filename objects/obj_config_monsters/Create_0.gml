@@ -646,6 +646,26 @@ with game {
 			weight : 7,
 			floating : 0
 		},
+		{
+			mons_id : 33,
+			picture : spr_jigoku,
+			picture_scale : 1,
+			monster_name : "Jigoku",
+			quotation : "\"\"",
+			behavior : "",
+			anecdote : "!",
+			toughness : monster_hp_level[4],
+			speed_lvl : monster_speed_level[3],
+			dame_lvl : monster_damage_level[5],
+			class : [1],
+			hp : 75,
+			basic_speed : 0.6,
+			dame : 0,
+			map : 6,
+			obj_form : obj_jigoku,
+			weight : 7,
+			floating : 1
+		},
 	]
 }
 

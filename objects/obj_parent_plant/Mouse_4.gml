@@ -1,4 +1,3 @@
-action_set_relative(0);
 if volatile == 0 && instance_exists(pr)
 {
 	if pr.y !=  pr.y0-1000
@@ -7,12 +6,13 @@ if volatile == 0 && instance_exists(pr)
 		{
 			if controller.plant_ = -2
 			{
-				if power_active = 0
+				if power_active = 0 && foodable_progress == 0
 				{
 					controller.plant_ = 0
 					global.pf += -1;
 					controller.planting = 0;				
 					power_active = 1;
+					foodable_progress = cost / 25 * 60
 				}
 			}
 		}
@@ -37,4 +37,3 @@ if powering == 0  && instance_exists(pr)
 		with pr instance_destroy()
 	}
 }
-action_set_relative(0);

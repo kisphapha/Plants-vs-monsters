@@ -5,7 +5,7 @@ sprite_attack = spr_driller3
 sprite_dead = spr_driller4
 digging = 1;
 heart.immue = 1;
-
+draw_shadow = false;
 
 if global.begining == 0
 {

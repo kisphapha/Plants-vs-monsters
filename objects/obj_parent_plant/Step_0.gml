@@ -47,3 +47,8 @@ if (is_idle)
 	}
 }
 depth = -(y);// + sprite_height - sprite_yoffset
+
+if (foodable_progress > 0){
+	foodable_progress -= 1
+	if (foodable_progress <= 0) foodable_progress = 0
+}

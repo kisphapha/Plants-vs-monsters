@@ -31,10 +31,17 @@ if dead = true {
 			y = a.y
 		}
 		with heart instance_destroy();
-        instance_destroy()
+		instance_destroy()
 	}
     else
+	{
 		x = 10000
+		if !instance_exists(a) 
+		{
+			with heart instance_destroy();
+			instance_destroy()
+		}
+	}
 
 }
 

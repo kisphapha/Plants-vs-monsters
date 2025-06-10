@@ -1,6 +1,7 @@
 with (obj_spectator)
 {
-	action_move("000001000", 8);
+	direction = 0;
+	speed = 8
 }
 
 if global.boss == 0

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite_ext(spr_entity_shadow,0,x,y + (sprite_height - sprite_yoffset) - 12 - shadow_offset, sprite_width / 64, 1,0,image_blend,image_alpha)
+if (draw_shadow){
+	draw_sprite_ext(spr_entity_shadow,0,x,y + (sprite_height - sprite_yoffset) - 12 - shadow_offset, sprite_width / 64, 1,0,image_blend,image_alpha)
+}
 
 if waterlogged = 1 && dead = false && floating == 0 && isBoss == 0
 {

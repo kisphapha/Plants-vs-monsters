@@ -36,6 +36,8 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_airzap","path":"objects/obj_airzap/obj_airzap.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_cacao_splash","path":"objects/obj_cacao_splash/obj_cacao_splash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_hotcacao","path":"objects/obj_hotcacao/obj_hotcacao.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_goluk_composites","path":"objects/obj_goluk_composites/obj_goluk_composites.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_tallnut","path":"objects/obj_tallnut/obj_tallnut.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_parent_mons",

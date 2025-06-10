@@ -3,8 +3,8 @@ if chain > 0
 {
 	chain -= 1;
 	repeat 2{
-	    var _blt = instance_create(x,y-8+random_range(-4,4),obj_pea)
-	    _blt.speed = 8; blt.direction = 0;
+	    var _blt = instance_create(x,y-8+random_range(-8,8),obj_pea)
+	    _blt.speed = 8; _blt.direction = 0;
 	    _blt.dame = 1;
 	    _blt.form = 0
 	}

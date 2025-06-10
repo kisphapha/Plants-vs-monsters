@@ -53,5 +53,9 @@ function special_condition(argument0) {
 	    if type = 0 return bounce_phase != 2 && bounce_phase != 3
 		if type = 1 return bounce_phase != 2 && bounce_phase != 3
 	}
+	if object_index = obj_jigoku{   
+		if type = 1 return use_skill == 0 && weak == 0 && other.x < x
+
+	}
 	return true
 }

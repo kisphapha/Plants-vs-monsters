@@ -34,6 +34,7 @@ pattern = [
 		yy : 1
 	}
 ]
+max_time = 0;
 //khai bao monster
 time_level = 3000;
 depth = -2900
@@ -44,7 +45,7 @@ global.xac_suat = 10;
 
 lvl = 1;
 global.map = 0;
-action_set_alarm(60, 11);
+//action_set_alarm(60, 11);
 
 #region pattern functions
 //Use for not ending normally levels like pattern mode
