@@ -20,5 +20,3 @@ lvl = 5;
 world_type = 3
 fixed_seeds=[1,14,15,3,10,9]
 global.map = 2;
-action_set_alarm(5, 10);
-action_set_alarm(60, 11);

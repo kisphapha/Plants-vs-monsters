@@ -8,6 +8,7 @@ if special_condition(0) && transparent == 0 && !dead
 			exit;	
 		}
 		var _dame = other.damage*(1-immortal);
+		var _dead_type = 0
 		
 		if (other.type == 1)
 		{
@@ -43,15 +44,11 @@ if special_condition(0) && transparent == 0 && !dead
 			_dame *= reduce_fire
 		}
 		
-		hp -= _dame
-
-		if (hp <= 0)
-		{
-			dead_type = 0;
-			if (_dame >= hpmax)
-				dead_type = 1
-			dead = true;
-		}
+		if (_dame >= hpmax)
+			_dead_type = 1
+			
+		take_damage(_dame,_dead_type)
+		
 		array_push(other.black_list,id)
 	}
 }

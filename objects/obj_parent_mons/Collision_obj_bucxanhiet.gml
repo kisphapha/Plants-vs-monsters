@@ -8,12 +8,7 @@ if transparent == 0
 			if (ds_list_find_index(collide_list,other.id) == -1)
 			{
 				ds_list_add(collide_list,other.id)
-				hp += -other.dame*(1-immortal);
-				if (hp <= 0)
-				{
-					dead = true;
-				}
-				dead_type = 1;		
+				take_damage(other.dame*(1-immortal), 1)	
 			}			
 		}
 	}

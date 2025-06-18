@@ -1,7 +1,7 @@
 
 if special_condition(0) && transparent == 0 && !dead
 {
-
+	var _dame = 0, _dead_type = 0;
 	if (other.fired)
 	{	
 		var _burn = instance_create_depth(other.x,other.y,depth - 1,obj_fireburn)
@@ -23,7 +23,7 @@ if special_condition(0) && transparent == 0 && !dead
 			_bomb.size_x = 0.3
 			_bomb.size_y = 0.3
 		} else {
-			hp -= 1*(1-immortal);	
+			_dame = 1*(1-immortal);	
 		}
 	}
 	
@@ -33,10 +33,7 @@ if special_condition(0) && transparent == 0 && !dead
 		instance_destroy()
 	}
 	
-	if (hp <= 0)
-	{
-		dead_type = 0;
-		if other.charged dead_type = 1;
-		dead = true;
-	}
+	if other.charged _dead_type = 1;
+
+	take_damage(_dame,_dead_type)
 }

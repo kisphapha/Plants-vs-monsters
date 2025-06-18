@@ -56,6 +56,7 @@ left_leg.xx = -20
 left_leg.yy = -8
 left_leg.love = self;
 idle_phase = 0;
+is_composite = true;
 alarm[3] = 30;
 
 

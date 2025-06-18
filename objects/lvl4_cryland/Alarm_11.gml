@@ -1,3 +1,3 @@
 
-global.sun += 2750-50;
+global.sun += 2750 - global.init_sun;
 

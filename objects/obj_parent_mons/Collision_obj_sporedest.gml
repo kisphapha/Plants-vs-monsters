@@ -1,6 +1,6 @@
 if special_condition(0) && transparent == 0 && other.active == 1 && !dead
 {
-	hp += -(2+other.powered*23)*(1-immortal);
+	take_damage((2+other.powered*23)*(1-immortal))
 	with (other) instance_destroy()
 	if (hp <= 0)
 	{
@@ -17,7 +17,5 @@ if special_condition(0) && transparent == 0 && other.active == 1 && !dead
 		}
 		action_set_relative(0);
 		action_effect(5, tile.x+32, tile.y+32, 2, 8388736, 0);
-		dead_type = 0;
-		dead = true;
 	}
 }

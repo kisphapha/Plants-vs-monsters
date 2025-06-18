@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"erruption",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"erruption",
+  "parent":{
+    "name":"encapsulation",
+    "path":"folders/Scripts/encapsulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

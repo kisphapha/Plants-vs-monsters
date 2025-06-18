@@ -22,7 +22,7 @@ global.map = 4;
 world_type = 5
 global.pattern = 1
 is_drop = false
-spawn_dynamic = 200
+spawn_dynamic = 500
 pattern = [
 	{
 		plant_id : 30,

@@ -2,13 +2,17 @@
 if special_condition(0) && transparent == 0 && !dead
 {
 	//hp += -other.damage*(1-immortal);
+	var _dame = 0
 	if freeze = 1 or cold = 1{
 		freeze = 0
 		cold = 0
-		sprite_index = sprite_walk;
-		image_speed = 0.5;
-		speed = const_speed;
-		direction = 180;	
+		if (!isBoss)
+		{
+			sprite_index = sprite_walk;
+			image_speed = 0.5;
+			speed = const_speed;
+			direction = 180;	
+		}
 	}
 	if (other.lvl < 4){
 		var _dame_instant =	instance_create_depth(x,y,depth - 1,obj_damage_once)
@@ -26,7 +30,7 @@ if special_condition(0) && transparent == 0 && !dead
 	} else {
 		if (!array_contains(other.black_list, id)){
 			array_push(other.black_list,id)	
-			hp -= other.damage * reduce_fire;
+			_dame = other.damage * reduce_fire;
 			instance_create_depth(other.x,other.y,depth - 1,obj_fireburn, {
 				sprite_index : spr_fireburn_lvl_4	
 			})
@@ -37,9 +41,5 @@ if special_condition(0) && transparent == 0 && !dead
 		}
 	}
 	
-	if (hp <= 0)
-	{
-		dead_type = 0;
-		dead = true;
-	}
+	take_damage(_dame)
 }

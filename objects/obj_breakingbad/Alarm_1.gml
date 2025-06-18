@@ -1,4 +1,4 @@
 if instance_exists(tile)
-tile.unplantable = 1
+tile.unplantable += 1
 
 

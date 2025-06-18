@@ -22,7 +22,8 @@ function add_random_crystal(argument0, argument1, argument2) {
 			ds_list_delete(possible_tile,_random_index)
 			cr = instance_create(_tile.x+32,_tile.y+32,obj_crystal)
 		    cr.tile = _tile;
-		    _tile.unplantable = 2;
+		    _tile.unplantable += 1;
+			_tile.crystalize = 1;
 		}
 	}
 	/*repeat min(counting_possible,amount) {

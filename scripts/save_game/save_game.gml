@@ -34,7 +34,8 @@ function save_game(){
 			ds_map_add(_content, "monsters", _monsters);
 			ds_map_add(_content, "plants", _plants);			
 			ds_map_add(_content, "init_recharge", global.init_recharge);		
-			ds_map_add(_content, "balance", 0);
+			ds_map_add(_content, "balance", 0);			
+			ds_map_add(_content, "init_sun", global.init_sun);
 
 			var _file_name = game.selected_user;
 			create_and_save_json_file(_file_name, _content, 1);

@@ -19,11 +19,6 @@ if !dead
 				alarm[6] = 13
 		    }
 		}
-		hp += -other.dame*(1-immortal);
-		if (hp <= 0)
-		{
-			dead_type = 0;
-			dead = true;
-		}
+		take_damage(other.dame*(1-immortal))
 	}
 }

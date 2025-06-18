@@ -48,6 +48,11 @@ tossed = 0;
 toss_max = 0;
 weak_flying = random(1);
 draw_shadow = true;
+is_composite = false;
+cold_resist = false;
+sprite_walk = sprite_index
+sprite_attack = sprite_index
+sprite_dead = sprite_index
 
 if y <= 160
 {
@@ -78,3 +83,14 @@ if _index != -1 {
 	const_speed = game.monsters_library[_index].basic_speed
 	floating = game.monsters_library[_index].floating
 }
+
+function take_damage(_dame, _dead_type = 0){
+	hp -= _dame	
+	if (hp <= 0)
+	{
+		dead = true;
+		dead_type = _dead_type
+	}
+	damage_action(_dame,_dead_type)
+}
+function damage_action(_dame = 0, _dead_type = 0){}

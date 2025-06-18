@@ -59,7 +59,7 @@ function spawn_random()
 	}
      
 	var _wave_weight = 1
-	_wave_weight = 2 + (waves div min(1, 500/spawn_dynamic)) * 2
+	_wave_weight = 2 + (waves div max(1, 500/spawn_dynamic)) * 2
      
 	if (waves < 10) _wave_weight = 4
 	if (waves < 5) _wave_weight = 2

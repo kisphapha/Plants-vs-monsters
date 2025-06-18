@@ -7,16 +7,14 @@ if special_condition(0)
 		{
 			if other.melee == 1
 			{
-				hp += -0.1*(1-immortal);
+				var _dame = 0.1*(1-immortal)
+
 				if other.powered == 1
 				{
-					hp += -0.1*(1-immortal);
+					_dame += 0.1*(1-immortal);
 				}
-				if hp <= 0				
-				{
-					dead = true;
-					dead_type = 0;
-				}
+
+				take_damage(_dame)
 			}
 		}
 	}

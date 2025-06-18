@@ -1,3 +1,3 @@
-if instance_exists(tile) tile.unplantable = 1
+if instance_exists(tile) tile.unplantable += 1
 
 

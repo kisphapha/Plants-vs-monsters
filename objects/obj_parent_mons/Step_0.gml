@@ -6,12 +6,12 @@ if instance_exists(heart)
 	heart.line = line
 	powered = heart.powered
 }
-if cold = 1
+if cold = 1 && !cold_resist
 {
 	if speed = const_speed speed = const_speed/2
 } 
 
-if freeze = 1  && switch_lane = 0
+if freeze = 1  && switch_lane = 0 && !cold_resist
 {speed = 0; image_speed = 0}
 
 if switch_lane = 0 && untouch <= 1 && throwing = 0 && throws ==0

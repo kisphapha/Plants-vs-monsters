@@ -35,35 +35,35 @@ switch (attack){
 
         break;
 
-//attack 3: venom shoot
+	//attack 3: venom shoot
 
-    case 3:
+	    case 3:
 
-        sprite_index = spr_scorpiking3;
+	        sprite_index = spr_scorpiking3;
 
-        image_speed = 0.5;
-
-
-
-        break;
+	        image_speed = 0.5;
 
 
 
-//attack 4: Laser of Destruction
-
-    case 4:
-
-        sprite_index = spr_scorpiking3;
-
-        image_speed = 0.5;
-
-        hpp = hp;
-
-        break;
+	        break;
 
 
 
-}
+	//attack 4: Laser of Destruction
+
+	    case 4:
+
+	        sprite_index = spr_scorpiking3;
+
+	        image_speed = 0.5;
+
+	        hpp = hp;
+
+	        break;
+
+
+
+	}
 
 }
 

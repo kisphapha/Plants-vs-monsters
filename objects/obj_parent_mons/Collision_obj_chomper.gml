@@ -8,12 +8,7 @@ else
 {
 	if other.eating == 2
 	{
-		hp -= 15;
-		if (hp <= 0)
-		{
-			dead_type = 2;
-			dead = true;
-		}
+		take_damage(15,2)
 	}
 }
 

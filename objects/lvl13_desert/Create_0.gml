@@ -13,4 +13,4 @@ conveyor_array = [obj_ca8,obj_ca9,obj_ca10,obj_ca11,obj_ca12,obj_ca13,obj_ca8,ob
 conveyor_change = 0
 boss_health = 2000
 boss = obj_scopiking
-action_set_alarm(60, 11);
+alarm[11] = 60

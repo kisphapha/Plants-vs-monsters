@@ -18,6 +18,8 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_kang_blast","path":"objects/obj_kang_blast/obj_kang_blast.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_fireskull","path":"objects/obj_fireskull/obj_fireskull.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_firesmash","path":"objects/obj_firesmash/obj_firesmash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_mukbang_bite","path":"objects/obj_mukbang_bite/obj_mukbang_bite.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_qwrath_tails","path":"objects/obj_qwrath_tails/obj_qwrath_tails.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_PR",

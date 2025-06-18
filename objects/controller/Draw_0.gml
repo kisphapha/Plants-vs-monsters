@@ -54,20 +54,4 @@ with obj_seedy{
 }
 
 
-if global.begining == 0
-{
-	with obj_parent_mons{
-	    draw_set_color(c_black)
-	    draw_rectangle(x-20,y-sprite_yoffset-10,x+20,y-sprite_yoffset-15,false)
-	    if immortal = 0   draw_set_color(c_red) else    draw_set_color(make_color_rgb(155,193,192))
-        draw_rectangle(x-20,y-sprite_yoffset-10,x-20+hp/hpmax*40,y-sprite_yoffset-15,false)
-	    if cold = 1
-	    draw_sprite_stretched(spr_ice,0,x-sprite_xoffset,y-sprite_yoffset,sprite_width,sprite_height)
-	    if freeze = 1
-	    draw_sprite_stretched(spr_ice,1,x-sprite_xoffset,y-sprite_yoffset,sprite_width,sprite_height)
-	    if powered = 1
-	    draw_sprite_stretched(spr_plantfoodst,random(6),x-sprite_xoffset,y-sprite_yoffset,sprite_width,sprite_height)
-	    if poison > 0
-	    draw_sprite_ext(spr_possoned,random(6),x,y,sprite_width/80,sprite_height/80,image_angle,image_blend,image_alpha)
-	}
-}
+

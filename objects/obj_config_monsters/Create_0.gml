@@ -666,6 +666,26 @@ with game {
 			weight : 7,
 			floating : 1
 		},
+		{
+			mons_id : 34,
+			picture : spr_qwarth_full,
+			picture_scale : 1,
+			monster_name : "Qwarth",
+			quotation : "\"!\"",
+			behavior : "",
+			anecdote : "",
+			toughness : monster_hp_level[7],
+			speed_lvl : monster_speed_level[0],
+			dame_lvl : monster_damage_level[6],
+			class : [6],
+			hp : 6000,
+			basic_speed : 2,
+			dame : 0,
+			map : 6,
+			obj_form : obj_qwrath,
+			weight : 999,
+			floating : 1
+		},
 	]
 }
 

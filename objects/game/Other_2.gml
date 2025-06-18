@@ -39,6 +39,7 @@ global.lvl = noone
 global.confirm_result = -1
 global.map = 0
 global.init_recharge = false
+global.init_sun = 50
 reset_leveltype()
 /* */
 /*  */
