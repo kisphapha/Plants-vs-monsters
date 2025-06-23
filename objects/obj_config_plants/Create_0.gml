@@ -708,7 +708,7 @@ with game
 			recharge_time : 300,
 			cost : 100,
 			obj_form : obj_hibitenna,
-			drop_at : noone,
+			drop_at : lvl1_volcanic,
 			cursor : spr_hibitenna
 		},
 		{
@@ -729,7 +729,7 @@ with game
 			recharge_time : 300,
 			cost : 175,
 			obj_form : obj_torchwood,
-			drop_at : noone,
+			drop_at : lvl3_volcanic,
 			cursor : spr_torchwood
 		},
 		{
@@ -750,7 +750,7 @@ with game
 			recharge_time : 300,
 			cost : 225,
 			obj_form : obj_daikopter,
-			drop_at : noone,
+			drop_at : lvl4_volcanic,
 			cursor : spr_daikopter
 		},
 		{
@@ -772,7 +772,7 @@ with game
 			recharge_time : 1500,
 			cost : 125,
 			obj_form : obj_tallnut,
-			drop_at : noone,
+			drop_at : lvl5_volcanic,
 			cursor : spr_tn2
 		},
 		{
@@ -793,7 +793,7 @@ with game
 			recharge_time : 900,
 			cost : 50,
 			obj_form : obj_hotcacao,
-			drop_at : noone,
+			drop_at : lvl7_volcanic,
 			cursor : spr_hotcacao
 		},
 		{
@@ -815,7 +815,7 @@ with game
 			recharge_time : 300,
 			cost : 450,
 			obj_form : obj_gatling_pea,
-			drop_at : noone,
+			drop_at : lvl9_volcanic,
 			cursor : spr_gatling_pea
 		},
 		{
@@ -837,7 +837,7 @@ with game
 			recharge_time : 300,
 			cost : 600,
 			obj_form : obj_magma_melon,
-			drop_at : noone,
+			drop_at : lvl12_volcanic,
 			cursor : spr_fire_melon_1
 		},
 		{

@@ -47,7 +47,7 @@ if instance_number(obj_enemies) == 1
 		}
 		
 		if _current_level.object_index == lvl13_desert || _current_level.object_index == lvl14_cryland || _current_level.object_index == lvl12_swamp
-			|| _current_level.object_index == lvl10_kang_dynasty
+			|| _current_level.object_index == lvl10_kang_dynasty || _current_level.object_index == lvl15_volcanic
 		{
 			if _ref_level == _current_level.lvl
 			{

@@ -8,6 +8,10 @@ max_val = 1
 
 banning = 2
 
+xx = 0
+
+list = []
+
 tile = instance_nearest(x-20,y-20,obj_tiles)
 
 tile.unplantable = 1

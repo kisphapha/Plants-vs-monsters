@@ -1,11 +1,11 @@
 if !dead{
 	
-	attack = choose(1,1,2,2,4,5)
+	attack = choose(1,1,2,2,2,4,5)
 	if (angery > 0){
-		attack = choose(1,1,2,2,3,4,5)
+		attack = choose(1,1,2,2,2,3,4,5)
 	} 
 	if (angery > 1){
-		attack = choose(1,1,2,2,3,4,5,6)
+		attack = choose(1,1,2,2,2,3,4,5,6)
 	} 
 		
 	

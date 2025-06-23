@@ -167,6 +167,7 @@ if (toss_max > 0)
 		toss_max = 0
 		if floating = 3 floating = 0;
 		alarm[1] = 1
+		speed = 0
 	}
 	
 	if global.strongwind = 1 && floating == 3  {

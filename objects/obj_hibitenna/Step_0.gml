@@ -22,33 +22,53 @@ if power_active == 1
 	}
 }
 
-if (instance_exists(mons) && mons.floating > 0 
-	&& (abs(mons.x - x) < (full_range ? 9999 : 112))
-	&& (abs(mons.y - y) < (full_range ? 9999 : 112))
-	&& (full_range ? (true) : (mons.line >= line - 1 && mons.line <= line + 1))){
-	if (!instance_exists(bolt))
-	{
-		bolt = instance_create_depth(mons.x,mons.y,depth,obj_airzap)
-		bolt.dame = powered ? 10 : 5
-		bolt.lifespan = 300
-		if (mons.object_index != obj_parent_mons) bolt.for_fire = 1
-	} else {
-		bolt.x = mons.x
-		bolt.y = mons.y
-		coords = [{xx : x, yy : y - 32}]
-		var _dir = point_direction(x,y - 32, bolt.x, bolt.y)
-		var _len = point_distance(x,y - 32, bolt.x, bolt.y)
-		var _total_points = floor( _len / 16)
-		for (var _i = 1; _i <= _total_points; _i += 1){
+if (instance_exists(mons) && mons.floating > 0 ){
+	var _flag = false
+	
+	if (mons.object_index != obj_volcano_meteor &&
+		abs(x - mons.x) < 112 && (mons.line >= line - 1 && mons.line <= line + 1)){
+		_flag = true	
+	}
+
+	if (mons.object_index == obj_volcano_meteor){
+		var _coord = find_coordinate(mons.dest_tile.x,mons.dest_tile.y)
+		_flag = (_coord.x_coord >= coord.x_coord - 1 && _coord.x_coord <= coord.x_coord + 1
+		&& _coord.y_coord >= coord.y_coord - 1 && _coord.y_coord <= coord.y_coord + 1)
+		&& point_distance(x,y,mons.x,mons.y) < 200
+	}
+	
+	if (full_range){
+		_flag = true	
+	}
+	
+	
+	if (_flag){
+		if (!instance_exists(bolt))
+		{
+			bolt = instance_create_depth(mons.x,mons.y,depth,obj_airzap)
+			bolt.dame = powered ? 10 : 5
+			bolt.lifespan = 300
+			if (mons.object_index != obj_parent_mons) bolt.for_fire = 1
+		} else {
+			bolt.x = mons.x
+			bolt.y = mons.y
+			coords = [{xx : x, yy : y - 32}]
+			var _dir = point_direction(x,y - 32, bolt.x, bolt.y)
+			var _len = point_distance(x,y - 32, bolt.x, bolt.y)
+			var _total_points = floor( _len / 16)
+			for (var _i = 1; _i <= _total_points; _i += 1){
+				array_push(coords, {
+					xx : x + lengthdir_x(_len * _i / _total_points, _dir) + lengthdir_x(random_range(-32,32),90),				
+					yy : y + lengthdir_y(_len * _i / _total_points, _dir) + lengthdir_y(random_range(-32,32),90) - 32,	
+				})
+			}
 			array_push(coords, {
-				xx : x + lengthdir_x(_len * _i / _total_points, _dir) + lengthdir_x(random_range(-32,32),90),				
-				yy : y + lengthdir_y(_len * _i / _total_points, _dir) + lengthdir_y(random_range(-32,32),90) - 32,	
+				xx : bolt.x,
+				yy : bolt.y + mons.height
 			})
 		}
-		array_push(coords, {
-			xx : bolt.x,
-			yy : bolt.y + mons.height
-		})
+	} else if (instance_exists(bolt)) {
+		instance_destroy(bolt)
 	}
 } else if (instance_exists(bolt)) {
 	instance_destroy(bolt)

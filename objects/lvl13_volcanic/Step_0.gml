@@ -1,2 +1,2 @@
 event_inherited()
-global.xac_suat = 8 + waves * 1.5;
+global.xac_suat = 5 + waves * 1.6;

@@ -4,6 +4,7 @@ function reset_leveltype() {
 	global.fixed = 0
 	global.last_stand = 0
 	global.tree_of_wisdom = 0
+	global.recharge_boost = 1.0
 	global.restrict = 0
 	global.pattern = 0	
 	global.timer = 0	

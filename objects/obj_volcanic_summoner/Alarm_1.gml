@@ -59,7 +59,7 @@ if c >= 6 and c < 6.5 monster = obj_goluk
 
 if c >= 6.5 and c < 7 monster = obj_jigoku
 
-if c >= 5 and c < 7.5 monster = obj_gigantic}
+if c >= 7 and c < 7.5 monster = obj_gigantic}
 
 //100 190 275 350 440
 
@@ -71,4 +71,4 @@ instance_create_depth(_xx,_yy,0,monster)
 
 
 
-alarm[1] = random_range(1 + love.hp/love.hpmax * 9,10 + love.hp/love.hpmax * 40)
+alarm[1] = random_range(1 + love.hp/love.hpmax * 9,8 + love.hp/love.hpmax * 40)

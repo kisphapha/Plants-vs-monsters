@@ -1,6 +1,11 @@
 started = 1
 
-if waves < max_waves waves += 1
+if waves < max_waves 
+{
+	waves += 1
+	with obj_cursedstatue value += 1
+}
+
 
 if waves = hugewave[1] {instance_create(view_get(0)+view_get(2)/2,+view_get(1)+view_get(3)/2,obj_hugewave)}
 
@@ -11,7 +16,6 @@ if waves = max_waves {instance_create(view_get(0)+view_get(2)/2,+view_get(1)+vie
                         controller.final = 1}
 
                         
-
 if waves > 0 and waves <= 2
 { 
 	instance_create(680+random_range(-32,32),script0(0),obj_monster); 
@@ -114,6 +118,14 @@ if waves = 18
 	repeat 2 instance_create(random_range(432,608),script0(0),obj_darkpatrol)
 	alarm[0] = 900
 }
+if waves = 19
+{ 
+	repeat 5 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
+	repeat 5 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);
+	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_jigoku);
+	repeat 2 instance_create(random_range(432,608),script0(0),obj_darkpatrol)
+	alarm[0] = 600
+}
 if waves = 20 or waves = 21
 { 
 	repeat 8 instance_create(680+random_range(-32,32),script0(0),obj_monster);
@@ -140,5 +152,4 @@ if waves = 24
 	repeat 8 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);
 	repeat 3 instance_create(680+random_range(-32,32),script0(0),obj_jigoku);
 	repeat 3 instance_create(random_range(432,608),script0(0),obj_darkpatrol)
-	alarm[0] = 900
 }

@@ -21,4 +21,4 @@ max_waves = 20;
 lvl = 13;
 global.map = 5;
 world_type = 6
-is_drop	= true;
+is_drop	= false;

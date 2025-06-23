@@ -23,6 +23,9 @@ if (!dead){
 else 
 {
     hp = 0
+	
+	if (global.begining == 1) instance_destroy()
+	
     sprite_index = sprite_dead;
     image_speed = 0.5
 	if (fade) {

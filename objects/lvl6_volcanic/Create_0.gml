@@ -24,3 +24,6 @@ world_type = 6
 is_drop	= false
 global.timer = 1;
 max_time = 6300;
+noti_message = "In this type of level, you have to win the game before the time running out!"
+noti_color = c_yellow
+tutorial_time = 600;

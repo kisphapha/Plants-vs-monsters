@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function find_coordinate(){
+function find_coordinate(_xx = x, _yy = y){
 	xx[1] = 80; xx[2] = 144; xx[3] = 208; xx[4] = 272; xx[5] = 336; xx[6] = 400; xx[7] = 464; xx[8] = 528; xx[9] = 592
 	yy[1] = 110; yy[2] = 190; yy[3] = 275; yy[4] = 350; yy[5] = 440
 	//find coordinate
@@ -9,8 +9,8 @@ function find_coordinate(){
 	for (var _i = 1; _i <= 9; _i += 1)
 	{			
 		
-		if (abs(xx[_i] - x) < _min_x){
-			_min_x = abs(xx[_i] - x)
+		if (abs(xx[_i] - _xx) < _min_x){
+			_min_x = abs(xx[_i] - _xx)
 			_curr_x = _i
 		}
 	}
@@ -18,8 +18,8 @@ function find_coordinate(){
 	for (var _i = 1; _i <= 5; _i += 1)
 	{			
 		
-		if (abs(yy[_i] - y) < _min_y){
-			_min_y = abs(yy[_i] - y)
+		if (abs(yy[_i] - _yy) < _min_y){
+			_min_y = abs(yy[_i] - _yy)
 			_curr_y = _i
 		}
 	}

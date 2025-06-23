@@ -6,5 +6,6 @@ if (other.love != self && other.tossable && special_condition(0)
 	tossed = 0
 	direction = 180;
 	speed = 8;
+	if (object_index == obj_goluk) speed = 3;
 	if floating == 0 floating = 3;
 }

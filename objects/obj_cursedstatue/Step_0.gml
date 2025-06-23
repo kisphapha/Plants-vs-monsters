@@ -15,30 +15,19 @@ if value = max_val {
         c.image_index = 1;
 
         for ( i = 1 ; i <= instance_number(obj_seedy); i += 1){
-
             seed[i].ban_choosing = 0  
-
-            number[i] = 0  
-
-            list[i-1] = 0 
-
         }
 
-        j = 0
-
+		number = []
+		list = []
         repeat amount {      
-
             do {
-
-                xx = round(random_range(1,7))
-
-                list[j] = xx             
-
+                xx = round(random_range(1,instance_number(obj_seedy)))
             } 
-
-            until !alreadyExists(xx,list,7)
-
-            number[j] = seed[xx]; j += 1;
+            until !array_contains(list,xx)
+			
+			array_push(list,xx)        
+            array_push(number,seed[xx]);
 
         }
 

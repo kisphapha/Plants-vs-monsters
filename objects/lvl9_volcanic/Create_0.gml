@@ -16,6 +16,7 @@ repeat 1 instance_create(random_range(656,828),random_range(104,452),obj_goluk)
 
 
 global.xac_suat = 9999999;
+global.last_stand = 1
 hugewave[1] = 8;
 max_waves = 16;
 lvl = 9;

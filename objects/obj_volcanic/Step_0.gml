@@ -1,58 +1,45 @@
-var __b__;
-__b__ = action_if_variable(global.world6_level, 0, 2);
-if __b__
+if global.world6_level > 0
 {
-{
-action_sprite_set(spr_volcanic, 0, 0);
-lock = 0;
-}
+	action_sprite_set(spr_volcanic, 0, 0);
+	lock = 0;
 }
 else
 {
-{
-lock = 1;
-action_sprite_set(spr_volcanic, 1, 0);
+	lock = 1;
+	action_sprite_set(spr_volcanic, 1, 0);
 }
-}
-__b__ = action_if_variable(levelsystem1.lock_sequence, 7, 0);
-if __b__
+if levelsystem1.lock_sequence == 7
 {
-action_move_to(120, 240);
+	action_move_to(120, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, 5, 0);
-if __b__
+if levelsystem1.lock_sequence == 5
 {
-action_move_to(520, 240);
+	action_move_to(520, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, 4, 0);
-if __b__
+if levelsystem1.lock_sequence == 4
 {
-action_move_to(720, 240);
+	action_move_to(720, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, 3, 0);
-if __b__
+if levelsystem1.lock_sequence == 3
 {
-action_move_to(920, 240);
+	action_move_to(920, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, 2, 0);
-if __b__
+if levelsystem1.lock_sequence == 2
 {
-action_move_to(1120, 240);
+	action_move_to(1120, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, 1, 0);
-if __b__
+
+if levelsystem1.lock_sequence == 1
 {
-action_move_to(1320, 240);
+	action_move_to(1320, 240);
 }
-__b__ = action_if_variable(levelsystem1.lock_sequence, position, 0);
-if __b__
+
+if levelsystem1.lock_sequence == position
 {
-{
-action_move_to(320, 240);
-action_sprite_transform(0.75, 0.75, 0, 0);
-}
+	action_move_to(320, 240);
+	action_sprite_transform(0.75, 0.75, 0, 0);
 }
 else
 {
-action_sprite_transform(0.5, 0.5, 0, 0);
+	action_sprite_transform(0.5, 0.5, 0, 0);
 }

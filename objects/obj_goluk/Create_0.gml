@@ -1,4 +1,5 @@
 const_speed = 0.3
+heart = noone
 action_inherited();
 mons_id = 32
 sprite_walk = spr_goluk_full

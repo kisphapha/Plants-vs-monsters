@@ -226,8 +226,11 @@ if attack == 1
 
 if (dead){
 	hp = 0
+	
 	if (moving != 5)
 	{
+		if (global.begining == 1)  instance_destroy()
+		with heart instance_destroy()
 		moving = 5
 		moving_step = 0;
 		alarm[2] = 0;

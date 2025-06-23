@@ -18,7 +18,7 @@ function add_rain_meteor(_amount, _from, _to) {
 			var _meteor = instance_create_depth(_tile.x + 32 + 900, _tile.y + 32 - 900,depth,obj_volcano_meteor)
 			_meteor.dest_tile = _tile
 			
-			var _warning = instance_create_depth(_tile.x + 32 , _tile.y + 32 ,-_tile.y - 32,obj_warning)
+			var _warning = instance_create_depth(_tile.x + 32 , _tile.y + 32 ,-_tile.y - 40,obj_warning)
 			_meteor.warning = _warning
 			_warning.duration = -1;
 		}

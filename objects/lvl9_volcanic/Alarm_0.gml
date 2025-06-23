@@ -81,13 +81,13 @@ if waves = 12 or waves = 13
 	repeat 1 instance_create(680+random_range(-32,32),script0(0),obj_goluk);
 	alarm[0] = 600
 }
-if waves = 13
+if waves = 14 or waves = 15
 { 
 	repeat 4 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
 	repeat 8 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);
-	alarm[0] = 900
+	alarm[0] = 600
 }
-if waves = 14
+if waves = 16
 { 
 	repeat 12 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);

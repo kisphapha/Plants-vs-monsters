@@ -38,6 +38,8 @@ if (tekkai_phase == 4){
 	}
 	
 	add_rain_meteor(4 + angery * 2,1,7)
+	var _summoner = instance_create_depth(x,y,0,obj_volcanic_summoner)
+	_summoner.love = self
 	alarm[10] = 150
 }
 if (tekkai_phase == 5){

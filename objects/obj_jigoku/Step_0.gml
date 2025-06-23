@@ -8,7 +8,7 @@ if global.strongwind = 1 {
 	alarm[2] = 0;
 	if (height < 0)
 	{
-		x += 15;
+		x += 5;
 		speed = 0;
 	}
 	

@@ -12,23 +12,26 @@ if waves = max_waves {instance_create(view_get(0)+view_get(2)/2,+view_get(1)+vie
 
 if waves = 1 or waves = 2
 { 
-	instance_create(680+random_range(-32,32),script0(0),obj_monster); 
+	var _mons = instance_create(680+random_range(-32,32),script0(0),obj_monster); 
+	
+	if waves == 1 _mons.heart.powered = 1
+	
 	alarm[0] = 600
 }
 
-if waves = 4
+if waves = 3
 { 
 	instance_create(680+random_range(-32,32),script0(0),obj_brownie); 
 	alarm[0] = 600
 }
 
-if waves = 5
+if waves = 4
 { 
 	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul); 
 	alarm[0] = 600
 }
 
-if waves = 6
+if waves = 5
 {
 	instance_create(680+random_range(-32,32),script0(0),obj_hardcore); 
 	alarm[0] = 600
@@ -49,9 +52,8 @@ if waves = 7
 	repeat 3 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
 	repeat 4 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);
 	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_lavabull); 
-	repeat 1 instance_create(680+random_range(-32,32),script0(1),obj_goluk);	
-	repeat 1 instance_create(680+random_range(-32,32),script0(3),obj_goluk);
-	repeat 1 instance_create(680+random_range(-32,32),script0(5),obj_goluk);
+	repeat 1 instance_create(680+random_range(-32,32),script0(2),obj_goluk);	
+	repeat 1 instance_create(680+random_range(-32,32),script0(4),obj_goluk);
 
 	alarm[0] = 900
 }
@@ -71,6 +73,7 @@ if (waves = 9 or waves = 10){
 	repeat 6 instance_create(680+random_range(-32,32),script0(0),obj_brownie);	
 	repeat 4 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
 	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_goluk);
+	alarm[0] = 600
 }
 if waves = 11 or waves = 12
 { 

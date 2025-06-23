@@ -1,6 +1,6 @@
 if charged && global.line[line] = 1 and global.begining = 0 and distance > 0 && instance_exists(mons) && powering == 0{
 	charged = false;
-	if (random(4) < 1){
+	if (random(3) < 1){
 		sprite_index = spr_kernelpult_1
 		is_throw_butter = true
 	} else {

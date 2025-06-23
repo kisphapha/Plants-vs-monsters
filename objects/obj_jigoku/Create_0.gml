@@ -14,8 +14,6 @@ if global.begining == 0
 {
 	speed = const_speed
 	direction = 180
-	sprite_index = sprite_walk
-	image_speed = 0.5
 	if global.monster_reveal[mons_id] == 0 {
 		global.monster_reveal[mons_id] = 1
 	}
@@ -23,6 +21,8 @@ if global.begining == 0
 phase = 0; 
 height = 0;
 weird_death = 1;
+sprite_index = sprite_walk
+image_speed = 0.5
 alarm[3] = 20;
 alarm[4] = 30;
 enemy = noone;

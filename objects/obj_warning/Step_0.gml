@@ -11,7 +11,7 @@ if (duration > 0){
 }
 
 if (phase == 0){
-	image_alpha -= 0.02	
+	image_alpha -= 0.04	
 } else {
-	image_alpha += 0.02	
+	image_alpha += 0.04
 }

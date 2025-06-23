@@ -77,6 +77,7 @@ if waves = 10 or waves = 11
 if (waves = 12){
 	erruption(360,120,60,true)
 	repeat 3 instance_create(680+random_range(-32,32),script0(0),obj_jigoku);
+	alarm[0] = 600;
 }
 if waves = 13 or waves = 14
 { 
@@ -140,5 +141,4 @@ if waves = 25
 	repeat 4 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
 	repeat 8 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);
 	repeat 3 instance_create(680+random_range(-32,32),script0(0),obj_jigoku);
-	alarm[0] = 900
 }

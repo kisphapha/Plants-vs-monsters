@@ -17,7 +17,7 @@ if (charging == 3){
 	cur_time -= 1;	
 	if (cur_time < 0){
 		with controller {
-			if lost == 0 && win == 0 lost = 1;	
+			if lost == 0 && lvl.win == 0 lost = 1;	
 		}
 		charging = 4;
 	}

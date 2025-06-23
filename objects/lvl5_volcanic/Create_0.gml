@@ -10,7 +10,7 @@ repeat 2 instance_create(random_range(656,828),random_range(104,452),obj_brownie
 
 repeat 1 instance_create(random_range(656,828),random_range(104,452),obj_hardcore)
 
-repeat 1 instance_create(random_range(656,828),random_range(104,452),obj_blackdog)
+repeat 1 instance_create(random_range(656,828),random_range(104,452),obj_lavabull)
 
 repeat 1 instance_create(random_range(656,828),random_range(104,452),obj_fireghoul)
 

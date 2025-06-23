@@ -22,5 +22,5 @@ delay = 300
 lvl = 12;
 global.map = 5;
 world_type = 6
-is_drop	= false;
+is_drop	= true;
 action_set_alarm(60, 11);

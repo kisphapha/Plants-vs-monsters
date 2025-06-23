@@ -35,6 +35,9 @@ if controller.win == 1
 				if _lvl.world_type == 5{
 			        room_goto(r_kangdynasty)
 			    }
+				if _lvl.world_type == 6{
+			        room_goto(r_volcanic)
+			    }
 			}
 		}
 	}

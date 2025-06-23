@@ -49,4 +49,17 @@ global.slot[7] = 0
 
 global.slot[8] = 0
 
+/*saved_instanced = [{
+	sprite : spr_sunflower,
+	image : 0,
+	x : 0,
+	y : 0,
+	xscale : 1,
+	yscale : 1,
+	angle : 0,
+	blend : c_white,
+	alpha : 1
+}]*/
 
+saved_instances = ds_priority_create()
+saved_instances_list = []

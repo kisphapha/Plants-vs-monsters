@@ -4,4 +4,3 @@
 
 //repeat 5 instance_create(680+random_range(-32,32),script0(0),obj_monster); 
 
-instance_create(800,232,obj_qwrath); 

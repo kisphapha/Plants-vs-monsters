@@ -5,4 +5,6 @@ var _plant = tile.plant
 if instance_exists(_plant)
 {
 	satisfy = (_plant.object_index == plant_target);
+} else {
+	satisfy = false	
 }

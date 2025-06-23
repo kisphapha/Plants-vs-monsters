@@ -26,6 +26,11 @@ if waves = 4
 	instance_create(680+random_range(-32,32),script0(0),obj_hardcore); 
 	alarm[0] = 600
 }
+if waves = 5
+{ 
+	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_brownie); 
+	alarm[0] = 600
+}
 if waves = 6
 {
 	repeat 2 instance_create(680+random_range(-32,32),script0(0),obj_monster); 	

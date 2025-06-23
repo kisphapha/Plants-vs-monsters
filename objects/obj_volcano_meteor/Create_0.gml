@@ -10,6 +10,7 @@ alarm[0] = 1;
 height = 0;
 floating = 1;
 fly_away = false;
+coord = find_coordinate()
 
 function die(_status){
 	var _die_x = 0,_die_y = 0;

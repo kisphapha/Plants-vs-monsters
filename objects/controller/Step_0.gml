@@ -1,4 +1,47 @@
 if global.pause == 2 {
+	ds_priority_clear(saved_instances)
+	saved_instances_list = []
+	for (var _i = 0; _i < instance_count; _i += 1){
+		var _instance = instance_find(all,_i)		
+		if (instance_exists(_instance)
+		 && _instance.object_index != obj_menu_pause
+		 && _instance.sprite_index != -1
+		 && _instance.visible = true) {
+			 
+			 if (object_is_ancestor(_instance.object_index,obj_parent_mons) &&
+				_instance.is_composite){
+				 continue;
+			 }
+			 
+			 ds_priority_add(saved_instances,{
+				sprite : _instance.sprite_index,
+				image : _instance.image_index,
+				x : _instance.x,
+				y : _instance.y,
+				xscale : _instance.image_xscale,
+				yscale : _instance.image_yscale,
+				angle : _instance.image_angle,
+				blend : _instance.image_blend,
+				alpha : _instance.image_alpha
+			 },_instance.depth)
+		 }
+	}
+	
+	while (ds_priority_size(saved_instances) > 0){
+		var _instance = ds_priority_delete_max(saved_instances)
+		array_push(saved_instances_list,{
+			sprite : _instance.sprite,
+			image : _instance.image,
+			x : _instance.x,
+			y : _instance.y,
+			xscale : _instance.xscale,
+			yscale : _instance.yscale,
+			angle : _instance.angle,
+			blend : _instance.blend,
+			alpha : _instance.alpha
+		})	
+	}
+	
 	global.pause = 1
 	instance_deactivate_all(true)
 	instance_activate_object(game)

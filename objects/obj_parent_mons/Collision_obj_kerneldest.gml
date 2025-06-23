@@ -12,6 +12,6 @@ if special_condition(0) && transparent == 0 && other.active == 1 && !dead
 		
 		}
 		with (other) instance_destroy()
-		take_damage((0.5 + (other.is_butter ? 1.5 : 0))*(1-immortal))
+		take_damage((1 + (other.is_butter ? 1 : 0))*(1-immortal))
 	}
 }

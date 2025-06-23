@@ -38,27 +38,30 @@ heart2.adjx = -40; heart2.adjy = -40
 heart3 = instance_create(x,y,obj_enemies); heart3.love = self;
 heart3.adjx = -40; heart3.adjy = 40
 
-head = instance_create_depth(x,y,depth - 2, obj_qwarth_parts)
+head = instance_create_depth(x,y,depth, obj_qwarth_parts)
 head.sprite_index = spr_qwrath_1
 head.xx = 0
 head.yy = 0
 head.love = self
 head.sprite_tekkai = spr_qwrath_tekkai
 head.is_head = true
-jaw = instance_create_depth(x-24,y+48,depth - 2, obj_qwarth_parts)
+head.extra_depth = 4
+jaw = instance_create_depth(x-24,y+48,depth, obj_qwarth_parts)
 jaw.sprite_index = spr_qwrath_jaw
 jaw.xx = 0
 jaw.yy = 16
 jaw.love = self
 jaw.image_angle = 10
 jaw.sprite_tekkai = spr_qwrath_tekkai_2
+jaw.extra_depth = 3
 for (var _i = 0; _i <= 9; _i += 1){
-	body[_i] = instance_create_depth(x-24,y+48,depth - 2, obj_qwarth_parts)
+	body[_i] = instance_create_depth(x-24,y+48,depth, obj_qwarth_parts)
 	body[_i].sprite_index = spr_qwrath_body
 	body[_i].xx = 50 + _i * 110
 	body[_i].yy = 0	
 	body[_i].love = self
 	body[_i].sprite_tekkai = spr_qwrath_tekkai_3
+	body[_i].extra_depth = 2
 }
 eye = noone
 if global.monster_reveal[mons_id] == 0 {
@@ -72,7 +75,9 @@ damage_history = []
 start_x = x
 cold_resist = true;
 angery = 0;
-super_angery = false
+super_angery = false;
+reduce_fire = 0.75;
+reduce_ice = 1.25;
 alarm[3] = 60;
 
 function damage_action(_damge = 0, _dead_type = 0){

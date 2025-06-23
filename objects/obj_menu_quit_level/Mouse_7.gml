@@ -12,7 +12,8 @@ if global.map == 3
 	room_goto(r_cryland)
 if global.map == 4
 	room_goto(r_kangdynasty)
-
+if global.map == 5
+	room_goto(r_volcanic)
 
 
 

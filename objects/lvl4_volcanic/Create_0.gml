@@ -23,4 +23,4 @@ global.map = 5;
 world_type = 6
 is_drop	= true
 global.fixed = 1
-fixed_seeds = [4,7,32,33,34,36]
+fixed_seeds = [4,7,32,33,3,35,36]

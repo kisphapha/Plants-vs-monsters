@@ -2,6 +2,19 @@ action_color(0);
 action_font(font0, 1);
 
 if global.pause = 1 {
+	
+	for (var _i = 0; _i < array_length(saved_instances_list); _i += 1){
+		draw_sprite_ext(saved_instances_list[_i].sprite,
+			saved_instances_list[_i].image,
+			saved_instances_list[_i].x,
+			saved_instances_list[_i].y,
+			saved_instances_list[_i].xscale,
+			saved_instances_list[_i].yscale,
+			saved_instances_list[_i].angle,
+			saved_instances_list[_i].blend,
+			saved_instances_list[_i].alpha)	
+	}
+	
 	draw_set_alpha(0.5)
 	draw_set_color(c_black)
 	draw_rectangle(0,0,room_width,room_height,false)
@@ -11,6 +24,8 @@ if global.pause = 1 {
 	draw_set_color(c_lime)
 	draw_text(view_get(0)+view_get(2)/2,
 		view_get(1)+view_get(3)/2,"PAUSED");
+		
+	
 }
 if global.begining == 0
 {

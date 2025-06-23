@@ -11,27 +11,23 @@
     draw_set_halign(fa_center)
 
     if global.buff_type = 0 {
-
         draw_text(307,287,string_hash_to_newline("INCREASE PLANT FOOD STORAGE"))
-
     }
 
     if global.buff_type = 1 {
-
         draw_text(307,287,string_hash_to_newline("ADDITION SLOT"))
-
     }
 
 	if global.buff_type = 2 {
-
         draw_text(307,287,string_hash_to_newline("COMBO RECHARGE + SHOP"))
-
     }
 
     if global.buff_type = 3 {
-
+        draw_text(307,287,string_hash_to_newline("COMBO SUN + SHOP"))
+    }
+	
+	if global.buff_type = 4 {
         draw_text(307,287,string_hash_to_newline("RECHARGE SPEED UP"))
-
     }
 
     draw_set_font(font1)
@@ -58,7 +54,13 @@
 
     }
 
-    if global.buff_type = 3 {
+	if global.buff_type = 3 {
+
+        draw_text(64,352,string_hash_to_newline("Increase starting suns to 150#+ Unlock new shop items"))
+
+    }
+
+    if global.buff_type = 4 {
 
         draw_text(64,352,string_hash_to_newline("The recharge time of all plant seed decrease by 20%"))
 
