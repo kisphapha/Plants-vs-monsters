@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_bloom",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.17551,
+  "name":"snd_bloom",
+  "parent":{
+    "name":"banana_launcher",
+    "path":"folders/Sounds/plants/banana_launcher.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_bloom.mp3",
+  "type":0,
+  "volume":1.0,
+}

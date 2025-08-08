@@ -11,6 +11,7 @@ if !is_buttered && falling == 0 && ignited && stormed == 0 && freeze == 0 && !de
 			sprite_index = spr_smallbomb3
 			image_speed = 1
 			speed = 0
+			audio_play_sound(snd_bomb_fused,50,false,global.volume_sfx)
 		}
 	}
 }

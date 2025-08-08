@@ -30,3 +30,7 @@ heart3.adjx = -40; heart3.adjy = 40
 if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }
+
+sound_nature = [snd_scorpio1, snd_scorpio2, snd_scorpiking_laugh]
+sound_attack = [snd_monsterdog_bite1, snd_monsterdog_bite2]
+sound_death = [snd_scorpiking_dead]

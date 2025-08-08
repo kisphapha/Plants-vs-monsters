@@ -37,7 +37,6 @@ if attack = 3 && sprite_index = spr_scorpiking3{
         
 
     }
-
 }
 
 if attack = 4 && sprite_index = spr_scorpiking3{
@@ -51,6 +50,8 @@ if attack = 4 && sprite_index = spr_scorpiking3{
     abt.love = instance_nearest(x,y,object_index);
 
     alarm[7] = 250
+	
+	audio_play_sound(snd_scorpiking_laser_charge,100,false,global.volume_sfx * 1.25)
 
 }
 

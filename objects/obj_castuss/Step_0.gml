@@ -13,6 +13,9 @@ if instance_exists(mons){
 				action_sprite_set(spr_castuss4, 0, 0.4);
 			}
 		}
+		if (random(5) < 1){
+			audio_play_single(snd_castus_stab,40,false,global.volume_sfx)	
+		}
 	}
 	else
 	{

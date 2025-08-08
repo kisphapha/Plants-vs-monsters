@@ -17,14 +17,19 @@ if freeze = 1  && switch_lane = 0 && !cold_resist
 if switch_lane = 0 && untouch <= 1 && throwing = 0 && throws ==0
     && object_index != obj_krockodile && object_index != obj_slime && floating == 0 && isBoss == 0
 {   
+	var _play_sound = true;
 	if place_meeting(x+sprite_width/2-8,y,obj_waterlogged) = true and waterlogged = 0
 	{
         waterlogged = 1
+		audio_play_single(snd_monster_enter_water,50,false,global.volume_sfx)
+		_play_sound = false
 	} 
 
     if place_meeting(x-8,y,obj_waterlogged) = false and waterlogged = 1 
 	{
         waterlogged = 0
+		if (_play_sound)
+			audio_play_single(snd_monster_leave_water,50,false,global.volume_sfx)
     }
 }
 
@@ -82,34 +87,37 @@ if dead == true
 {
 	if (isBoss = 0 and weird_death = 0)
 	{
-		{
-			if controller.lvl.started == 0 visible = false
-			hp = 0;
-			{
-				dying += 1;
-			}
-			action_set_motion(0, 2-dying/30);
-			action_move("001000000", 0.5);
-			if dying < 30
-			{
-				{
-					spin += dead_spin;
-				}
-			}
-			image_angle = -spin
-			image_alpha = 1-dying/60;
-			if dying > 60
-			{
-				action_kill_object();
-			}
-			if sprite_index != sprite_dead
-			{
-				{
-				sprite_index = sprite_dead;
-				image_speed = 0.5;
-				}
+		if (!is_scream && global.begining == 0){
+			is_scream = true
+			if (array_length(sound_death) > 0){	
+				audio_play_single(sound_death[irandom(array_length(sound_death) - 1)],50,false,global.volume_sfx)	
 			}
 		}
+		if controller.lvl.started == 0 visible = false
+		hp = 0;
+		{
+			dying += 1;
+		}
+		action_set_motion(0, 2-dying/30);
+		action_move("001000000", 0.5);
+		if dying < 30
+		{	
+			spin += dead_spin;
+		}
+		image_angle = -spin
+		image_alpha = 1-dying/60;
+		if dying > 60
+		{
+			action_kill_object();
+		}
+		if sprite_index != sprite_dead
+		{
+			{
+			sprite_index = sprite_dead;
+			image_speed = 0.5;
+			}
+		}
+		
 	}
 }
 if attack == 1 && object_index != obj_gigantic  && object_index != obj_big_bomb 
@@ -179,5 +187,11 @@ if (toss_max > 0)
 		if (x > 600 && weak_flying >= 0.66){
 			speed = 0
 		}
+	}
+}
+
+if (random(moans_rarity) < 1 && !dead){	
+	if (array_length(sound_nature) > 0 ){
+		audio_play_single(sound_nature[irandom(array_length(sound_nature) - 1)],20,false,global.volume_sfx)	
 	}
 }

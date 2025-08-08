@@ -16,5 +16,6 @@ if sprite_index == spr_gigantic5
 		var _imp = instance_create(x,y-120,obj_imp);
 		_imp.distance = distance_to_point(144,y);_imp.throws = 1
 		_imp.direction = 180; _imp.speed = distance_to_point(144,y)/90}
+		audio_play_sound(snd_imp_throw,50,false,global.volume_sfx)
 	}
 }

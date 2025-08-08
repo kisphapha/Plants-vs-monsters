@@ -42,6 +42,8 @@ if fly = 1{
 
         with dest {if object_index = obj_bananadest instance_destroy()}
 
+		audio_play_adjusted(choose(snd_explosion,snd_explosion_2),80,false,1.2,0.8,obj_bananaheart,0.02)
+			
         instance_destroy()
 
     }

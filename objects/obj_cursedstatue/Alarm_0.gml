@@ -17,3 +17,4 @@ for (i = 0 ; i < array_length(number); i += 1){
 };
 
 
+audio_play_sound(snd_castus_upgraded_shoot,200,false,global.volume_sfx)

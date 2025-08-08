@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_poison_cloud",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":5.328969,
+  "name":"snd_poison_cloud",
+  "parent":{
+    "name":"poisonshroom",
+    "path":"folders/Sounds/plants/poisonshroom.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_poison_cloud.mp3",
+  "type":0,
+  "volume":1.0,
+}

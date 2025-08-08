@@ -9,4 +9,5 @@ if global.line[line] == 1  && global.begining == 0
 
 	blt.form = 0
 
+	audio_play_single(snd_sun_produce,50,false,global.volume_sfx)
 }

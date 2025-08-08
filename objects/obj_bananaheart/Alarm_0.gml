@@ -18,6 +18,8 @@ if global.line[line] = 1 and global.begining = 0 and image_index = 1 and distanc
 
     blt.speed = distance/60; blt.direction = 0;
 
+	audio_play_adjusted(snd_scorpiking_shoot,80,false,1.2,0.8,obj_bananaheart,0.02)
+	audio_play_adjusted(snd_falling_things,75,false,1.2,0.8,obj_bananaheart,0.02)
 }
 
 

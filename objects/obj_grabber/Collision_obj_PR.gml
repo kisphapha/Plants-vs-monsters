@@ -9,5 +9,6 @@ if (!grabbed)
 		alarm[0] = 10
 		speed = 0
 		victim = other
+		audio_play_adjusted(snd_grabot_grabbed,50,false,0.9,1.1,obj_grabot,0.02)
 	}
 }

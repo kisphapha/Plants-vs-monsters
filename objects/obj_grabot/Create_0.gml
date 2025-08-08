@@ -29,8 +29,10 @@ else
 	image_speed = 0
 	weird_death = 0
 }
-
-
-
+moans_rarity = 1
+sound_nature = [snd_grabot_move]
+sound_attack = []
+sound_death = []
+audio_play_adjusted(snd_grabot_appear,30,false,0.9,1.1,obj_grabot,0.02)
 
 

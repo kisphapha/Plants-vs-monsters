@@ -50,7 +50,9 @@ if charge = 3 {
 
     charge = 4;
 
-    if powering = 0 alarm[1] = 15
+    if powering = 0 alarm[1] = 15;
+	
+	audio_play_sound(snd_eggplant_charge,100,false,global.volume_sfx)
 
 }
 

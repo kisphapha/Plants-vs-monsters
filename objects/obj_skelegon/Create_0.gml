@@ -22,7 +22,10 @@ sprite_attack = spr_skelegon3
 
 sprite_dead = spr_skelegon4
 
-
+sound_hurt = [snd_skelegon_hurt_1,snd_skelegon_hurt_2]
+sound_attack = [snd_monsterdog_bite1,snd_monsterdog_bite2]
+sound_death = [snd_skelegon_dead]
+sound_nature = [snd_skelegon_1,snd_skelegon_2]
 
 
 

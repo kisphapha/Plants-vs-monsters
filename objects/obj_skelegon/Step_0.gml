@@ -1,6 +1,7 @@
 action_inherited();
 if dead = true {
     if x  < 640 && controller.lvl.started == 1{
+		audio_play_single(snd_skelegon_dead,50,false,global.volume_sfx)
         code = random(100000)
         s[0] = instance_create(x-23,y-17,obj_skelegonCorpse); s[0].type = 0
         s[1] = instance_create(x+13,y+7,obj_skelegonCorpse); s[1].type = 1

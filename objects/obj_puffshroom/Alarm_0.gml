@@ -12,4 +12,6 @@ if global.line[line] && global.begining == 0
 
 	blt.alarm[1] = 30
 
+	audio_play_adjusted(snd_puff,50,false,1.2,0.8)
+
 }

@@ -60,6 +60,11 @@ if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }
 
+sound_nature = [snd_kang_1, snd_kang_2]
+sound_attack = []
+sound_death = []
+audio_play_sound(snd_kang_1,120,false,global.volume_sfx)
+
 function shoot_laser()
 {
 	if (shoot_phase == 2)

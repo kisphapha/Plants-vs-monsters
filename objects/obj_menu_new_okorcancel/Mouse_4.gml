@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited()
+
 try 
 {
 	if image_index == 1 {

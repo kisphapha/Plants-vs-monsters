@@ -53,6 +53,13 @@ cold_resist = false;
 sprite_walk = sprite_index
 sprite_attack = sprite_index
 sprite_dead = sprite_index
+is_scream = false;
+attack_sound_debounce = 0;
+moans_rarity = 150;
+sound_nature = [snd_monster_moans_1,snd_monster_moans_2,snd_monster_moans_3];
+sound_death = [snd_monster_dies,snd_monster_dies2]
+sound_attack = [snd_monster_attack_3, snd_monster_attack_2]
+sound_hurt = [snd_monster_hit, snd_monster_hit2, snd_monster_hit3]
 
 if y <= 160
 {
@@ -94,3 +101,11 @@ function take_damage(_dame, _dead_type = 0){
 	damage_action(_dame,_dead_type)
 }
 function damage_action(_dame = 0, _dead_type = 0){}
+
+function play_hit_sound(){
+	if (array_length(sound_hurt) > 0)
+	{
+		audio_play_adjusted(sound_hurt[irandom(array_length(sound_hurt) - 1)],
+			30,false,1.2,0.8, obj_parent_mons, 0.02)	
+	}
+}

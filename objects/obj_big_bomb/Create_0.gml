@@ -29,4 +29,5 @@ if global.begining == 0
 	weird_death = 0	
 }
 
-
+moans_rarity = 5;
+sound_nature = [snd_bomb_fusing]

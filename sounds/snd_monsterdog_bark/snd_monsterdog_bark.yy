@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_monsterdog_bark",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.365687,
+  "name":"snd_monsterdog_bark",
+  "parent":{
+    "name":"monsterdog",
+    "path":"folders/Sounds/monsters/monsterdog.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_monsterdog_bark.mp3",
+  "type":0,
+  "volume":1.0,
+}

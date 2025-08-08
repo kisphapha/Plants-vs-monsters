@@ -19,5 +19,7 @@ if instance_exists(dest) and phase = 1 and dest.y < y {
 		})		
 		_splash.image_index = image_index
 	}
+	
+	audio_play_sound(choose(snd_melonpult_1,snd_melonpult_2),50,false,global.volume_sfx)
     instance_destroy()
 }

@@ -24,6 +24,10 @@ if special_condition(0) && transparent == 0 && !dead
 			_bomb.size_y = 0.3
 		} else {
 			_dame = 1*(1-immortal);	
+			if (obj_sound_manager.monster_hit_cooldown == 0){
+				obj_sound_manager.monster_hit_cooldown = 5
+				play_hit_sound()
+			}
 		}
 	}
 	

@@ -18,7 +18,8 @@ if (ignited && dead)
 		is_bombing = true	
 		sprite_index = spr_bigbomb3
 		image_index = 0
-		image_speed = 0.5
+		image_speed = 0.5;
+		audio_play_sound(snd_bomb_fused,50,false,global.volume_sfx * 2)
 	}
 }
 if is_bombing

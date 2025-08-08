@@ -25,4 +25,4 @@ love.floorfire = floorfire; love.laser = laser
 
 sprite_index = spr_poison2
 
-
+audio_play_sound(snd_scorpiking_laser,100,false,global.volume_sfx * 1.25)

@@ -17,4 +17,7 @@ if !is_shoot
 		_bom.alarm[3] = 60
 		_bom.direction = point_direction(x + 24, y - 96, _speed * 60, game.yy[_fall_line] )
 	}
+	audio_play_sound(snd_scorpiking_shoot,100,false,global.volume_sfx)
+	audio_play_sound(snd_falling_things,80,false,global.volume_sfx)
+
 }

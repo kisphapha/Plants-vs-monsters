@@ -35,7 +35,12 @@ if drag = 2{
         with love alarm[1] = 30
 		if instance_exists(victim)
 		{
-			    if victim.x != 0 and retreat = 0 {with victim.pr instance_destroy()}
+			if victim.x != 0 and retreat = 0 {
+				
+				audio_play_sound(snd_urusal_eats,100,false,global.volume_sfx)	
+				with victim.pr instance_destroy()
+				
+			}
 		}
         instance_destroy()
 

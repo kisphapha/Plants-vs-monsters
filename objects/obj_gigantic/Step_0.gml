@@ -19,7 +19,10 @@ if hp <= 75 and global.begining = 0 and dead=false and freeze = 0  && attack == 
 
 if sprite_index = sprite_attack{
 	if image_index = 7 && image_speed > 0 {image_speed = 0; alarm[2] = 20}
-    if image_index = 9 instance_create(x-70,y-16,obj_smassh);
+    if image_index = 9 {
+		instance_create(x-70,y-16,obj_smassh);
+		audio_play_sound(snd_gigantic_smash,60,false,global.volume_sfx)
+	}
 }
 
 action_set_relative(0);

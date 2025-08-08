@@ -29,5 +29,9 @@ if (global.begining == 0) {
 
 
 alarm[11] = 1
+sound_nature = []
+sound_death = [snd_slime_dead]
+sound_attack = [snd_monsterdog_bite1, snd_monsterdog_bite2]
+
 
 

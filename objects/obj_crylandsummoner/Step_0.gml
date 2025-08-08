@@ -105,6 +105,8 @@ if chance < 1
  effect_create_above(ef_explosion,xx,yy,1,c_gray)
 
  mons = instance_create(xx,yy,monster)
+ 
+ audio_play_single(choose(snd_boss_summon,snd_boss_summon_1),50,false,global.volume_sfx)
 
 }
 

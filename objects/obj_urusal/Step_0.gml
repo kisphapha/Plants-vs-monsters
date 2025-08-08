@@ -30,8 +30,10 @@ if (angery = 0 and hp < 2000) or (angery = 1 and hp <1000) {
     image_index = 3;
 
     attack = 0;
+	
+	audio_play_single(sound_death[0],300,false,global.volume_sfx)
 
-    }
+}
 
 
 
@@ -49,61 +51,63 @@ if transparent = 1
 
 image_alpha = 0.5
 
-
-var __b__;
-__b__ = action_if_variable(dead, true, 0);
-if __b__
+if dead
 {
-{
-hp = 0;
-global.kill = 1
+	hp = 0;
+	
+	global.kill = 1;
+	
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[0],300,false,global.volume_sfx)	
+		}
+	}
 
-if controller.final = 0 
+	if controller.final = 0 
+	{
+		head.alarm[0] = 10
 
-{head.alarm[0] = 10
+		controller.final = 1
+	}
 
-controller.final = 1}
+	if dying < 100
 
-if dying < 100
+	{
+		earthquake(4);dying += 1;  
 
-    {earthquake(4);dying += 1;  
+	    speed = 0;
 
-    speed = 0;
-
-    image_index = 3; 
-
-
-
-    if dying >= 99 {
-
-        dying = 101
-
-    }}
-
-if dying >= 101 and sprite_index = sprite_dead{
-
-    dying += 1
-
-    if dying > 150
-
-    {
-
-        image_alpha -= 0.01
-
-        with heart2 instance_destroy();
-
-        with heart3 instance_destroy();
-
-        with heart instance_destroy();
-
-        if image_alpha < 0 instance_destroy();        
-
-    }
-
-}
+	    image_index = 3; 
 
 
 
+	    if dying >= 99 {
 
-}
+	        dying = 101
+
+	    }
+	}
+
+	if dying >= 101 and sprite_index = sprite_dead{
+
+	    dying += 1
+
+	    if dying > 150
+
+	    {
+
+	        image_alpha -= 0.01
+
+	        with heart2 instance_destroy();
+
+	        with heart3 instance_destroy();
+
+	        with heart instance_destroy();
+
+	        if image_alpha < 0 instance_destroy();        
+
+	    }
+
+	}
 }

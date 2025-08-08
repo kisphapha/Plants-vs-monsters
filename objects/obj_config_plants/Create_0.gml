@@ -693,9 +693,10 @@ with game
 		{
 			plant_id : 32,
 			plant_name : "Hibitenna",
-			description : "",
-			quotation : "\"!\"",
-			plant_food : "",
+			description : "A stational anti air strike fortress. She will zap any mid air enemy with 3x3 area.\n" +
+			"Hibitenna was like the electronic source of the plant world. That's why plants can follow up the technology growth these days. Additionally, Hibitennas and Nuclear Power Plants are close friends, they collaborate very well!",
+			quotation : "\"Come close to me and feel the love lighting!\"",
+			plant_food : "Increase the attack range to the entire lawn for 30 second",
 			picture : spr_hibitenna,
 			card_pucture : spr_ca32,
 			dame_level : plants_dame_level[3],
@@ -714,9 +715,10 @@ with game
 		{
 			plant_id : 33,
 			plant_name : "Torchwood",
-			description : "",
-			quotation : "\"!\"",
-			plant_food : "",
+			description : "Convert peas and some other projectiles to fire as it go through	 him, boosting their damage and splashing\n" +
+			"Torchwoods are considered benefactors of the Peashooters family. With the present of both, like a tiger with wings, the monsters will scream to their death. Well, Snow peas on the other hand...",
+			quotation : "\"I think they need some heat!\"",
+			plant_food : "Go supersaiyan and even more strengthen the pea projectiles",
 			picture : spr_torchwood,
 			card_pucture : spr_ca33,
 			dame_level : plants_dame_level[0],
@@ -735,9 +737,10 @@ with game
 		{
 			plant_id : 34,
 			plant_name : "Daikopter",
-			description : "",
-			quotation : "\"!\"",
-			plant_food : "",
+			description : "Shoot 2 homing missiles at once, target monsters at any lane\n"+
+			"They have been sent to Volcanic as spies thanks to being the only plants which can fly. They are pretty optimistic, often tell jokes, have big laugh, and you always see a big smile on their face",
+			quotation : "\"Smile my friend! You dont know if you shall see tomorrow\"",
+			plant_food : "Release a series of powerful missiles toward random monsters",
 			picture : spr_daikopter,
 			card_pucture : spr_ca34,
 			dame_level : plants_dame_level[2],
@@ -756,9 +759,9 @@ with game
 		{
 			plant_id : 35,
 			plant_name : "Tall nut",
-			description : "Basic defender, he blocks monsters and delays them thanks to his strong health point\n"+
-			"He has the \"wall \" in his name. He has known his fate. No one in this world may be able to handle this job",
-			quotation : "\"Stay behind me! I'll protect you\"",
+			description : "Have super high health and is able to block jumping monsters\n"+
+			"Some Wallnuts have gene mutation, they become bigger and extra hard. Time went by, these mutated wallnuts have child and form a new tall nut species. Nowadays, tallnuts are admired by wallnut and are choosen to be their leaders",
+			quotation : "\"Those are just painless bites\"",
 			plant_food : "He'll be equipped with an armor and double the health",
 			picture : spr_tn2,
 			card_pucture : spr_ca35,
@@ -778,9 +781,10 @@ with game
 		{
 			plant_id : 36,
 			plant_name : "Hotcacao",
-			description : "",
-			quotation : "\"\"",
-			plant_food : "",
+			description : "Explode on touch and release a 3x3 hot cocoa pond that slows down monsters\n" +
+			"Other plants often ask them if they die if the liquid inside their heads is drunk out. They would say don't mention it!",
+			quotation : "\"Boiling water!! Get out of  the way!\"",
+			plant_food : "Suicide and cover the whole map with hot cocoa",
 			picture : spr_hotcacao,
 			card_pucture : spr_ca36,
 			dame_level : plants_dame_level[0],
@@ -799,10 +803,10 @@ with game
 		{
 			plant_id : 37,
 			plant_name : "Gatling Pea",
-			description : "An upgraded peashooter that'll shoot 2 peas in a straight line at a time\n"+
-			"If a peashooter lives long enough, he'll become senior peashooter, or we may informally call Repeaters",
+			description : "An upgraded Repeater that'll shoot 4 peas in a straight line at a time\n"+
+			"They're Repeater, but the oldest of them all. The war with Immemor breaks out along time a ago, those Repeaters have been equipped with a machine gun and double their power. They have many war medals and are respected by any plants",
 			quotation : "\"Bring your asses in! I'll slay all in one shot!\"",
-			plant_food : "He got the same effect as peashooter but double the amount of peas",
+			plant_food : "Bust out a storm of peas that as twice as powerful as Repeaters'",
 			picture : spr_gatling_pea,
 			card_pucture : spr_ca37,
 			dame_level : plants_dame_level[3],
@@ -821,10 +825,10 @@ with game
 		{
 			plant_id : 38,
 			plant_name : "Magma Melon",
-			description : "The ice version of melon-pult. They behaves similarly but deals extra cold effect to hit target and surroundings\n"+
-			"Winter melons is another species of melon-pults, along with Fire melons. They live in extreme cold, freezing areas which ice and snow cover throughout the year. Regular melon-pults can become winter melons if they go throught a harsh training (Lore only, not possible in the actual game).",
-			quotation : "\"Take this melon and chill with life\"",
-			plant_food : "Become a melon mortal that launch multiple ice melons into the high. As a result, a meteor shower happen that deal heavy damage and freeze enemies",
+			description : "The lava (or fire) version of melon-pult. They behaves similarly but deals double damage\n"+
+			"Magma Melon origin is debatable, but the most acceptable theory is that they live in a volcanic biome, so they evolved. Nonetheless, Magma Melons, Winter Melons and Water Melons are best friends!",
+			quotation : "\"Do you want to watch meteor shower with me?\"",
+			plant_food : "Become a volcano, errupt, and start a apocalypse meteor shower",
 			picture : spr_fire_melon_1,
 			card_pucture : spr_ca38,
 			dame_level : plants_dame_level[4],

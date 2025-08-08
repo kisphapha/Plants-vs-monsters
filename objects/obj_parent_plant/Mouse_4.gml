@@ -12,7 +12,8 @@ if volatile == 0 && instance_exists(pr)
 					global.pf += -1;
 					controller.planting = 0;				
 					power_active = 1;
-					foodable_progress = cost / 25 * 60
+					foodable_progress = cost / 25 * 60;
+					audio_play_single(snd_plant_powering,50,false,global.volume_sfx)
 				}
 			}
 		}
@@ -22,6 +23,7 @@ if powering == 0  && instance_exists(pr)
 {
 	if controller.plant_ = -1 && pr.y > 0
 	{
+		audio_play_sound(snd_shovel,100,false,global.volume_sfx)
 		controller.plant_ = 0
 		controller.planting = 0
 		if global.last_stand = 1 and instance_number(obj_letrock2) = 1

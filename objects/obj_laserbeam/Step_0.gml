@@ -13,7 +13,10 @@ if first = 1{
     }
 
 }
-
+if (random(5) < 1){
+	audio_play_single(snd_lightflower_swing,50,false,global.volume_sfx)
+}
+	
 
 
 

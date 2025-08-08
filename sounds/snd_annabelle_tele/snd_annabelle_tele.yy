@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_annabelle_tele",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.835918,
+  "name":"snd_annabelle_tele",
+  "parent":{
+    "name":"annabelle",
+    "path":"folders/Sounds/monsters/annabelle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_annabelle_tele.mp3",
+  "type":0,
+  "volume":1.0,
+}

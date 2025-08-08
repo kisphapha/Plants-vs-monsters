@@ -23,6 +23,10 @@ if (freeze == 0 && !is_buttered)
 	x = xx;
 
 	y = yy;
+	
+	sound_nature = [snd_rex_growl]
+	
+	moans_rarity = 30
 } else {
 	alarm[2] = 30	
 }

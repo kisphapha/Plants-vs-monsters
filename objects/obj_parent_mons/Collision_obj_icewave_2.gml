@@ -12,7 +12,7 @@ if transparent == 0 && !dead && special_condition(0)
 		alarm[0] = max(alarm[0], 200);
 		_dame = (other.energy / 150) *(1-immortal);
 	}
-	
+	audio_play_single(snd_frozen,50,false,global.volume_sfx)
 
 	take_damage(_dame)
 }

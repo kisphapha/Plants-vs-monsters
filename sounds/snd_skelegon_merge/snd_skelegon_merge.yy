@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_skelegon_merge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.928,
+  "name":"snd_skelegon_merge",
+  "parent":{
+    "name":"skelegon",
+    "path":"folders/Sounds/monsters/skelegon.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_skelegon_merge.mp3",
+  "type":0,
+  "volume":1.0,
+}

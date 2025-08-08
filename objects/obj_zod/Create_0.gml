@@ -35,5 +35,9 @@ if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }
 
+moans_rarity = 10;
+sound_nature = [snd_monster_attack]
+sound_attack = [snd_castus_stab]
+
 
 

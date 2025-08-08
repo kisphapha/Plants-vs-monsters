@@ -19,6 +19,7 @@ draw_set_color(color_3)
 draw_set_font(font1)
 draw_set_halign(fa_center)
 draw_text(x,y-string_height(display_message)/2,display_message)
+//draw_text_ext(x,y,display_message,2,300)
 
 
 

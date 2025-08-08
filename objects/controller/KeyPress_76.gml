@@ -1,3 +1,4 @@
-action_set_relative(1);
-global.pf += 1;
-action_set_relative(0);
+if (!keyboard_check(vk_control))
+{
+	global.pf += 1;
+}

@@ -12,4 +12,5 @@ repeat 1 + power_number
 
 	}
 }
+audio_play_sound(snd_sun_produce,50,false,global.volume_sfx)
 alarm[0] = 600

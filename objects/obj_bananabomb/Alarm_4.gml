@@ -42,9 +42,13 @@ if type = 1{
 	    blt.fly = 1; blt.dest = dest2
 
 	    blt.speed = distance/60; blt.direction = point_direction(x,y,target.x,target.y);
+		
+	}	
 
-	    instance_destroy()
-	}
+	audio_play_sound(snd_scorpiking_shoot,100,false,global.volume_sfx)	
+	audio_play_sound(snd_falling_things,90,false,global.volume_sfx)
+
+	instance_destroy()
 }
 
 

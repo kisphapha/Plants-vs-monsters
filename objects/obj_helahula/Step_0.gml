@@ -35,6 +35,11 @@ if distance < 128 {
 
 if dead = true {
 
+	if (!is_scream){
+		is_scream = true;
+		audio_play_single(snd_monster_dies,50,false,global.volume_sfx)
+	}
+
     hp = 0
 
     if fuked = 0{
@@ -73,7 +78,7 @@ if dead = true {
 
     sprite_index = sprite_dead;
 
-        image_speed = 1
+    image_speed = 1
 
 }
 

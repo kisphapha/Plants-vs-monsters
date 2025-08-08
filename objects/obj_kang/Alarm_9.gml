@@ -11,3 +11,4 @@ with current_extension
 
 equid_roll = 30
 alarm[5] = 60
+audio_play_sound(snd_kang_equiped,120,false,global.volume_sfx)

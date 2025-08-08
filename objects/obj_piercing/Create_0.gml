@@ -17,7 +17,9 @@ spin = 0
 lifespan = 30
 daming_speed = 10
 dame = 1
+sound = [snd_dragonfruit_blows_1,snd_dragonfruit_blows_2]
 alarm[11] = 1
+alarm[4] = 1
 
 
 depth = -(y+60)

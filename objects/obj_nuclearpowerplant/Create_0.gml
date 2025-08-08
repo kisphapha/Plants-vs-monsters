@@ -15,6 +15,7 @@ power_plants = [];
 
 function throw_bomb(_number) {
 	setfire = _number
+	audio_play_sound(snd_scorpiking_shoot,50,false,global.volume_sfx)
 	//counting unplanted slot
 	while (setfire > 0){
 		count = 0

@@ -13,6 +13,7 @@ if global.begining == 0
 	action_set_alarm(10, 4);
 	action_set_alarm(900, 3);
 	action_sprite_set(spr_annabelle2, 10, -1);
+	audio_play_single(snd_annabelle_tele,30,false,global.volume_sfx)
 	if global.monster_reveal[mons_id] == 0 {
 		global.monster_reveal[mons_id] = 1
 	}
@@ -24,5 +25,7 @@ sprite_dead = spr_annabelle4
 if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }
+sound_nature = []
+
 
 

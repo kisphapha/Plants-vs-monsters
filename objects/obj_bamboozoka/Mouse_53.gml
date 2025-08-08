@@ -17,5 +17,6 @@ if controller.planting == 1 && controller.plant_ == -3 && selected
 	image_speed = 0.5
 	alarm[2] = 10
 	ammo = false
+	audio_play_sound(snd_bamboo_launch,100,false,global.volume_sfx)
 	
 }

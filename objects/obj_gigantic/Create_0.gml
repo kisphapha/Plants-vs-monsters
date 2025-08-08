@@ -17,6 +17,8 @@ sprite_attack = spr_gigantic4
 
 sprite_dead = spr_gigantic6
 
-
+sound_nature = [snd_gigantic_moans_1, snd_gigantic_moans_2]
+sound_attack = []
+sound_death = [snd_gigantic_dead]
 
 

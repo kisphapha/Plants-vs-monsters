@@ -10,6 +10,8 @@ if dead = true {
 
         fuked = 1
 
+		audio_play_single(snd_crystal_break,50,false,global.volume_sfx)
+
         {with mask instance_destroy()}
 
         repeat 10 {

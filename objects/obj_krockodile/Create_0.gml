@@ -17,6 +17,8 @@ switch_state = false;
 sprite_index = sprite_walk
 image_speed = 0.5-global.begining*0.5
 
-
+sound_nature = [];
+sound_attack = [snd_monsterdog_bite1, snd_monsterdog_bite2]
+moans_rarity = 60;
 
 

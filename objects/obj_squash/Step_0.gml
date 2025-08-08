@@ -16,6 +16,7 @@ if instance_exists(mons)  && global.begining == 0
 			squashing = 1;
 			phase = 1;
 			is_idle = false;
+			audio_play_sound(snd_squash_hmm,80,false,global.volume_sfx)
 			action_sprite_set(spr_squash, 1, 0);
 			action_set_alarm(15, 0);
 			action_set_motion(point_direction(x,y,mons.x,mons.y), (distance+16)/45);
@@ -37,7 +38,8 @@ if instance_exists(mons)  && global.begining == 0
 				mons_y = mons.y;
 				is_idle = false;
 				action_move("000000010", 30);
-				action_set_alarm(30, 3);			
+				action_set_alarm(30, 3);
+				audio_play_sound(snd_squash_hmm,80,false,global.volume_sfx)
 			}
 			else
 			{

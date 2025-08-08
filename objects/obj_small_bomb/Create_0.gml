@@ -11,7 +11,7 @@ sprite_dead = spr_smallbomb6
 
 falling = 0;
 dest_fall_line = 0;
-floating = 0
+floating = 0;
 if global.begining == 0
 {
 	speed = const_speed
@@ -22,4 +22,5 @@ if global.begining == 0
 	}
 }
 
-
+moans_rarity = 5;
+sound_nature = [snd_bomb_fusing]

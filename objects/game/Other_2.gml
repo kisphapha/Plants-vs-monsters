@@ -40,6 +40,8 @@ global.confirm_result = -1
 global.map = 0
 global.init_recharge = false
 global.init_sun = 50
+global.volume_sfx = 1
+global.volume_music = 1
 reset_leveltype()
 /* */
 /*  */

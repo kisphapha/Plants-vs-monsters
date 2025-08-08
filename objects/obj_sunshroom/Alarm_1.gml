@@ -1,4 +1,4 @@
-action_set_relative(1);
+
 if chain > 0
 {
 	chain += -1;
@@ -6,24 +6,15 @@ if chain > 0
 	sun.direction = random_range(45,135)
 	sun.speed = 8
 	sun.size = 1.414
+	alarm[1] = 2
+	
+	if chain < 1
 	{
-		action_set_relative(0);
-		action_set_alarm(2, 1);
-		action_set_relative(1);
-	}
-	__b__ = action_if_variable(chain, 1, 1);
-	if __b__
-	{
-		{
-		action_set_relative(0);
-		powering = 0;
-		action_set_relative(1);
+		powering = 0
 		with a1
 			{instance_destroy()}
 		with a2
 			{instance_destroy()}
-
-		}
 	}
+	audio_play_sound(snd_sun_produce,50,false,global.volume_sfx)
 }
-action_set_relative(0);

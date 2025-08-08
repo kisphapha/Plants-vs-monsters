@@ -153,14 +153,23 @@ unlocked too. To open almanac, click the the top right corner button in islands 
 - Added aura light when receive a new plant seed.
 - Change: Chompers will restore full health after diggesting any monsters.
 =================================================================
---/--/---- --- RELEASE 1.4 - VOLCANIC
+28/06/2025 --- RELEASE 1.4 - VOLCANIC
 =================================================================
+- Added 15 Volcanic levels:
+	+ 7 new plants: Hibitenna, Torchwood, Daikopter, Tallnut, Hotcacao, Gatling Gun, Magma Melon. Experience now!
+	+ 4 new monsters: Firegoul, Lavabull, Goluk, Jigoku. Experience now!
+	+ New boss: Qwrath, mastermind of world 6
+	+ World gimmick: Stone or magma debris might fall from the sky. As further as you progress, volcano might errupt causing dust and smoke spread everywhere
+	+ New mode: Time mode. You have to complete the level before time ran out!
 - Added monsters and plants shadow
 - Added bouncy idle state for plants
-- Change: High graphic background for all worlds
+- Added plant food cool down mechanic for each plant, higher cost plants will have longer cool down time. This ensure balance and avoid "one plant kill all".
+- Change: High graphic background for all worlds (except Volcanic background)
 - Change: All plants now have a bouncy idle animation.
 - Change: Sad shroom will prioritize to attack the monster on their lanes rather than attack all randomly.
 - Change: Buff chomper's damage when applying to big monsters
 - Change: Smoothen Threepeater's plant food
 - Change: Enhance waterlogged logic and visual
+- Change: Pausing now show a picture of the last frame of the game instead of nothing
 - Fixed: Plants not attacking Bombi that is shot from Kang's cannon when it land on some bottom lanes.
+- Fixed: Skelegon not dying although no corpse is found making the level can not be finished

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_crystard_sleep",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.352,
+  "name":"snd_crystard_sleep",
+  "parent":{
+    "name":"crystard",
+    "path":"folders/Sounds/monsters/crystard.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_crystard_sleep.mp3",
+  "type":0,
+  "volume":1.0,
+}

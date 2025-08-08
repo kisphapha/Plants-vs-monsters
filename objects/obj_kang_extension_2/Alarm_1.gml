@@ -15,4 +15,5 @@ if powering > 0
 	{
 		alarm[2] = 30
 	}
+	audio_play_sound(snd_castus_upgraded_shoot,100,false,global.volume_sfx)
 }

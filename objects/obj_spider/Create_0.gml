@@ -29,3 +29,6 @@ if (global.begining ==  0) {
 		global.monster_reveal[mons_id] = 1
 	}	
 }
+
+sound_nature = [snd_spider_1, snd_spider_2]
+sound_death = [snd_insect_dead]

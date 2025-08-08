@@ -17,5 +17,7 @@ sprite_dead = spr_eyebat2
 
 floating = 1;
 
-
+sound_nature = [snd_eyebat1,snd_eyebat2]
+sound_death = [snd_eyebat_dead]
+sound_attack = [snd_monsterdog_bite1,snd_monsterdog_bite2]
 

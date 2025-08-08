@@ -29,5 +29,6 @@ if (recharge_bom > 0 && sprite_index == spr_nuclearpowerplant_2)
 		sprite_index = spr_nuclearpowerplant_3
 		image_speed = 0.5
 		alarm[3] = 10
+		
 	}
 }

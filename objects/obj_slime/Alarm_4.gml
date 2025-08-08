@@ -11,4 +11,4 @@ y = y0;
 
  height = 0
 
-
+audio_play_single(choose(snd_slime_jump_1,snd_slime_jump_2),30,false)

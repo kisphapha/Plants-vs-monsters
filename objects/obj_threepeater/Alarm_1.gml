@@ -29,6 +29,6 @@ if chain > 0
 		{instance_destroy()}
 		
 	}
-	
+	audio_play_adjusted(snd_sun_produce,50,false,1.2,0.8)
 }
 

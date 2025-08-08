@@ -33,6 +33,8 @@ switch (attack){
 
         alarm[1] = 250
 
+		audio_play_single(snd_scorpiking_laugh,100,false,global.volume_sfx)
+		
         break;
 
 	//attack 3: venom shoot

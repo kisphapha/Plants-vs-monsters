@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_bamboo_launch",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.142041,
+  "name":"snd_bamboo_launch",
+  "parent":{
+    "name":"bamboozoka",
+    "path":"folders/Sounds/plants/bamboozoka.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_bamboo_launch.mp3",
+  "type":0,
+  "volume":1.0,
+}

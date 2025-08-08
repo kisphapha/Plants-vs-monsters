@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_scorpiking_laser_charge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":7.032,
+  "name":"snd_scorpiking_laser_charge",
+  "parent":{
+    "name":"scorpiking",
+    "path":"folders/Sounds/monsters/scorpiking.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_scorpiking_laser_charge.mp3",
+  "type":0,
+  "volume":1.0,
+}

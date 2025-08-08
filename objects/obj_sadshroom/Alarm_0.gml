@@ -42,6 +42,7 @@ if  instance_number(obj_enemies) > 0 and global.begining = 0{
 	    _blt.dest = _dest;
 	    _blt.speed = _distance / 60;
 	    _blt.direction = point_direction(x, y, _dest.x, _dest.y);	
+		audio_play_adjusted(snd_puff,50,false,1.2,0.8)
 	}
 
 }

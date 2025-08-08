@@ -1,15 +1,14 @@
-action_set_relative(0);
+
 if can_click == 1 && instance_number(obj_sunpoint)
 {
 	if collected == 0
 	{
 		collected = 1;
 		{
-			action_set_relative(1);
 			global.sun += value;
-			action_set_relative(0);
+			audio_play_sound(snd_sun_click,80,false,global.volume_sfx)
 		}
 		action_move_point(obj_sunpoint.x, obj_sunpoint.y, 8);
 	}
 }
-action_set_relative(0);
+

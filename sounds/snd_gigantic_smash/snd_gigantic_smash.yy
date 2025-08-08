@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_gigantic_smash",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.306122,
+  "name":"snd_gigantic_smash",
+  "parent":{
+    "name":"gigantic",
+    "path":"folders/Sounds/monsters/gigantic.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_gigantic_smash.mp3",
+  "type":0,
+  "volume":1.0,
+}

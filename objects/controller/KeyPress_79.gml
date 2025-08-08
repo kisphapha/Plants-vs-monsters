@@ -1,4 +1,7 @@
-with obj_seedy alarm[1] = 1
+if (!keyboard_check(vk_control))
+{
+	with obj_seedy alarm[1] = 1
+}
 
 /*global.lawnmover = 1;
 global.shovel = 1;

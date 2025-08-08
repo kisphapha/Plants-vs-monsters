@@ -20,3 +20,7 @@ height = 0
 fly_high = 0
 floating = 1
 phase = 0; alarm[3] = 20
+
+moans_rarity = 30
+sound_nature = [snd_dragonfly_buzz_1, snd_dragonfly_buzz_2]
+sound_death = [snd_slime_dead]

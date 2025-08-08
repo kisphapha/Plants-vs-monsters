@@ -9,4 +9,5 @@ function add_rain_bomb(_min_x,_max_y, _amount){
 		 _monster.switch_lane = 1
 		 _monster.sprite_index = spr_smallbomb7
 	}
+	audio_play_sound(snd_falling_things,80,false,global.volume_sfx)
 }

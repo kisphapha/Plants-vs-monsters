@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-game_save("test")
+//game_save("test")

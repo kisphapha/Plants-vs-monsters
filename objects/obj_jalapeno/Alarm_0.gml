@@ -7,6 +7,8 @@ _bom.type = 5
 
 instance_create_depth(x,y,depth - 1,obj_frame_creator)
 
+audio_play_sound(snd_jalapeno,100,false,global.volume_sfx)
+
 with (pr) instance_destroy()
 
 

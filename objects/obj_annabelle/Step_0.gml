@@ -14,7 +14,8 @@ if instance_exists(prj)
 	    if line = 4 new_line = choose(275,440)
 	    if line = 5 new_line = 350
 		cool_down = 0;
-		alarm[6] = 13
+		alarm[6] = 13;
+		audio_play_single(snd_annabelle_tele,30,false,global.volume_sfx)
 	}
 }
 else
@@ -73,7 +74,12 @@ if dead = true {
         }
 
     }
-
+	
+	if (!is_scream){
+		is_scream = true;
+		audio_play_single(snd_monster_dies,50,false,global.volume_sfx)
+	}
+	
    with heart instance_destroy();
 
    instance_destroy()        

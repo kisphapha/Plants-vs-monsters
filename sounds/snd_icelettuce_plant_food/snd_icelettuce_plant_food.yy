@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_icelettuce_plant_food",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.657143,
+  "name":"snd_icelettuce_plant_food",
+  "parent":{
+    "name":"icelettuce",
+    "path":"folders/Sounds/plants/icelettuce.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_icelettuce_plant_food.mp3",
+  "type":0,
+  "volume":1.0,
+}

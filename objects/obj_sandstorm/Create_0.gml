@@ -3,30 +3,28 @@ action_set_alarm(1, 0);
 attack = 0;
 dead = false;
 zom = noone;
-var __b__;
-__b__ = action_if_variable(y, 160, 1);
-if __b__
+
+if y < 160
 {
-line = 1;
+	line = 1;
 }
-__b__ = action_if(y > 160 and y < 252);
-if __b__
+if y >= 160 and y < 252
 {
-line = 2;
+	line = 2;
 }
-__b__ = action_if(y > 252 and y < 328);
-if __b__
+
+if y >= 252 and y < 328
 {
-line = 3;
+	line = 3;
 }
-__b__ = action_if(y > 328 and y < 408);
-if __b__
+
+if y >= 328 and y < 408
 {
-line = 4;
+	line = 4;
 }
-__b__ = action_if(y > 408 and y < 488);
-if __b__
+if y >= 408 and y < 488
 {
-line = 5;
+	line = 5;
 }
 depth = -y*2;
+audio_play_single(choose(snd_sandstorm_1,snd_sandstorm_2),100,false,global.volume_sfx)

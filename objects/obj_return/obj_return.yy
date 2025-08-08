@@ -3,7 +3,6 @@
   "%Name":"obj_return",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":77,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_return",
@@ -12,7 +11,10 @@
     "name":"GUI",
     "path":"folders/Objects/GUI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_menu_button",
+    "path":"objects/obj_menu_button/obj_menu_button.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

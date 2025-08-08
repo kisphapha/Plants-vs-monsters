@@ -12,4 +12,5 @@ if wave > 0
 			speed = const_speed * 3
 		}
 	}
+	audio_play_sound(snd_ping,100,false,global.volume_sfx)
 }

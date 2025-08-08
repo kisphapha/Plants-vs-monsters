@@ -26,6 +26,8 @@ function add_random_crystal(argument0, argument1, argument2) {
 			_tile.crystalize = 1;
 		}
 	}
+	audio_play_sound(snd_crystal_rise,150,false,global.volume_sfx)
+
 	/*repeat min(counting_possible,amount) {
 	y_random = irandom_range(1,5)
 	x_random = irandom_range(from,to)

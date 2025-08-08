@@ -62,7 +62,7 @@ if random(15+love.hp/150) < 1
 
  if monster = obj_slime {if random(3)<1 mons.size = 3 else mons.size = 2} 
 
-
+ audio_play_single(choose(snd_boss_summon,snd_boss_summon_1),50,false,global.volume_sfx)
 
 }
 

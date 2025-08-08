@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_kang_explode",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.989388,
+  "name":"snd_kang_explode",
+  "parent":{
+    "name":"kang",
+    "path":"folders/Sounds/monsters/kang.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_kang_explode.mp3",
+  "type":0,
+  "volume":1.0,
+}

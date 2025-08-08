@@ -15,7 +15,13 @@ if controller.planting = 1 and controller.plant_ >= 0 && planted = 0{
         plant.cost =  choosing_card.price
         global.sun -= choosing_card.price
         choosing_card.alarm[1] = choosing_card.recharge_time; choosing_card.recharge = 0; plant_success = 1
-    } else 
+		
+		if (water == 1) {
+			audio_play_sound(snd_plant_water,80,false,global.volume_sfx)
+		} else {
+			audio_play_sound(snd_plant,80,false,global.volume_sfx)
+		}
+	} else 
 		planted = 0
 	
     if global.bangchuyen = 1 and plant_success = 1

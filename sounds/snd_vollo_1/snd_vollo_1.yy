@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_vollo_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":8.542041,
+  "name":"snd_vollo_1",
+  "parent":{
+    "name":"vollo",
+    "path":"folders/Sounds/monsters/vollo.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_vollo_1.mp3",
+  "type":0,
+  "volume":1.0,
+}

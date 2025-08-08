@@ -16,6 +16,11 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1)
 			if  other.id ==  target.id
 			{
 				target.hp += -dame+cold*0.5;
+				attack_sound_debounce += 1;
+				if (array_length(sound_attack) > 0 && attack_sound_debounce >= 5){
+					attack_sound_debounce = 0;
+					audio_play_single(sound_attack[irandom(array_length(sound_attack) - 1)],30,false,global.volume_sfx)	
+				}
 			}	
 		}
 		action_move("000010000", 0);
@@ -30,6 +35,7 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead && (special_condition(1)
 			if other.bam2 == 1
 			{
 				with (other) instance_destroy();
+				audio_play_sound(snd_icelettuce_freeze,80,false,global.volume_sfx)
 				freeze = 1;			
 				alarm[1] = 300;
 				cold = 1;

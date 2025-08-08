@@ -22,3 +22,5 @@ sprite_dead = spr_crystard5
 fuked = 0
 
 mask = instance_create(x,y,obj_boxmodel)
+
+sound_nature = [snd_crystard_1,snd_crystard_2]

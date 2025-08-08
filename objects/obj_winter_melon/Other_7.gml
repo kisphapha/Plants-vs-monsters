@@ -38,6 +38,7 @@ if (powering == 1)
 			_blt.direction = random_range(85,95)
 		}	
 		cannon_current_wave -= 1
+		audio_play_sound(snd_scorpiking_shoot,100,false,global.volume_sfx)
 		alarm[5] = 10
 	}
 	else 

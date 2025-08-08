@@ -7,6 +7,7 @@ if dead = true {
 
     instance_create(x,y,obj_fsexp)
 
+	audio_play_sound(snd_plant_dies,100,false,global.volume_sfx)
 }
 
 

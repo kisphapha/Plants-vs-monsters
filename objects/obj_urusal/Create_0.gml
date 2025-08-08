@@ -49,3 +49,9 @@ shadow_offset = 32
 if global.monster_reveal[mons_id] == 0 {
 	global.monster_reveal[mons_id] = 1
 }
+
+sound_nature = [snd_urusal_1, snd_urusal_2]
+sound_death = [snd_scorpiking_dead]
+
+
+audio_play_single(sound_nature[0],300,false,global.volume_sfx)

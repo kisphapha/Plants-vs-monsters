@@ -32,7 +32,8 @@ if chain > 0{
 	    blt.direction = point_direction(x, y, dest.x, dest.y);
 	}
 	ds_list_destroy(eligibleEnemies); // Clean up the lis
-    alarm[1] = 15
+    alarm[1] = 15;
+	audio_play_adjusted(snd_puff,100,false,1.2,0.8)
     if chain <= 0 {
         with a1 instance_destroy()
         with a2 instance_destroy()

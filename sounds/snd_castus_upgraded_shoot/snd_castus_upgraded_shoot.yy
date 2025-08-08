@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_castus_upgraded_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.182844,
+  "name":"snd_castus_upgraded_shoot",
+  "parent":{
+    "name":"castus",
+    "path":"folders/Sounds/plants/castus.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_castus_upgraded_shoot.mp3",
+  "type":0,
+  "volume":1.0,
+}

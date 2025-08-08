@@ -41,6 +41,7 @@ if power_active == 1
 			blt.type = 1; blt.sprite_index = spr_bananabloom; blt.image_speed = 0.5
 			blt.fly = 0;
 			blt.speed = 0; blt.direction = 0;
+			audio_play_single(snd_bloom,100,false,global.volume_sfx)
 			image_index = 2
 			alarm[2] = 3
 			action_set_timeline(timeline1, 0);

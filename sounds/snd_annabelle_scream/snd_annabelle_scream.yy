@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_annabelle_scream",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":7.032,
+  "name":"snd_annabelle_scream",
+  "parent":{
+    "name":"annabelle",
+    "path":"folders/Sounds/monsters/annabelle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_annabelle_scream.mp3",
+  "type":0,
+  "volume":0.33,
+}

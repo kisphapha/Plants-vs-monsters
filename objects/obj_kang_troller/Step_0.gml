@@ -16,10 +16,15 @@ if (shoot_phase == 0 || shoot_phase == 1)
 			shoot_phase = 2
 			image_speed = 0.5
 			image_index = 0
+			audio_play_sound(snd_bomba_open,120,false,global.volume_sfx)
 		}
 	}
 }
 if (dead){
+	if (!is_scream){
+		is_scream = true;
+		audio_play_sound(snd_kang_explode,120,false,global.volume_sfx)
+	}
 	if (shoot_phase >= 0){
 		shoot_phase = -2	
 		if (x_0 == -1) x_0 = x

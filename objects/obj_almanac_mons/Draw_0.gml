@@ -38,7 +38,7 @@ for (var _i = 0 ; _i < array_length(selected_info.class); _i ++)
 //BACKGROUND
 draw_sprite_part(background,0,243,202,197,205,195,38)
 //AVATER
-draw_sprite_ext(selected_info.picture,0,294,160,1,1,0,image_blend,image_alpha)
+draw_sprite_ext(selected_info.picture,0,294,160,selected_info.picture_scale,selected_info.picture_scale,0,image_blend,image_alpha)
 
 //LAYOUT
 draw_sprite(spr_almanac_layout_2,0,0,0)

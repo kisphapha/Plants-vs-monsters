@@ -8,7 +8,7 @@ if transparent == 0
 			if (ds_list_find_index(collide_list,other.id) == -1)
 			{
 				ds_list_add(collide_list,other.id)
-				take_damage(75*(1-immortal))
+				take_damage(75*(1-immortal),1)
 			}			
 		}
 	}

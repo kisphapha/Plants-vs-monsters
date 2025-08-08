@@ -44,7 +44,8 @@ if global.pause == 2 {
 	
 	global.pause = 1
 	instance_deactivate_all(true)
-	instance_activate_object(game)
+	instance_activate_object(game)	
+	instance_activate_object(obj_sound_manager)
 	instance_activate_object(obj_menu_pause)
 	instance_create(view_get(0) + 240, view_get(1) + 350, obj_menu_restart_level)
 	instance_create(view_get(0) + 240, view_get(1) + 400, obj_menu_quit_level)
@@ -98,3 +99,6 @@ if global.slotNumber = 8
 	cd = 50
 
 
+if (keyboard_check(vk_control)){
+	summon_debug()
+}

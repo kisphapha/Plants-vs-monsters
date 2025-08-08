@@ -19,6 +19,7 @@ if instance_exists(dest) and phase = 2 and dest.y < y {
 		_splash.image_index = image_index
 		if sprite_index == spr_melon_projectile_fire _splash.image_index = 2
 	}
+	audio_play_sound(choose(snd_melonpult_1,snd_melonpult_2),50,false,global.volume_sfx)
     instance_destroy()
 }
 

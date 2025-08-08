@@ -6,6 +6,8 @@ if value = max_val {
 
         alarm[0] = 30;
 
+		audio_play_sound(snd_plant_powering,200,false,global.volume_sfx)
+		
         c = instance_create(x-40,y-20,obj_lvlup);
 
         c.sizex = 80;

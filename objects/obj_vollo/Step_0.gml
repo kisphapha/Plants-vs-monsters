@@ -57,6 +57,8 @@ if switch_lane = 1 and dead = false
         image_index = 0;
 
         attack = 0;
+		
+		audio_play_single(sound_death[0],300,false,global.volume_sfx)
 
     }
 
@@ -129,6 +131,13 @@ hp = 500
 
 if dead
 {
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[0],300,false,global.volume_sfx)	
+		}
+	}
+	
 	if dying < 100
 
 	{
@@ -212,8 +221,14 @@ if dead
 	        alarm[5] = 100
 
 	        dying = 0;
+			
+			is_scream = false;
 
 	    }
 
 	}
+}
+
+if (random(100) < 1 && !dead){	
+	audio_play_single(sound_nature[irandom(1)],20,false,global.volume_sfx)	
 }

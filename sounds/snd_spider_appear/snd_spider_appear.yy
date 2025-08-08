@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_spider_appear",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.703696,
+  "name":"snd_spider_appear",
+  "parent":{
+    "name":"spider",
+    "path":"folders/Sounds/monsters/spider.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_spider_appear.ogg",
+  "type":0,
+  "volume":1.0,
+}

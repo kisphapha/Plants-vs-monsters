@@ -12,6 +12,7 @@ if !is_buttered && falling == 0 && ignited && stormed == 0 && freeze == 0 && !de
 			speed = 0
 			target = other.id;
 			attack = 1;
+			audio_play_sound(snd_bomba_open,false,80,global.volume_sfx)
 		}
 	}
 }

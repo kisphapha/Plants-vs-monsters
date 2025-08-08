@@ -1,5 +1,9 @@
 if special_condition(0) && transparent == 0 && other.active == 1 && !dead
 {
+	if (obj_sound_manager.monster_hit_cooldown == 0){
+		obj_sound_manager.monster_hit_cooldown = 5
+		play_hit_sound()	
+	}
 	take_damage((2+other.powered*23)*(1-immortal))
 	with (other) instance_destroy()
 	if (hp <= 0)
@@ -13,7 +17,8 @@ if special_condition(0) && transparent == 0 && other.active == 1 && !dead
 		    if c >= 60 and c < 85 shroom  = obj_sadshroom
 		    if c >= 85 shroom  = obj_possonshroom
 		    plant = instance_create(tile.x+32,tile.y+32,shroom); plant.tile = tile
-		    tile.planted = 1
+		    tile.planted = 1;
+			audio_play_sound(snd_plant_grow,100,false,global.volume_sfx)
 		}
 		action_set_relative(0);
 		action_effect(5, tile.x+32, tile.y+32, 2, 8388736, 0);

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_urusal_appear",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":5.668563,
+  "name":"snd_urusal_appear",
+  "parent":{
+    "name":"urusal",
+    "path":"folders/Sounds/monsters/urusal.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_urusal_appear.mp3",
+  "type":0,
+  "volume":1.0,
+}

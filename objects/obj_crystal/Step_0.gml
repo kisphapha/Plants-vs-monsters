@@ -15,6 +15,7 @@ if broke = 1 {
     tile.unplantable -= 1 
 	tile.crystalize = 0
     with box {instance_destroy()}
+	audio_play_sound(snd_crystal_break,150,false,global.volume_sfx)
 
     instance_destroy();  
 

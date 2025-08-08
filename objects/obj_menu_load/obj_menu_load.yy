@@ -12,7 +12,10 @@
     "name":"GUI",
     "path":"folders/Objects/GUI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_menu_button",
+    "path":"objects/obj_menu_button/obj_menu_button.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

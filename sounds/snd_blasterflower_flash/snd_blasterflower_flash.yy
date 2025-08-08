@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_blasterflower_flash",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.880812,
+  "name":"snd_blasterflower_flash",
+  "parent":{
+    "name":"blasterflower",
+    "path":"folders/Sounds/plants/blasterflower.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_blasterflower_flash.mp3",
+  "type":0,
+  "volume":1.0,
+}

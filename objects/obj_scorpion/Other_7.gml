@@ -9,6 +9,7 @@ if sprite_index == spr_scorpion3
 		})
 		chain += -1;
 		action_sprite_set(spr_scorpion3, 0, 1);
+		audio_play_adjusted(snd_scorpio_shoot,50,false,1.3,0.7, obj_scorpion, 0.02, 0.4)
 	}
 	else
 	{

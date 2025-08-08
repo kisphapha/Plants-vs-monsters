@@ -6,7 +6,7 @@ if chain > 0
 	sun.direction = random_range(45,135)
 	sun.speed = 8
 	sun.size = 1
-
+	audio_play_sound(snd_sun_produce,50,false,global.volume_sfx)
 
 	alarm[1] = 2
 

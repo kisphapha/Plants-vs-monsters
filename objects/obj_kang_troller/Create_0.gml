@@ -31,3 +31,8 @@ y_0 = -1
 shake_x = 0
 shake_y = 0
 floating = 1
+
+sound_nature = [snd_kang_1, snd_kang_2]
+sound_attack = []
+sound_death = []
+audio_play_sound(snd_kang_1,120,false,global.volume_sfx)

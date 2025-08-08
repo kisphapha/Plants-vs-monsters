@@ -47,7 +47,9 @@ if flying = 1{
 
         switch_lane = 1
 
-        alarm[1] = 1
+        alarm[1] = 1;
+		
+		audio_play_sound(snd_vollo_pin,100,false,global.volume_sfx)
 
     }
 

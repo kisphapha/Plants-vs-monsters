@@ -15,18 +15,21 @@ if special_condition(0) && transparent == 0 && !dead
 			cold = 1
 			alarm[0] = max(alarm[0], 200);	
 			_dame *= reduce_ice
+			audio_play_single(snd_frozen,50,false,global.volume_sfx)
 		}
 		if (other.type == 2)
 		{
 			cold = 1
 			alarm[0] = max(alarm[0], 150);	
 			_dame *= reduce_ice
+			audio_play_single(snd_frozen,50,false,global.volume_sfx)
 		}
 		if (other.type == 3)
 		{
 			freeze = 1
 			alarm[1] = max(alarm[1], 240);
 			_dame *= reduce_ice
+			audio_play_single(snd_frozen,50,false,global.volume_sfx)
 		}
 		if (other.type == 5)
 		{

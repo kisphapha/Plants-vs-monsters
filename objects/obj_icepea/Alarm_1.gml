@@ -8,6 +8,7 @@ if chain > 0
 			_blt.speed = 8; _blt.direction = 0;
 			_blt.dame = 1;	
 		}
+		audio_play_adjusted(snd_sun_produce,50,false,1.2,0.8)
 		alarm[1] = 3
 		if chain < 1
 		{			

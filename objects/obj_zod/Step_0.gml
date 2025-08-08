@@ -4,6 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
+if sprite_index == spr_zod_3 && image_index == 4 {
+	audio_play_adjusted(snd_castus_stab,40,false,0.8,1.1,obj_zod,0.02)
+}
+
 if dead && is_shell == 1{
 	is_shell = 2;
 	dead = false;
@@ -36,6 +40,8 @@ if dead && is_shell == 1{
 		_smoke.size = random_range(0.5,2)
 		_smoke.span = 2
 	}
+	audio_play_adjusted(snd_zod_break,50,false,0.8,1.1,obj_zod,0.02)
+	sound_attack = []
 	
 }
 if bounce_phase == 0

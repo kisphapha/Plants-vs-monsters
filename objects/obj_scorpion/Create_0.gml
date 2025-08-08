@@ -22,5 +22,7 @@ sprite_attack = spr_scorpion4
 sprite_dead = spr_scorpion5
 
 
-
+sound_nature = [snd_scorpio1, snd_scorpio2]
+sound_attack = [snd_monsterdog_bite1, snd_monsterdog_bite2]
+sound_death = [snd_insect_dead]
 

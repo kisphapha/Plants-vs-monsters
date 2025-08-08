@@ -69,6 +69,6 @@ var _xx = game.xx[7] + random_range(-16,16)
 effect_create_above(ef_explosion,_xx,_yy,1,c_gray)
 instance_create_depth(_xx,_yy,0,monster)
 
-
+audio_play_single(choose(snd_boss_summon,snd_boss_summon_1),50,false,global.volume_sfx)
 
 alarm[1] = random_range(1 + love.hp/love.hpmax * 9,8 + love.hp/love.hpmax * 40)

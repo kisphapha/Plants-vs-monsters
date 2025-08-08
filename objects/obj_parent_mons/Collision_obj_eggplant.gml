@@ -12,6 +12,7 @@ if transparent == 0
 				{
 					if switch_lane = 0 && other.line = line {
 					    _dame = 5*(other.powering+1)*(1-immortal)
+						audio_play_single(snd_monster_attack_2,100,false,global.volume_sfx)
 					    alarm[1] = 10;
 						attack = 0
 					    switch_lane = 1;

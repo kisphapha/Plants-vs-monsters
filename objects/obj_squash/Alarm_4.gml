@@ -13,3 +13,4 @@ alarm[5]=60
 
 
 action_move("000010000", 0);
+audio_play_sound(snd_gigantic_smash,100,false,global.volume_sfx)

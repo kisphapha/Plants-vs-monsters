@@ -14,6 +14,7 @@ if power_active == 1
 			direction : 0,
 			speed : 12
 		})
+		audio_play_sound(snd_cold_wind,100,false,global.volume_sfx)
 		a1 = instance_create(x,y+40,obj_vtmp);
 		a2 = instance_create(x,y+40,obj_light)
 

@@ -29,13 +29,9 @@ if launch = 3 {
 
 }
 
-
-var __b__;
-__b__ = action_if_variable(power_active, 1, 0);
-if __b__
+if power_active == 1
 {
-	__b__ = action_if_variable(powering, 0, 0);
-	if __b__
+	if powering == 0
 	{
 		{
 			power_active = 0;
@@ -46,7 +42,8 @@ if __b__
 			a2 = instance_create(x,y+40,obj_light)
 
 			launch = 3
-
+			
+			audio_play_sound(snd_lightflower_ignite,100,false,global.volume_sfx)
 
 		}
 	}

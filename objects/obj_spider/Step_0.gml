@@ -124,4 +124,17 @@ if dead = true
 	}
 	sprite_index = sprite_dead;
 	image_speed = 0;
+	
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[irandom(array_length(sound_death) - 1)],50,false,global.volume_sfx)	
+		}
+	}
+}
+
+if (random(120) < 1){	
+	if (array_length(sound_nature) > 0 ){
+		audio_play_single(sound_nature[irandom(array_length(sound_nature) - 1)],20,false,global.volume_sfx)	
+	}
 }

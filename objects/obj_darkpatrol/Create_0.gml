@@ -22,6 +22,7 @@ sprite_dead = spr_darkpatrol5
 
 weird_death = 1
 
+sound_attack = [snd_castus_stab]
 
 
 

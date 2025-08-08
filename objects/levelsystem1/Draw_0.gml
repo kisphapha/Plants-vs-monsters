@@ -1,3 +1,4 @@
+
 action_set_relative(1);
 if lock_sequence == 7
 {

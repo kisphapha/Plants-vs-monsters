@@ -28,7 +28,8 @@ else
         sprite_index = sprite_walk; 
         image_index = 0;
         attack = 0;
-		alarm[5] = -1
+		alarm[5] = -1;
+		audio_play_sound(snd_kang_explode,120,false,global.volume_sfx)
 	}
 }
 
@@ -39,6 +40,7 @@ if angery = 10 {
 	{
 		var _b = instance_create_depth(x +random_range(-120,120),y + random_range(-112,48),depth-1,obj_monster_boom)
 		_b.harmless = true
+		_b.play_sound = false;
 	}
 }
 
@@ -56,6 +58,7 @@ if (shoot_phase == 0 || shoot_phase == 1)
 			shoot_phase = 2
 			image_speed = 0.5
 			image_index = 0
+			audio_play_sound(snd_bomba_open,150,false,global.volume_sfx)
 		}
 	}
 }
@@ -93,7 +96,8 @@ if dead
 		height = 0
 		phase = 2
 		shoot_phase = 3
-		disk.unbound = true
+		disk.unbound = true;
+		audio_play_sound(snd_kang_explode,120,false,global.volume_sfx)
 	} else if (fallen == 1)
 	{
 		if random(4) < 1
@@ -114,4 +118,9 @@ if dead
 		}
 	}
 	
+}
+if (random(100) < 1 && !dead){	
+	if (array_length(sound_nature) > 0 ){
+		audio_play_single(sound_nature[irandom(array_length(sound_nature) - 1)],20,false,global.volume_sfx)	
+	}
 }

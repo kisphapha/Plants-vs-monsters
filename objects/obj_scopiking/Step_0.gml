@@ -17,8 +17,9 @@ if switch_lane = 1 and dead = false
     {switch_lane = 0; speed = 0; image_index = 0; image_speed =0; alarm[5] = 60; line = newlane}
 } else {
     if (angery = 0 and hp < 1300) or (angery = 1 and hp <600) {
+		audio_play_single(sound_death[0],300,false,global.volume_sfx)
         angery = 10; alarm[4] = 60
-        xx = x; yy = y
+        xx = x; yy = y;
         sprite_index = sprite_dead; image_speed =0;
         image_index = 0;
         attack = 0;
@@ -29,7 +30,8 @@ if switch_lane = 1 and dead = false
 
     if attack = 4 and hp < hpp-35 {
         hpp = 0;
-        sprite_index = sprite_dead; image_speed =0; image_index = 0
+        sprite_index = sprite_dead; image_speed =0; image_index = 0;
+		audio_play_single(sound_death[0],300,false,global.volume_sfx)
         alarm[1] = 60
     }
 }
@@ -44,6 +46,12 @@ image_alpha = 0.5
 if dead
 {
 	hp = 0;
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[0],300,false,global.volume_sfx)	
+		}
+	}
 	if global.boss == 1
 	{
 		global.kill = 1

@@ -1,8 +1,11 @@
+var _pick_success = false;
+
 if (global.sun >= game.plants_library[library_index].cost and recharge = 1 and drop<>3)
 {
 	if ban_choosing == 0
 		{
 		controller.plant_ = plant_id - 1;
+		_pick_success = true;
 		with (controller) 
 		{
 			planting = 1;
@@ -12,11 +15,13 @@ if (global.sun >= game.plants_library[library_index].cost and recharge = 1 and d
 if drop == 2
 {
 	global.chosing = instance_nearest(x,y,object_index);
+	_pick_success = true;
 }
 if ban == 0 && global.seed[plant_id] != 0
 {
 	if drop == 3
 	{
+		_pick_success = true;
 		if chosen =1
 			{global.slot[position]=0; chosen = 0}
 		else
@@ -44,6 +49,7 @@ if drop == 1
 {
 	if flying_toward_screen == 0
 	{
+		_pick_success = true;
 		with (obj_arrow) 
 		{
 			action_kill_object();
@@ -64,4 +70,10 @@ if drop == 1
 		}	
 		global.plant_amount += 1;
 	}
+}
+
+if _pick_success {
+	audio_play_sound(snd_pick_plant,100,false,global.volume_sfx)
+} else {
+	audio_play_sound(snd_pick_fail,100,false,global.volume_sfx)
 }

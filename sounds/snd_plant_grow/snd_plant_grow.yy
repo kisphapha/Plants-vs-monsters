@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_plant_grow",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.17551,
+  "name":"snd_plant_grow",
+  "parent":{
+    "name":"sunshroom",
+    "path":"folders/Sounds/plants/sunshroom.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_plant_grow.mp3",
+  "type":0,
+  "volume":1.0,
+}

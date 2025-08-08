@@ -17,7 +17,6 @@ hp_max = hp
 fire_resist = 0;
 alarm[0] = 1
 
-
 function dragged_to_front(){
 	if (instance_exists(love) && instance_exists(tile))
 	{
@@ -32,6 +31,8 @@ function dragged_to_front(){
 		}
 		alarm[1] = 7.2
 		is_dragged = true
-		new_tile = instance_nearest(x + 48,y,obj_tiles)
+		new_tile = instance_nearest(tile.x + 72, tile.y,obj_tiles)
+		//var _coord = find_coordinate()
+		//new_tile = instance_nearest(game.xx[min(9, _coord.x_coord + 1)] - 32 ,game.yy[_coord.y_coord] - 32 ,obj_tiles)
 	}
 }

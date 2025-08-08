@@ -1,4 +1,7 @@
-with crystal broke = 1
-instance_create(x,y,obj_waving)
-with (pr) instance_destroy()
+with crystal broke = 1
 
+instance_create(x,y,obj_waving)
+
+with (pr) instance_destroy()
+
+audio_play_sound(snd_explosion,100,false,global.volume_sfx)

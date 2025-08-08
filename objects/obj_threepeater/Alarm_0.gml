@@ -20,8 +20,10 @@ if (global.begining == 0)
 	c3.speed = 8; c3.direction = 0;
 
 	c3.twist = 2; c3.alarm[0] = 10; c3.dame = 1
-	}
+	
+	audio_play_adjusted(snd_sun_produce,50,false,1.2,0.8)
 
+	}
 }
 
 

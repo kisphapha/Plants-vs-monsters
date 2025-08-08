@@ -23,7 +23,7 @@ light.dame = 0.05
 
 with light {lightbeam(noone,noone,false,self.id)}
 
-
+audio_play_single(snd_lightflower_ignite,80,false,global.volume_sfx)
 
 alarm[2] = 90
 

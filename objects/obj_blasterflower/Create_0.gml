@@ -1,7 +1,9 @@
-action_inherited();
+event_inherited();
 crystal = instance_nearest(x,y,obj_crystal);
-action_sprite_set(spr_blasterflower, 0, 0);
+image_speed = 0;
+image_index = 0
 bam = 0;
-action_set_alarm(15, 0);
-action_sprite_transform(0.75, 0.75, 0, 0);
+alarm[0] = 15
 pr = noone
+
+audio_play_sound(snd_blasterflower_flash,100,false,global.volume_sfx)
