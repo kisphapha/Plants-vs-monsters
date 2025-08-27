@@ -60,6 +60,8 @@ sound_nature = [snd_monster_moans_1,snd_monster_moans_2,snd_monster_moans_3];
 sound_death = [snd_monster_dies,snd_monster_dies2]
 sound_attack = [snd_monster_attack_3, snd_monster_attack_2]
 sound_hurt = [snd_monster_hit, snd_monster_hit2, snd_monster_hit3]
+cursed = false
+immortal_spawn = 0;
 
 if y <= 160
 {

@@ -31,3 +31,19 @@ if (y > 408 and y < 488)
 {
 line = 5;
 }
+
+if (magnetized && instance_exists(magnetic_center)){
+	magnetic_angle += speed
+	
+	x = magnetic_center.x + lengthdir_x(magnetic_distance, magnetic_angle)	
+	y = magnetic_center.y + lengthdir_y(magnetic_distance, magnetic_angle)	
+	
+	if (magnetic_final_direction != -1){
+		direction = magnetic_final_direction
+		speed *= 1.5
+		magnetized = false
+		dame *= 1.5
+	}
+	
+}
+

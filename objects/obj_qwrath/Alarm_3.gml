@@ -8,6 +8,7 @@ if (steps == 1){
 		image_angle : 340
 	})
 	intro_fire.cursed = true	
+	audio_play_sound(snd_qwrath_fire,150,false,global.volume_sfx)
 	alarm[3] = 30;
 }
 if (steps == 2){

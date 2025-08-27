@@ -12,7 +12,7 @@ if transparent == 0
 			with (other) {
 				action_kill_object();
 			}
-			take_damage(1*(1-immortal))
+			take_damage(other.dame*(1-immortal))
 			if (obj_sound_manager.monster_hit_cooldown == 0){
 				obj_sound_manager.monster_hit_cooldown = 5
 				play_hit_sound()

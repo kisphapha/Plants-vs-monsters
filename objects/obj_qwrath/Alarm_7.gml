@@ -15,6 +15,7 @@ if (vertical_fire_phase == 2){
 	snap_line()
 }
 if (vertical_fire_phase == 3){
+	audio_play_sound(snd_qwrath_fire,150,false,global.volume_sfx)
 	main_fire = instance_create_depth(x,y,depth - 50,obj_firebreath, {
 		image_xscale : 1.5,
 		image_yscale : 1.25,

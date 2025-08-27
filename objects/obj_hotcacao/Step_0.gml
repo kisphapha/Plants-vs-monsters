@@ -14,3 +14,6 @@ if power_active == 1
 		image_speed = 0.5
 	}
 }
+if (random(150) < 1){
+	audio_play_single(choose(snd_hotcacao_1,snd_hotcacao_2),30,false,global.volume_sfx)	
+}

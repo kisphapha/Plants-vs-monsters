@@ -25,3 +25,9 @@ height = 0;
 weird_death = 1;
 reduce_fire = 1/3;
 reduce_ice = 3;
+
+sound_nature = [snd_fire_idle]
+sound_hurt = [snd_ignite1, snd_ignite2]
+sound_attack = []
+sound_death = [snd_fireburn]
+moans_rarity = 10

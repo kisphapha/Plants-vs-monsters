@@ -11,7 +11,7 @@ if (instance_exists(dest_tile)){
 
     if dest_tile.y >= 408 {line = 5;}
 	
-	speed = random_range(7,12)
+	speed = random_range(9,14)
 	direction = point_direction(x,y,dest_tile.x + 32,dest_tile.y + 32)
 } else {
 	instance_destroy()	

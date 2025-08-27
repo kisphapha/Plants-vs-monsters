@@ -7,4 +7,5 @@ if (!isBoss && special_condition(0) && toss_max = 0){
 	speed = 8;
 	if floating == 0 floating = 3;
 	take_damage(10)
+	audio_play_adjusted(snd_monster_attack_3,60,false,1.2,0.8,obj_enemies,0.02)
 }

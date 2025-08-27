@@ -32,6 +32,9 @@ function explode(_super){
 			}
 		}
 	}
+	
+	audio_play_sound(snd_lavasplash,100,false,global.volume_sfx,0.5)
+	
 	if instance_exists(pr) {
 		with pr instance_destroy()
 	}

@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if !is_buttered && stormed == 0 && freeze == 0 && !dead && untouch = 0 
+if global.begining == 0 && !is_buttered && stormed == 0 && freeze == 0 && !dead && untouch = 0 
 	&& switch_lane == 0 && !other.is_dragged && moving == 0
 {
 	if (instance_exists(left_leg)){

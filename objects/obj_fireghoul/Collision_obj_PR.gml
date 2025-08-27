@@ -8,6 +8,7 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead
 	{
 		var _exp = instance_create_depth(other.x,other.y,depth - 10, obj_explosion)
 		_exp.sprite_index = spr_burntoash
+		_exp.sound = [snd_fireburn]
 		repeat 10 {
 			var _size = random_range(1,2)
 			var _smoke = instance_create_depth(other.x,other.y,depth - 5, obj_smoke, {
@@ -23,11 +24,13 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead
 	}else if (other.fire_resist == 1 && charged){
 		var _exp = instance_create_depth(other.x,other.y,depth - 10, obj_explosion)
 		_exp.sprite_index = spr_burntoash
+		_exp.sound = [snd_fireburn]
 		charged = false
 		alarm[2] = 30;
 	}else if (other.fire_resist == 2 && charged){
 		var _exp = instance_create_depth(other.x,other.y,depth - 10, obj_explosion)
 		_exp.sprite_index = spr_burntoash
+		_exp.sound = [snd_fireburn]
 		charged = false
 		alarm[2] = 30;
 		other.hp -= 200;

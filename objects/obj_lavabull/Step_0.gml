@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+if (ramming == 1){
+	audio_play_single(snd_lavabull_run,30,false,global.volume_sfx)	
+}
 
 if (!dead){
 	if (ramming == 2){

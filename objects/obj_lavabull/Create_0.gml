@@ -24,3 +24,6 @@ if global.begining == 0
 weird_death = 1
 reduce_fire = 1/2;
 reduce_ice = 2;
+
+sound_nature = []
+sound_attack = []

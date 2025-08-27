@@ -15,7 +15,8 @@ if global.begining == 0
 	image_speed = 1
 	bounce_phase = 0
 	is_shell = 1
-	weird_death = 1
+	weird_death = 1;
+	sound_nature = [snd_monster_attack]
 }
 else
 {
@@ -23,7 +24,8 @@ else
 	image_speed = 0
 	bounce_phase = 4
 	is_shell = 0
-	weird_death = 0
+	weird_death = 0;
+	sound_nature = []
 }
 
 
@@ -36,7 +38,6 @@ if global.monster_reveal[mons_id] == 0 {
 }
 
 moans_rarity = 10;
-sound_nature = [snd_monster_attack]
 sound_attack = [snd_castus_stab]
 
 

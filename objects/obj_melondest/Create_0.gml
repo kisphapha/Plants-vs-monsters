@@ -21,9 +21,10 @@ function detonate(){
 	if (is_magma){
 		_extra_dame_major = 2.5		
 		_extra_dame_minor = 1.5
-		instance_create_depth(x,y,depth - 1, obj_explosion, {
+		var _exp = instance_create_depth(x,y,depth - 1, obj_explosion, {
 			sprite_index : spr_fireblast	
 		})	
+		_exp.sound = []
 	}
 	
 	var _dame_major = instance_create_depth(x,y,depth,obj_damage_once)

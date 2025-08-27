@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_daikopter_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.097125,
+  "name":"snd_daikopter_1",
+  "parent":{
+    "name":"daikopter",
+    "path":"folders/Sounds/plants/daikopter.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_daikopter_1.mp3",
+  "type":0,
+  "volume":1.0,
+}

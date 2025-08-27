@@ -16,6 +16,7 @@ if (fire_phase == 1){
 		_smoke_2.size = random_range(1,1.5)
 		_smoke_2.span = 2
 	}
+	audio_play_sound(snd_jigoku_1,100,false,global.volume_sfx)
 	alarm[6] = 60
 }
 if (fire_phase == 2){
@@ -38,6 +39,7 @@ if (fire_phase == 4){
 	})
 	main_fire.yy = 16
 	main_fire.love = self
+	audio_play_sound(snd_qwrath_fire,150,false,global.volume_sfx)
 }
 if (fire_phase == 5){
 	speed = 0

@@ -12,7 +12,8 @@ monster_to_join = [
 	obj_dragonfly, obj_krockodile, obj_spider, obj_slime,
 	obj_skelegon, obj_crystard, obj_helahula, obj_darkpatrol, obj_annabelle,
 	obj_small_bomb, obj_zod, obj_grabot, obj_big_bomb, 
-	obj_fireghoul,obj_lavabull,obj_goluk
+	obj_fireghoul,obj_lavabull,obj_goluk, obj_jigoku,
+	obj_eggmonster_basic, obj_eggmonster_standard, obj_eggmonster_vip
 ]
 monster_this_waves = [
 	obj_monster, obj_brownie, obj_hardcore

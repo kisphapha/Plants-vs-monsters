@@ -25,7 +25,14 @@ if dead = false{
 
     sprite_index = sprite_dead;
 
-    image_speed = 1
+    image_speed = 1;
+	
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[irandom(array_length(sound_death) - 1)],50,false,global.volume_sfx)	
+		}
+	}
 
 }
 

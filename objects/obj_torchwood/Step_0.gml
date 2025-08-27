@@ -19,3 +19,6 @@ if power_active == 1
 		timeline_running = true;
 	}
 }
+if (random(10) < 1){
+	audio_play_single(snd_fire_idle,30,false,global.volume_sfx)	
+}

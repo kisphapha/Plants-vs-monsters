@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (instance_exists(mons)){
+if (instance_exists(mons) && is_homing){
 	target_facing = point_direction(x,y,mons.x,mons.y)
 	var _delta = (target_facing - facing + 540) % 360 - 180
 	

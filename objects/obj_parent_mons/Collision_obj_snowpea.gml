@@ -17,7 +17,7 @@ if transparent == 0
 				obj_sound_manager.monster_hit_cooldown = 5
 				play_hit_sound()
 			}
-			take_damage(1*(1-immortal) * reduce_ice)
+			take_damage(other.dame*(1-immortal) * reduce_ice)
 		}
 	}
 }

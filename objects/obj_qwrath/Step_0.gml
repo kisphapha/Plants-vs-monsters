@@ -1,5 +1,11 @@
 depth = -(y + sprite_height - sprite_yoffset);
 
+if (random(300) < 1 && !dead){	
+	if (array_length(sound_nature) > 0 ){
+		audio_play_single(sound_nature[irandom(array_length(sound_nature) - 1)],20,false,global.volume_sfx)	
+	}
+}
+
 if switch_lane = 1 and !dead
 
 {

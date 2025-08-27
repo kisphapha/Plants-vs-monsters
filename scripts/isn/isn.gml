@@ -14,7 +14,7 @@ function isn(argument0, argument1, argument2, argument3) {
 	//
 	/// GMLscripts.com/license
 	{
-	 var pointx,pointy,object,n,list,nearest;
+		var pointx,pointy,object,n,list,nearest;
 	    pointx = argument0;
 	    pointy = argument1;
 	    object = argument2;

@@ -40,6 +40,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_tallnut","path":"objects/obj_tallnut/obj_tallnut.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_floorfire_2","path":"objects/obj_floorfire_2/obj_floorfire_2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_qwrath_tails","path":"objects/obj_qwrath_tails/obj_qwrath_tails.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_ultimate_bullet","path":"objects/obj_ultimate_bullet/obj_ultimate_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_parent_mons",

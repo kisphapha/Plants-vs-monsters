@@ -91,8 +91,11 @@ if dead
 		fallen = 1
 		disk.image_speed = 0
 		image_index = 1
-		global.kill = 1
-		controller.final = 1		
+		if (global.boss == 1)
+		{
+			global.kill = 1
+			controller.final = 1		
+		}
 		height = 0
 		phase = 2
 		shoot_phase = 3

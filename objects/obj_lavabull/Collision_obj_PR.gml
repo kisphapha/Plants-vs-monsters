@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if !is_buttered && stormed == 0 && freeze == 0 && !dead && untouch = 0 
+if global.begining == 0 && !is_buttered && stormed == 0 && freeze == 0 && !dead && untouch = 0 
 	&& switch_lane == 0 && !other.is_dragged 
 {
 	
@@ -22,6 +22,8 @@ if !is_buttered && stormed == 0 && freeze == 0 && !dead && untouch = 0
 			image_index = 6;
 			image_speed = 0
 			other.hp -= 750  * (2 - cold) / 2;
+			audio_play_adjusted(snd_lavabull_impact,80,false,1.1,0.8,obj_lavabull,0.03);
+			audio_play_adjusted(snd_lavabull_brake,60,false,1.1,0.8,obj_lavabull,0.03);
 		}
 	}
 }

@@ -25,7 +25,7 @@ else
 }
 
 
-if distance < 128 {
+if distance < 128 && global.begining == 0 {
 
     if more_summon = 0 {more_summon = 1; alarm[2] = 1}
 

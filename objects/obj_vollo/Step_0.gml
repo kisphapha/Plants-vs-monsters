@@ -142,7 +142,10 @@ if dead
 
 	{
 
-	    global.kill = 1
+	    if global.boss == 1
+		{
+			global.kill = 1
+		}
 
 	    earthquake(4);  
 
@@ -176,7 +179,10 @@ if dead
 
 	            dying = 150
 
-	            controller.final = 1
+	            if global.boss == 1
+				{
+					controller.final = 1
+				}
 
 	        }
 

@@ -145,7 +145,7 @@ if waves = 21
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 5 instance_create(680+random_range(-32,32),script0(0),obj_brownie);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(3),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(3),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 22
@@ -153,7 +153,7 @@ if waves = 22
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monsterdog);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(1),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(1),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 23
@@ -161,7 +161,7 @@ if waves = 23
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 8 instance_create(680+random_range(-32,32),script0(0),obj_fireghoul);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(5),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(5),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 24
@@ -169,7 +169,7 @@ if waves = 24
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 4 instance_create(680+random_range(-32,32),script0(0),obj_hardcore);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(2),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(2),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 25
@@ -178,7 +178,7 @@ if waves = 25
 	erruption(150,90,60,true)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 1 instance_create(680+random_range(-32,32),script0(0),obj_gigantic);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(4),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(4),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 26
@@ -186,8 +186,8 @@ if waves = 26
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 6 instance_create(680+random_range(-32,32),script0(0),obj_brownie);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(1),obj_lavabull);		
-	repeat 3 instance_create(680+random_range(-32,96),script0(5),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(1),obj_lavabull);		
+	repeat 2 instance_create(680+random_range(-32,96),script0(5),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 27
@@ -195,8 +195,8 @@ if waves = 27
 	add_rain_meteor(2,1,9)
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monster);	
 	repeat 10 instance_create(680+random_range(-32,32),script0(0),obj_monsterdog);	
-	repeat 3 instance_create(680+random_range(-32,96),script0(2),obj_lavabull);		
-	repeat 3 instance_create(680+random_range(-32,96),script0(4),obj_lavabull);	
+	repeat 2 instance_create(680+random_range(-32,96),script0(2),obj_lavabull);		
+	repeat 2 instance_create(680+random_range(-32,96),script0(4),obj_lavabull);	
 	alarm[0] = 600
 }
 if waves = 28

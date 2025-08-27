@@ -55,7 +55,6 @@ if dead
 {
 	hp = 0;
 	
-	global.kill = 1;
 	
 	if (!is_scream && global.begining == 0){
 		is_scream = true
@@ -64,12 +63,17 @@ if dead
 		}
 	}
 
-	if controller.final = 0 
+	if (global.boss == 1)
 	{
-		head.alarm[0] = 10
+		global.kill = 1
+		if controller.final = 0 
+		{
+			head.alarm[0] = 10
 
-		controller.final = 1
+			controller.final = 1
+		}		
 	}
+	
 
 	if dying < 100
 

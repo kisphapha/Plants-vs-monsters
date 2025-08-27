@@ -14,6 +14,7 @@ if (moving == 1)
 		moving = 0;
 		recheck = false;
 		love.speed = 0;
+		audio_play_adjusted(snd_gigantic_smash,50,false,1.1,0.9,obj_goluk,0.03)
 		if (!love.dead)
 		{
 			love.moving = 0;
@@ -46,6 +47,7 @@ if (moving == 2 or moving = 3)
 			_quake.duration = 10;
 			_quake.lvl = 2;
 			var _smash = instance_create_depth(x-40,y,depth,obj_smassh);
+			audio_play_adjusted(snd_gigantic_smash,50,false,1.1,0.9,obj_goluk,0.03)
 		}
 	}
 }

@@ -9,5 +9,6 @@ if (!array_contains(untorchwood,other.id) && form == 0){
 		_pea.twist = twist
 		_pea.alarm[0] = alarm[0]
 	}
+	audio_play_sound(snd_firepea,30,false,global.volume_sfx)
 	instance_destroy()
 }

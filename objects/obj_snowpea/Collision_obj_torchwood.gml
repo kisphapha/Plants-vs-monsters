@@ -6,4 +6,5 @@ var _pea = instance_create_depth(x,y,depth, obj_pea, {
 	speed : speed
 })
 array_push(_pea.untorchwood, id)
+audio_play_sound(snd_firepea,30,false,global.volume_sfx)
 instance_destroy()

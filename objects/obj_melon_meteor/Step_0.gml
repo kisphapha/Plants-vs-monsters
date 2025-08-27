@@ -9,6 +9,7 @@ if instance_exists(dest) and phase = 1 and dest.y < y {
 		_bam.sprite_index = (image_index == 0) ? spr_melon_bam : spr_melon_bam_2
 	} else {
 		_bam.sprite_index = spr_lavaraise
+		audio_play_sound(snd_lavasplash,70,false,global.volume_sfx,0.5)
 	}
 	
 	repeat 5 {
@@ -19,7 +20,6 @@ if instance_exists(dest) and phase = 1 and dest.y < y {
 		})		
 		_splash.image_index = image_index
 	}
-	
 	audio_play_sound(choose(snd_melonpult_1,snd_melonpult_2),50,false,global.volume_sfx)
     instance_destroy()
 }

@@ -23,6 +23,7 @@ if (mukbang_phase == 1){
 	}
 }
 if (mukbang_phase == 2){
+	audio_play_sound(snd_qwrath_chomp,150,false,global.volume_sfx)
 	speed = 0
 	alarm[8] = 60
 }
@@ -30,6 +31,7 @@ if (mukbang_phase == 3){
 	alarm[8] = 15
 }
 if (mukbang_phase == 4){
+	audio_play_sound(snd_chomp_1,150,false,global.volume_sfx)
 	instance_create_depth(mukbang_target_x - 100,y,0,obj_mukbang_bite)
 	alarm[8] = 30
 }

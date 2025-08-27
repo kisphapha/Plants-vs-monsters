@@ -20,6 +20,7 @@ if power_active == 1
 			image_speed = 0
 			image_index = 0
 			alarm[5] = 30
+			audio_play_sound(snd_eruption,200,false,global.volume_sfx)
 			repeat 20 {
 				instance_create_depth(x + 16,y,depth - 1, obj_coldfog, {
 					speed : random_range(5,7),
@@ -29,4 +30,7 @@ if power_active == 1
 			
 		}
 	}
+}
+if (random(10) < 1){
+	audio_play_single(snd_fire_idle,30,false,global.volume_sfx)	
 }

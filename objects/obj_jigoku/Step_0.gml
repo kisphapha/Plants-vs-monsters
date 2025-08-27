@@ -2,6 +2,12 @@
 // You can write your code in this editor
 event_inherited()
 
+if (sprite_index == sprite_walk){
+	if (image_index	== 6){
+		audio_play_adjusted(snd_jigoku_wing,40,false,1.1,0.9,obj_jigoku,0.03)	
+	}
+}
+
 if global.strongwind = 1 {
 	alarm[6] = 60;
 	alarm[1] = 0;
@@ -39,6 +45,12 @@ if dead = false{
 	use_skill = 0
 	alarm[1] = 0;
 	alarm[2] = 0;
+	if (!is_scream && global.begining == 0){
+		is_scream = true
+		if (array_length(sound_death) > 0){	
+			audio_play_single(sound_death[irandom(array_length(sound_death) - 1)],50,false,global.volume_sfx)	
+		}
+	}
 	if (dead_type != 2)
 	{
 		if (weak > 0) {
@@ -48,6 +60,7 @@ if dead = false{
 			weak = 1;	
 			hp = 30;
 			dead = false;
+			is_scream = false;
 			alarm[6] = 240;
 			sprite_index = spr_jigoku_3
 			speed = 0;
@@ -68,7 +81,7 @@ if (weak == 3){
 	}
 }
 
-if (use_skill == 0 && instance_exists(enemy) && x - enemy.x < 240 && weak == 0)
+if (use_skill == 0 && global.begining == 0 && instance_exists(enemy) && x - enemy.x < 240 && weak == 0)
 {
 	use_skill = 1;
 	sprite_index = spr_jigoku_5
@@ -83,6 +96,7 @@ if ((use_skill == 1 || use_skill == 2) && image_index > 9 )
 	{
 		if (use_skill == 1)
 		{
+			audio_play_adjusted(snd_jigoku_attack,50,false,1.1,0.9,obj_jigoku,0.03)
 			use_skill = 2;
 			ball = instance_create_depth(x,y,depth - 5,obj_fireball)
 			ball.love = id

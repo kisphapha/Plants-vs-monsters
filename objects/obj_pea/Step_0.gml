@@ -37,3 +37,5 @@ if form == 4
 {
 	action_sprite_set(spr_puff, 0, 0);
 }
+
+image_angle = direction

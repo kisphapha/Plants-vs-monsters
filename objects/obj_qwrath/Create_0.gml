@@ -80,6 +80,10 @@ reduce_fire = 0.75;
 reduce_ice = 1.25;
 alarm[3] = 60;
 
+sound_nature = [snd_qwrath_1, snd_qwrath_2]
+sound_attack = []
+sound_death = [snd_qwrath_hurt]
+
 function damage_action(_damge = 0, _dead_type = 0){
 	array_push(damage_history, {
 		dame : _damge,
@@ -119,6 +123,9 @@ function rawr(){
 	{
 		state = "rawring"	
 		alarm[4] = 30
+	}
+	if (array_length(sound_nature) > 0){	
+		audio_play_sound(sound_nature[irandom(array_length(sound_nature) - 1)],80,false,global.volume_sfx)	
 	}
 }
 function fire(){

@@ -60,6 +60,10 @@ idle_phase = 0;
 is_composite = true;
 alarm[3] = 30;
 
+sound_nature = [snd_goluk_1]
+sound_death = []
+sound_attack = []
+
 
 function reset(){
 	head.xx = 0

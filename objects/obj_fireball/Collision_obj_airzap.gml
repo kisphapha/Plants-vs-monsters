@@ -4,9 +4,11 @@ if (other.for_fire && other.daming == 1){
 	hp -= other.dame
 	if (hp < 0)
 	{
-		instance_create_depth(x,y,depth - 100,obj_explosion, {
+		var _exp = instance_create_depth(x,y,depth - 100,obj_explosion, {
 			sprite_index : spr_fireblast	
 		})	
+		_exp.sound = [snd_fireburn]
+				
 		repeat 10 {
 			var _size = random_range(1,2)
 			var _smoke = instance_create_depth(x,y,depth - 5, obj_smoke, {

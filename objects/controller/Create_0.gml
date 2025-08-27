@@ -98,7 +98,13 @@ summon_command = [
 	{mons : obj_lavabull, key : ord("3")},	
 	{mons : obj_goluk, key : ord("4")},
 	{mons : obj_jigoku, key : ord("5")},
-	{mons : obj_qwrath, key : ord("6")},
+	{mons : obj_qwrath, key : ord("6")},	
+	{mons : obj_eggmonster_basic, key : ord("7")},	
+	{mons : obj_eggmonster_standard, key : ord("8")},	
+	{mons : obj_eggmonster_vip, key : ord("9")},
+
+
+
 ]
 
 function summon_debug(){

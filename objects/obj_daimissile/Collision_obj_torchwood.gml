@@ -8,4 +8,5 @@ if (((charged && other.powered) || !charged) && !fired)
 	} else {
 		sprite_index = spr_daimissile_3	
 	}
+	audio_play_sound(snd_firepea,30,false,global.volume_sfx)
 }

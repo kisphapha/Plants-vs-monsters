@@ -31,3 +31,7 @@ ball = noone;
 weak = 0;
 floating = 1;
 height = -20;
+sound_attack = []
+sound_death = [snd_jigoku_dead]
+sound_nature = [snd_jigoku_1]
+

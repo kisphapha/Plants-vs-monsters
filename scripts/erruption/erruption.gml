@@ -20,4 +20,6 @@ function erruption(_duration, _quake_duration, _delay, _show_text){
 		})	
 		_text.dest_scale = 2
 	}
+	
+	audio_play_sound(snd_eruption,200,false,global.volume_sfx)
 }

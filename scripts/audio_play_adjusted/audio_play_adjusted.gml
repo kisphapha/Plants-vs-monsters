@@ -8,5 +8,5 @@ function audio_play_adjusted(_sound,_priority,_loops,_higher_pitch = 1.2, _lower
 		_gain = max(0.05, 1 - instance_number(_object) * _decreaser ) * global.volume_sfx
 	}
 	
-	audio_play_sound(_sound,_priority,_loops,_gain, _offset, random_range(_lower_pitch,_higher_pitch))
+	return audio_play_sound(_sound,_priority,_loops,_gain, _offset, random_range(_lower_pitch,_higher_pitch))
 }

@@ -22,6 +22,7 @@ if (tail_phase == 3){
 		var _tail = instance_create(725,30,obj_qwrath_tailwind)
 		_tail.side = 1
 	}
+	audio_play_sound(snd_lavabull_brake,150,false,global.volume_sfx)
 	alarm[9] = 120
 }
 if (tail_phase == 4){

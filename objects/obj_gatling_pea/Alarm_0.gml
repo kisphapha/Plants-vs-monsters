@@ -14,4 +14,5 @@ if global.line[line] == 1  && global.begining == 0
 	image_speed = 1;
 	image_index = 0;
 	small_chain = 3;
+	audio_play_adjusted(snd_gatling_pea,40,false,1.1,0.9,obj_gatling_pea,0.03)
 }

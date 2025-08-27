@@ -9,6 +9,7 @@ if (mega_turns == 0)
 		var _rocket = instance_create_depth(x + 16, y, depth - 1, obj_daimissile )	
 		_rocket.mons = target
 	}
+	audio_play_adjusted(snd_sun_produce,40,false,1.1,0.9,obj_daikopter,0.025)
 } else {
 	mega_turns -= 1;
 	repeat 2 {	
@@ -21,6 +22,7 @@ if (mega_turns == 0)
 			_rocket.speed = 12
 		}
 	}
+	audio_play_adjusted(snd_daikopter_missile,40,false,1.1,0.9,obj_daikopter,0.025)
 }
 
 alarm[0] = 10

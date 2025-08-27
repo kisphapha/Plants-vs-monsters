@@ -15,3 +15,4 @@ if twist = 2 {
     y += alarm[0]*15/11
 
 }
+image_angle = direction

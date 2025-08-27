@@ -7,7 +7,7 @@ if phase = 1{
 else {
     y += v;
 }
-image_angle = tick*5
+//image_angle = tick*5
 if instance_exists(dest) and phase = 2 and dest.y < y {
     with dest {alarm[0] = 10; active = 1; detonate()}
 	repeat 5 {
@@ -17,9 +17,13 @@ if instance_exists(dest) and phase = 2 and dest.y < y {
 			speed : random_range(5,10)
 		})		
 		_splash.image_index = image_index
-		if sprite_index == spr_melon_projectile_fire _splash.image_index = 2
+		if sprite_index == spr_melon_projectile_fire {
+			_splash.image_index = 2
+			audio_play_sound(choose(snd_hotcacao_1,snd_hotcacao_2),50,false,global.volume_sfx)
+		}
 	}
 	audio_play_sound(choose(snd_melonpult_1,snd_melonpult_2),50,false,global.volume_sfx)
+	
     instance_destroy()
 }
 

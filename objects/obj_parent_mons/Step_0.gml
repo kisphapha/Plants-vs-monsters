@@ -195,3 +195,19 @@ if (random(moans_rarity) < 1 && !dead){
 		audio_play_single(sound_nature[irandom(array_length(sound_nature) - 1)],20,false,global.volume_sfx)	
 	}
 }
+if (cursed && !dead){
+	if (hp <= hpmax * 0.1){
+		cursed = false;
+		var _dame = instance_create_depth(x,y,depth,obj_damage_once)
+		_dame.type = 7;
+		_dame.size_x = 3;
+		_dame.size_y = 3;
+		_dame.damage = hpmax * 0.1;
+	}
+}
+if (immortal_spawn > 0){
+	immortal_spawn -= 1
+	if (immortal_spawn <= 0){
+		immortal = 0;
+	}
+}

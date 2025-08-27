@@ -46,6 +46,21 @@ if special_condition(0) && transparent == 0 && !dead
 			}	
 			_dame *= reduce_fire
 		}
+		if (other.type == 6){
+			cursed = true;	
+		}
+		if (other.type == 7){
+			cursed = true;	
+			_dead_type = 1;
+		}
+		if (other.type == 8){
+			cursed = false;
+			var _local_dame = instance_create_depth(x,y,depth,obj_damage_once)
+			_local_dame.type = 7;
+			_local_dame.size_x = 3;
+			_local_dame.size_y = 3;
+			_local_dame.damage = hpmax * 0.2;
+		}
 		
 		if (_dame >= hpmax)
 			_dead_type = 1

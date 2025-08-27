@@ -20,9 +20,10 @@ image_yscale = size
 depth = -y - 80
 if (y > dest_y)
 {
-	instance_create_depth(dest_x,dest_y,depth - 100,obj_explosion, {
+	var _exp = instance_create_depth(dest_x,dest_y,depth - 100,obj_explosion, {
 		sprite_index : spr_fireblast	
 	})
+	_exp.sound = [snd_fireburn]
 	instance_create_depth(dest_x - 24,dest_y - 32,depth - 100,obj_firesmash)
 	instance_destroy()
 }

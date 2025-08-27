@@ -22,7 +22,7 @@ if power_active == 1
 	}
 }
 
-if (instance_exists(mons) && mons.floating > 0 ){
+if (instance_exists(mons) && mons.floating > 0 && !mons.dead ){
 	var _flag = false
 	
 	if (mons.object_index != obj_volcano_meteor &&
@@ -68,8 +68,10 @@ if (instance_exists(mons) && mons.floating > 0 ){
 			})
 		}
 	} else if (instance_exists(bolt)) {
+		audio_stop_sound(bolt.audio)
 		instance_destroy(bolt)
 	}
 } else if (instance_exists(bolt)) {
+	audio_stop_sound(bolt.audio)
 	instance_destroy(bolt)
 }

@@ -17,21 +17,24 @@ function die(_status){
 	if (_status == 0 && instance_exists(dest_tile)){
 		_die_x = dest_tile.x
 		_die_y = dest_tile.y
-		instance_create_depth(dest_tile.x + 32,dest_tile.y + 32,depth - 100,obj_explosion, {
+		var _exp = instance_create_depth(dest_tile.x + 32,dest_tile.y + 32,depth - 100,obj_explosion, {
 			sprite_index : spr_lavaraise	
 		})
-		instance_create_depth(dest_tile.x + 32,dest_tile.y + 32,depth - 100,obj_explosion, {
+		_exp.sound = [snd_lavasplash]
+		var _exp2 = instance_create_depth(dest_tile.x + 32,dest_tile.y + 32,depth - 100,obj_explosion, {
 			sprite_index : spr_fireblast	
 		})
+		_exp2.sound = [snd_explosion_2]
 		var _crater = instance_create_depth(dest_tile.x + 32, dest_tile.y + 32, 1000, obj_breakingbad)
 		_crater.tile = dest_tile
 		
 	} else {
 		_die_x = x
 		_die_y = y
-		instance_create_depth(x,y,depth - 100,obj_explosion, {
+		var _exp = instance_create_depth(x,y,depth - 100,obj_explosion, {
 			sprite_index : spr_fireblast	
 		})
+		_exp.sound = [snd_explosion_2]
 	}
 	repeat 15 {
 		var _size = random_range(1.5,3)

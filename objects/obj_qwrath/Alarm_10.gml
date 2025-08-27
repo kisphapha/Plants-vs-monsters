@@ -27,6 +27,7 @@ if (tekkai_phase == 2){
 }
 if (tekkai_phase == 3){
 	alarm[10] = 30	
+	audio_play_sound(snd_qwrath_hurt,150,false,global.volume_sfx)
 }
 if (tekkai_phase == 4){
 	if (super_angery){

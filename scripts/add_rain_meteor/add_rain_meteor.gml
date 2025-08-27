@@ -23,4 +23,5 @@ function add_rain_meteor(_amount, _from, _to) {
 			_warning.duration = -1;
 		}
 	}
+	audio_play_sound(snd_falling_things,100,false,global.volume_sfx)
 }

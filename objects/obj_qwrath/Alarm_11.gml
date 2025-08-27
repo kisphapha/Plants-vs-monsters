@@ -17,6 +17,7 @@ if (die_phase == 2){
 }
 if (die_phase == 3){
 	alarm[11] = 120;	
+	audio_play_sound(snd_qwrath_hurt,150,false,global.volume_sfx)
 	var _earthquake =instance_create_depth(x,y,0,obj_quakemaker)
 	_earthquake.duration = 90;
 	_earthquake.lvl = 6;
@@ -25,6 +26,7 @@ if (die_phase == 4){
 	with head { image_speed = 1 }
 }
 if (die_phase == 5){
+	audio_play_sound(snd_goluk_collapse,150,false,global.volume_sfx)
 	var _earthquake =instance_create_depth(x,y,0,obj_quakemaker)
 	_earthquake.duration = 90;
 	_earthquake.lvl = 6;

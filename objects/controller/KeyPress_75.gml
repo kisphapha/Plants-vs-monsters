@@ -1,8 +1,16 @@
 if (!keyboard_check(vk_control))
 {
+	repeat 10 instance_create(680+random_range(-32,32),script0(1),obj_hardcore);
+	repeat 10 instance_create(680+random_range(-32,32),script0(2),obj_hardcore); 
+	repeat 10 instance_create(680+random_range(-32,32),script0(3),obj_hardcore); 
+	repeat 10 instance_create(680+random_range(-32,32),script0(4),obj_hardcore); 
+	repeat 10 instance_create(680+random_range(-32,32),script0(5),obj_hardcore); 
+
+	
+	
 	//var _tail = instance_create(725,150,obj_qwrath_tailwind)
 	//_tail.side = 1
-	instance_create(680+random_range(-32,32),script0(0),obj_fireghoul); 
+	//instance_create(680+random_range(-32,32),script0(0),obj_fireghoul); 
 	//instance_create(680+random_range(-32,32),game.yy[3],obj_white_thing)
 	//instance_create(680+random_range(-32,32),script0(0),obj_big_bomb)
 	/*bom = instance_create(random(640),random(480),obj_bucxanhiet)

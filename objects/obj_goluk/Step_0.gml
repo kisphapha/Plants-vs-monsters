@@ -161,6 +161,7 @@ if (moving == 5){
 				_smoke.size = _size;
 				_smoke.span = 3;
 			}
+			audio_play_adjusted(snd_goluk_collapse,100,false,1.1,0.9,obj_goluk,0.03)
 		}
 	}
 	if (moving_step >= 135){
@@ -229,6 +230,7 @@ if (dead){
 	
 	if (moving != 5)
 	{
+		audio_play_adjusted(snd_goluk_dying,80,false,1.1,0.9,obj_goluk,0.03)
 		if (global.begining == 1)  instance_destroy()
 		with heart instance_destroy()
 		moving = 5

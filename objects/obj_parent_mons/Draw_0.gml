@@ -31,4 +31,10 @@ if global.begining == 0
 	draw_sprite_stretched(spr_plantfoodst,random(6),x-sprite_xoffset,y-sprite_yoffset,sprite_width,sprite_height)
 	if poison > 0
 	draw_sprite_ext(spr_possoned,random(6),x,y,sprite_width/80,sprite_height/80,image_angle,image_blend,image_alpha)
+	if cursed 
+	{
+		draw_set_alpha(0.5)
+		draw_sprite_ext(spr_curse_sign,0,x,y - sprite_height/1.9,1,1,image_angle,image_blend,image_alpha)	
+		draw_set_alpha(1)
+	}
 }

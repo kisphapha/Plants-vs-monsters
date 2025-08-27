@@ -887,6 +887,48 @@ with game
 			obj_form : obj_winter_melon,
 			drop_at : noone,
 			cursor : spr_wm2
+		},
+		{
+			plant_id : 103,
+			plant_name : "Red Cabbage",
+			description : "",
+			quotation : "\"Trulimelo Trulitrila\"",
+			plant_food : "",
+			picture : spr_red_cabbage,
+			card_pucture : spr_ca103,
+			dame_level : plants_dame_level[3],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[4],
+			card_type : obj_ca103,
+			plant_types : [1,5],
+			plants_range : [plants_range[2],plants_range[3]],
+			hp : 120,
+			recharge_time : 300,
+			cost : 250,
+			obj_form : obj_red_cabbage,
+			drop_at : noone,
+			cursor : spr_red_cabbage
+		},
+		{
+			plant_id : 104,
+			plant_name : "Lithopetic",
+			description : "",
+			quotation : "\"Tralalero Tralala\"",
+			plant_food : "",
+			picture : spr_lithopetic,
+			card_pucture : spr_ca104,
+			dame_level : plants_dame_level[0],
+			hp_level : plants_hp_level[1],
+			recharge_level : plants_recharge_level[2],
+			card_type : obj_ca104,
+			plant_types : [5],
+			plants_range : [plants_range[7]],
+			hp : 120,
+			recharge_time : 900,
+			cost : 200,
+			obj_form : obj_lithopetic,
+			drop_at : noone,
+			cursor : spr_lithopetic
 		}
 	]	
 }

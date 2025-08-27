@@ -14,3 +14,4 @@ alarm[0] = 10
 max_time = 300;
 cur_time = 300;
 charging = 0;
+audio_play_sound(snd_timely,200,false,global.volume_sfx)

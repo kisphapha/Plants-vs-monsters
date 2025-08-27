@@ -1,5 +1,6 @@
 action_set_relative(1);
 if collision_rectangle(x,y,x+640,y+64,obj_enemies,true,true)
+|| collision_rectangle(x,y,x+640,y+64,obj_lithopetic,true,true)
 {
 	action_set_relative(0);
 	global.line[5] = 1;
